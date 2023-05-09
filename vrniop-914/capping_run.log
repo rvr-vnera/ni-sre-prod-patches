@@ -1,0 +1,779 @@
+
+PLAY [Execute capping script] **********************************************************************************************************************************************************************************
+
+TASK [Run capping script] **************************************************************************************************************************************************************************************
+changed: [172.45.39.94]
+changed: [172.45.165.67]
+changed: [172.35.0.110]
+changed: [172.35.0.248]
+changed: [172.35.0.62]
+changed: [172.45.211.130]
+changed: [172.45.88.131]
+changed: [172.35.0.120]
+changed: [172.35.0.201]
+changed: [172.35.0.93]
+changed: [172.35.0.138]
+changed: [172.35.0.63]
+changed: [172.35.0.24]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.218]
+changed: [172.35.0.184]
+changed: [172.35.0.145]
+changed: [172.35.0.196]
+changed: [172.35.0.37]
+changed: [172.35.0.59]
+changed: [172.35.0.175]
+changed: [172.35.0.253]
+changed: [172.35.0.240]
+changed: [172.55.26.234]
+changed: [172.35.0.51]
+changed: [172.35.0.39]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.70.0.224]
+changed: [172.72.0.222]
+changed: [172.35.0.137]
+
+TASK [debug] ***************************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => 
+  capping_output.stdout: |-
+    SETUP_NAME="PDPOD1"
+    DID=DOKV8UF
+    CID: 10001
+    CID: 10769
+    CID: 10004
+    CID: 10804
+    CID: 10040
+    CID: 10818
+    CID: 10199
+    CID: 10200
+    CID: 10201
+    CID: 10205
+    CID: 10856
+    CID: 10352
+ok: [172.35.0.110] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod10"
+    DID=DP3DPE1
+    CID: 10786
+    CID: 10277
+    CID: 10922
+    CID: 10283
+    CID: 10825
+    CID: 10959
+    CID: 10968
+    CID: 10361
+    CID: 10877
+ok: [172.45.211.130] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod1000"
+    DID=DPB9CU2
+    CID: 10308
+    CID: 70037
+    CID: 70045
+    CID: 70046
+    CID: 10343
+    CID: 10344
+    CID: 70001
+    CID: 70065
+    CID: 70000
+    CID: 70002
+    CID: 70069
+    CID: 70068
+    CID: 70007
+    CID: 70071
+    CID: 70070
+ok: [172.45.165.67] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod1001"
+    DID=DPDM9W0
+    CID: 70021
+    CID: 10329
+    CID: 10342
+    CID: 10343
+    CID: 70054
+    CID: 10344
+    CID: 10488
+    CID: 70008
+ok: [172.45.39.94] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod1002"
+    DID=DQJKV6G
+    CID: 70028
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": 60,
+        "awsInstancesThreshold": 500,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 44,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.45.88.131] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod1003"
+    DID=DQUC9WP
+    CID: 70053
+    CID: 70059
+    CID: 70061
+    CID: 70060
+    CID: 70062
+    CID: 70073
+    CID: 70072
+    CID: 70075
+    CID: 70074
+    CID: 70077
+    CID: 70076
+ok: [172.35.0.138] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod11"
+    DID=DP5Y8AD
+    CID: 10534
+    CID: 10797
+    CID: 10414
+    CID: 10798
+    CID: 10800
+    CID: 10826
+    CID: 11095
+    CID: 10727
+    CID: 10858
+    CID: 10862
+    CID: 10865
+ok: [172.35.0.62] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod12"
+    DID=DP5YA5P
+    CID: 10503
+    CID: 10827
+    CID: 10494
+ok: [172.35.0.59] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod13"
+    DID=DP9JUDI
+    CID: 11020
+    CID: 11061
+    CID: 11070
+    CID: 10316
+    CID: 10828
+    CID: 10832
+    CID: 10846
+    CID: 10591
+    CID: 10847
+    CID: 11167
+    CID: 11168
+    CID: 11169
+    CID: 10403
+    CID: 10408
+    CID: 11177
+    CID: 11178
+    CID: 11179
+    CID: 11180
+    CID: 11181
+    CID: 11182
+    CID: 11183
+    CID: 11184
+ok: [172.35.0.120] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod14platform"
+    DID=DPDJAOJ
+    CID: 10829
+    CID: 10320
+      "billing": {
+        "socketsThreshold": 1320,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 1320,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.35.0.93] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod15"
+    DID=DPPHY6C
+    CID: 10830
+    CID: 10672
+    CID: 10684
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": -1,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 0,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.35.0.201] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod16"
+    DID=DPFMJDI
+    CID: 10348
+      "billing": {
+        "socketsThreshold": 448,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 848,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10831
+ok: [172.35.0.63] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod17"
+    DID=DPHMQW7
+    CID: 10833
+    CID: 10366
+      "billing": {
+        "socketsThreshold": 662,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 662,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.35.0.24] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod18platform"
+    DID=DPM8IUF
+    CID: 10374
+      "billing": {
+        "socketsThreshold": 487,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 487,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10834
+ok: [172.35.0.184] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod19platform"
+    DID=DPNO1O6
+    CID: 11008
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": -1,
+        "awsInstancesThreshold": -1,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 140,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10018
+    CID: 10835
+    CID: 10972
+    CID: 10973
+    CID: 10979
+    CID: 10990
+    CID: 10991
+    CID: 11003
+ok: [172.35.0.9] => 
+  capping_output.stdout: |-
+    SETUP_NAME="PDPOD2"
+    DID=DOKVCXV
+    CID: 10819
+    CID: 10334
+    CID: 10401
+ok: [172.35.0.20] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod20"
+    DID=DPO2DQ0
+    CID: 10435
+      "billing": {
+        "socketsThreshold": 78,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 78,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10437
+    CID: 11021
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": -1,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 181,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10836
+    CID: 11033
+    CID: 10548
+ok: [172.55.26.234] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod2001"
+    DID=DPZRI89
+    CID: 90001
+    CID: 90000
+    CID: 90003
+    CID: 90002
+    CID: 90005
+    CID: 90004
+    CID: 90012
+    CID: 90017
+    CID: 90018
+    CID: 90028
+    CID: 90033
+    CID: 90032
+    CID: 90035
+    CID: 90034
+    CID: 90036
+ok: [172.35.0.218] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod21"
+    DID=DPQW25R
+    CID: 10837
+    CID: 10488
+      "billing": {
+        "socketsThreshold": 0,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 23,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 11084
+    CID: 10477
+ok: [172.35.0.145] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod22"
+    DID=DPRKWYP
+    CID: 10722
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": 596,
+        "awsInstancesThreshold": -1,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 1650,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10838
+ok: [172.35.0.196] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod23platform"
+    DID=DPWKLVF
+    CID: 10539
+      "billing": {
+        "socketsThreshold": 397,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 397,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10839
+ok: [172.35.0.37] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod24"
+    DID=DPY3YU7
+    CID: 10613
+      "billing": {
+        "socketsThreshold": 3600,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 3600,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10840
+ok: [172.35.0.175] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod26"
+    DID=DQI5YR7
+    CID: 11172
+    CID: 10984
+ok: [172.35.0.240] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod27"
+    DID=DQJO3YF
+    CID: 11125
+    CID: 11019
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": -1,
+        "awsInstancesThreshold": -1,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 0,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.35.0.253] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod28"
+    DID=DQKZXOQ
+    CID: 11127
+    CID: 11038
+ok: [172.35.0.51] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod29"
+    DID=DQPF2NQ
+    CID: 11098
+    CID: 11104
+    CID: 11121
+    CID: 11128
+    CID: 11132
+ok: [172.35.0.249] => 
+  capping_output.stdout: |-
+    SETUP_NAME="PDPOD3"
+    DID=DOLES69
+    CID: 10368
+    CID: 10317
+    CID: 10034
+    CID: 10805
+    CID: 10364
+      "billing": {
+        "socketsThreshold": 74,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 74,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+ok: [172.35.0.39] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod30"
+    DID=DQQ7QNA
+    CID: 11130
+    CID: 11117
+ok: [172.35.0.217] => 
+  capping_output.stdout: |-
+    SETUP_NAME="PDPOD4"
+    DID=DOLH6CY
+    CID: 10639
+      "billing": {
+        "socketsThreshold": 132,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 132,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10270
+    CID: 10031
+    CID: 10942
+    CID: 10585
+    CID: 10331
+ok: [172.72.0.222] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod4000"
+    DID=DQH0WCZ
+    CID: 150018
+    CID: 150019
+    CID: 150017
+    CID: 150022
+    CID: 150023
+    CID: 150020
+    CID: 150021
+    CID: 150024
+    CID: 150002
+    CID: 150003
+    CID: 150001
+      "billing": {
+        "socketsThreshold": 100,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 100,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 100,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": 100,
+        "sdwanEdgesThreshold": 0
+    CID: 150004
+ok: [172.70.0.224] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod7000"
+    DID=DQHSNV0
+    CID: 330001
+ok: [172.35.0.137] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod6"
+    DID=DOV1ZWA
+    CID: 11151
+    CID: 11152
+    CID: 11153
+    CID: 11154
+    CID: 11155
+    CID: 11156
+    CID: 11157
+    CID: 11158
+    CID: 10775
+    CID: 11159
+    CID: 11160
+    CID: 11161
+    CID: 11162
+    CID: 11163
+    CID: 11170
+    CID: 11171
+    CID: 10788
+    CID: 11173
+    CID: 11174
+    CID: 11175
+    CID: 11176
+    CID: 10817
+    CID: 10821
+    CID: 10324
+
+TASK [Run capping script] **************************************************************************************************************************************************************************************
+changed: [172.35.0.191]
+
+TASK [debug] ***************************************************************************************************************************************************************************************************
+ok: [172.35.0.191] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod5"
+    DID=DORA3PW
+    CID: 11023
+    CID: 11026
+    CID: 11027
+    CID: 11030
+    CID: 11031
+    CID: 11032
+    CID: 11036
+    CID: 11037
+    CID: 10271
+    CID: 11043
+    CID: 11047
+    CID: 11048
+      "billing": {
+        "socketsThreshold": -1,
+        "vmcSocketsThreshold": -1,
+        "awsInstancesThreshold": -1,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 45,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10559
+    CID: 10820
+    CID: 10565
+    CID: 10657
+    CID: 10659
+    CID: 10672
+    CID: 10699
+      "billing": {
+        "socketsThreshold": 6,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 6,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10700
+    CID: 10209
+    CID: 10210
+    CID: 10212
+    CID: 10724
+
+TASK [Run capping script] **************************************************************************************************************************************************************************************
+changed: [172.35.0.134]
+
+TASK [debug] ***************************************************************************************************************************************************************************************************
+ok: [172.35.0.134] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod7"
+    DID=DOV4000
+    CID: 10752
+    CID: 10242
+    CID: 10768
+    CID: 10783
+    CID: 10273
+    CID: 11075
+    CID: 10822
+    CID: 11078
+    CID: 11080
+    CID: 11081
+    CID: 11085
+    CID: 10886
+    CID: 10887
+    CID: 10888
+    CID: 10893
+    CID: 11187
+    CID: 11188
+    CID: 11189
+    CID: 11190
+    CID: 10216
+    CID: 10217
+    CID: 10732
+    CID: 10733
+    CID: 10734
+    CID: 10735
+    CID: 10749
+    CID: 10238
+
+TASK [Run capping script] **************************************************************************************************************************************************************************************
+changed: [172.35.0.66]
+
+TASK [debug] ***************************************************************************************************************************************************************************************************
+ok: [172.35.0.66] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod9"
+    DID=DP34O16
+    CID: 11147
+    CID: 10388
+    CID: 10392
+      "billing": {
+        "socketsThreshold": 0,
+        "vmcSocketsThreshold": -1,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": -1,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": -1,
+        "physicalEndpointThreshold": -1,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 11164
+    CID: 10269
+    CID: 11165
+    CID: 11166
+    CID: 10276
+    CID: 11049
+    CID: 10289
+    CID: 11185
+    CID: 11186
+    CID: 10295
+    CID: 10299
+    CID: 10304
+      "billing": {
+        "socketsThreshold": 44,
+        "vmcSocketsThreshold": 0,
+        "awsInstancesThreshold": 0,
+        "azureVcpusThreshold": 0,
+        "customPhysicalEndPointBillingInterval": 24,
+        "vSphereSocketsThreshold": 44,
+        "physicalEndpointThreshold": 0,
+        "maxPhysicalIPsCount": 100000,
+        "vcpusThreshold": -1,
+        "sdwanEdgesThreshold": -1
+    CID: 10824
+    CID: 10326
+    CID: 10335
+    CID: 10336
+
+TASK [Run capping script] **************************************************************************************************************************************************************************************
+changed: [172.35.0.168]
+
+TASK [debug] ***************************************************************************************************************************************************************************************************
+ok: [172.35.0.168] => 
+  capping_output.stdout: |-
+    SETUP_NAME="pdpod8"
+    DID=DP1Y4XN
+    CID: 10767
+    CID: 10768
+    CID: 10897
+    CID: 10898
+    CID: 10899
+    CID: 10900
+    CID: 10901
+    CID: 10263
+    CID: 10904
+    CID: 10906
+    CID: 10907
+    CID: 10908
+    CID: 10914
+    CID: 10915
+    CID: 10921
+    CID: 10924
+    CID: 10929
+    CID: 10931
+    CID: 10935
+    CID: 10936
+    CID: 10938
+    CID: 10940
+    CID: 10941
+    CID: 10943
+    CID: 10945
+    CID: 10946
+    CID: 10823
+    CID: 10956
+    CID: 10958
+    CID: 10732
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.110               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.39                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.63                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.165.67              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.211.130             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.39.94               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.88.131              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.26.234              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.72.0.222               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

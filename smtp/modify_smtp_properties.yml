@@ -1,0 +1,48 @@
+---
+- name: Modify smtp properties file
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    target_file: /home/ubuntu/build-target/deployment/smtp.properties
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Change smtp username
+      lineinfile:
+        regexp: "^mail.smtp.auth.username="
+        path: "{{ target_file }}"
+        line: 'mail.smtp.auth.username='
+
+    - name: Change smtp password
+      lineinfile:
+        regexp: "^mail.smtp.auth.password="
+        path: "{{ target_file }}"
+        line: 'mail.smtp.auth.password='
+
+    - name: Restart restapi service
+      shell: sudo service restapilayer-service restart
+
+    - name: Check restapi servicee
+      shell: |
+        sleep 10s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 Restapi
+      register: restapi
+
+    - name: New SMTP
+      shell: |
+        grep -rw "mail.smtp.auth" "{{ target_file }}"
+      register: new_smtp
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ restapi.stdout }}"
+         - "{{ new_smtp.stdout_lines }}"

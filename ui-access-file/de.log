@@ -1,0 +1,101 @@
+
+PLAY [Fix UI access file] **************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.95.1.146]
+ok: [172.95.1.244]
+ok: [172.95.1.43]
+ok: [172.95.1.36]
+ok: [172.95.1.83]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.95.1.146]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+
+TASK [Copy execution script] ***********************************************************************************************************************************************************************************
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.36]
+changed: [172.95.1.244]
+changed: [172.95.1.43]
+
+TASK [Current Value] *******************************************************************************************************************************************************************************************
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+
+TASK [Get new value] *******************************************************************************************************************************************************************************************
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+
+TASK [Apply new_url] *******************************************************************************************************************************************************************************************
+changed: [172.95.1.146]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+
+TASK [Final Value] *********************************************************************************************************************************************************************************************
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod6001platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6001platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6001platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod6002platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6002platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6002platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com", 
+        "https://de.www.mgmt.cloud.vmware.com/ni/,pdpod6000platform.pd.ni-onsaas-internal.com,<tenant>.de.pd.ni-onsaas.com"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.95.1.146               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

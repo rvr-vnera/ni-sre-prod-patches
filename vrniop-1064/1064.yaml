@@ -1,0 +1,46 @@
+---
+- name: Delete stale proxy keys
+  hosts: "{{ HOSTS }}"
+  become: true
+  gather_facts: no
+  become_user: ubuntu
+  vars:
+    target_dir: /tmp/vrniop-1064
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Create download dir
+      command: "mkdir -p  {{ target_dir }}"
+
+    - name: Copy execution script
+      copy:
+        src: files/delete_stale_keys.sh
+        dest: "{{ target_dir }}/delete_stale_keys.sh"
+        mode: '755'
+        owner: ubuntu
+
+    - name: Execute key deletion script
+      shell: |
+        cd {{ target_dir }}
+        ./delete_stale_keys.sh > /home/ubuntu/logs/delete_stale_keys_new_{{ pod_name.stdout }}.log
+
+    - name: Capture results
+      shell: |
+        grep -rnw "not found" /home/ubuntu/logs/delete_stale_keys_new_{{ pod_name.stdout }}.log
+      register: migration
+      ignore_errors: true
+
+    - name: Remove tmp directory
+      command: "rm -rf {{ target_dir }}"
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ migration.stdout_lines }}"

@@ -1,0 +1,16 @@
+---
+- name: Apply saasservice patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    saas_service_dir: /home/ubuntu/build-target/saasservice/
+    saasservice_file: "saasservice-0.001-SNAPSHOT.jar"
+    common_dependency_dir: /home/ubuntu/build-target/common-dependency/
+    backup_dir: /tmp/before_vrniop426/
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Check uptime
+      shell: /home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener

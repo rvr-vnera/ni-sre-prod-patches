@@ -1,0 +1,259 @@
+
+PLAY [Apply UI patch] ******************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.110]
+ok: [172.35.0.248]
+ok: [172.35.0.138]
+ok: [172.35.0.62]
+ok: [172.45.165.67]
+ok: [172.45.211.130]
+ok: [172.45.39.94]
+ok: [172.35.0.59]
+ok: [172.35.0.250]
+ok: [172.35.0.60]
+ok: [172.35.0.120]
+ok: [172.35.0.93]
+ok: [172.35.0.201]
+ok: [172.35.0.22]
+ok: [172.35.0.63]
+ok: [172.35.0.24]
+ok: [172.35.0.76]
+ok: [172.35.0.224]
+ok: [172.35.0.113]
+ok: [172.35.0.152]
+ok: [172.35.0.84]
+ok: [172.35.0.184]
+ok: [172.35.0.9]
+ok: [172.35.0.218]
+ok: [172.35.0.20]
+ok: [172.35.0.109]
+ok: [172.55.26.234]
+ok: [172.35.0.145]
+ok: [172.35.0.158]
+ok: [172.35.0.121]
+ok: [172.35.0.196]
+ok: [172.35.0.74]
+ok: [172.35.0.214]
+ok: [172.35.0.65]
+ok: [172.35.0.122]
+ok: [172.35.0.147]
+ok: [172.35.0.232]
+ok: [172.35.0.61]
+ok: [172.35.0.7]
+ok: [172.35.0.37]
+ok: [172.35.0.52]
+ok: [172.35.0.219]
+ok: [172.35.0.69]
+ok: [172.35.0.162]
+ok: [172.35.0.58]
+ok: [172.35.0.73]
+ok: [172.35.0.204]
+ok: [172.35.0.197]
+ok: [172.35.0.5]
+ok: [172.35.0.200]
+ok: [172.35.0.43]
+ok: [172.35.0.175]
+ok: [172.35.0.164]
+ok: [172.35.0.167]
+ok: [172.35.0.240]
+ok: [172.35.0.249]
+ok: [172.35.0.191]
+ok: [172.35.0.217]
+ok: [172.35.0.137]
+ok: [172.35.0.168]
+ok: [172.35.0.134]
+ok: [172.35.0.66]
+
+TASK [Verify user login] ***************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.120]
+changed: [172.35.0.60]
+changed: [172.35.0.93]
+changed: [172.35.0.201]
+changed: [172.35.0.22]
+changed: [172.35.0.63]
+changed: [172.35.0.224]
+changed: [172.35.0.24]
+changed: [172.35.0.76]
+changed: [172.35.0.152]
+changed: [172.35.0.113]
+changed: [172.35.0.84]
+changed: [172.45.211.130]
+changed: [172.35.0.184]
+changed: [172.45.165.67]
+changed: [172.35.0.9]
+changed: [172.45.39.94]
+changed: [172.35.0.20]
+changed: [172.35.0.218]
+changed: [172.35.0.109]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.121]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.196]
+changed: [172.35.0.214]
+changed: [172.35.0.122]
+changed: [172.35.0.147]
+changed: [172.35.0.232]
+changed: [172.35.0.7]
+changed: [172.35.0.61]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.219]
+changed: [172.35.0.58]
+changed: [172.35.0.69]
+changed: [172.35.0.162]
+changed: [172.55.26.234]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.197]
+changed: [172.35.0.5]
+changed: [172.35.0.200]
+changed: [172.35.0.43]
+changed: [172.35.0.175]
+changed: [172.35.0.164]
+changed: [172.35.0.167]
+changed: [172.35.0.240]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+
+TASK [Untar files to target_dir] *******************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.120]
+changed: [172.35.0.60]
+changed: [172.35.0.93]
+changed: [172.35.0.201]
+changed: [172.35.0.22]
+changed: [172.35.0.63]
+changed: [172.35.0.224]
+changed: [172.35.0.24]
+changed: [172.35.0.76]
+changed: [172.45.211.130]
+changed: [172.45.165.67]
+changed: [172.35.0.152]
+changed: [172.35.0.113]
+changed: [172.35.0.84]
+changed: [172.35.0.184]
+changed: [172.45.39.94]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.218]
+changed: [172.35.0.109]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.121]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.196]
+changed: [172.35.0.214]
+changed: [172.35.0.122]
+changed: [172.35.0.147]
+changed: [172.35.0.232]
+changed: [172.35.0.7]
+changed: [172.35.0.61]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.219]
+changed: [172.55.26.234]
+changed: [172.35.0.58]
+changed: [172.35.0.69]
+changed: [172.35.0.162]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.197]
+changed: [172.35.0.5]
+changed: [172.35.0.200]
+changed: [172.35.0.43]
+changed: [172.35.0.175]
+changed: [172.35.0.164]
+changed: [172.35.0.167]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.240]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.109               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.113               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.122               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.147               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.152               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.162               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.164               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.167               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.197               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.200               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.204               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.219               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.22                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.224               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.232               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.43                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.5                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.52                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.58                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.61                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.63                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.69                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.7                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.73                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.76                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.84                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.165.67              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.211.130             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.39.94               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.26.234              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

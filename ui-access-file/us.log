@@ -1,0 +1,1269 @@
+
+PLAY [Fix UI access file] **************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.207]
+ok: [172.35.0.162]
+ok: [172.35.0.122]
+ok: [172.35.0.183]
+ok: [172.35.0.145]
+ok: [172.35.0.35]
+ok: [172.35.0.217]
+ok: [172.35.0.8]
+ok: [172.35.0.249]
+ok: [172.35.0.102]
+ok: [172.35.0.110]
+ok: [172.35.0.253]
+ok: [172.35.0.74]
+ok: [172.35.0.114]
+ok: [172.35.0.65]
+ok: [172.35.0.248]
+ok: [172.35.0.120]
+ok: [172.35.0.219]
+ok: [172.35.1.235]
+ok: [172.35.0.167]
+ok: [172.35.0.218]
+ok: [172.35.0.51]
+ok: [172.35.0.5]
+ok: [172.35.0.197]
+ok: [172.35.0.61]
+ok: [172.35.0.66]
+ok: [172.35.0.138]
+ok: [172.35.0.73]
+ok: [172.35.1.171]
+ok: [172.35.1.226]
+ok: [172.35.0.52]
+ok: [172.35.0.240]
+ok: [172.35.0.250]
+ok: [172.35.0.232]
+ok: [172.35.0.20]
+ok: [172.35.0.204]
+ok: [172.35.0.93]
+ok: [172.35.0.196]
+ok: [172.35.0.59]
+ok: [172.35.0.121]
+ok: [172.35.0.222]
+ok: [172.35.0.109]
+ok: [172.35.0.184]
+ok: [172.35.0.191]
+ok: [172.35.0.69]
+ok: [172.35.0.58]
+ok: [172.35.0.175]
+ok: [172.35.1.120]
+ok: [172.35.0.254]
+ok: [172.35.0.159]
+ok: [172.35.0.192]
+ok: [172.35.1.228]
+ok: [172.35.0.37]
+ok: [172.35.0.7]
+ok: [172.35.0.158]
+ok: [172.35.0.168]
+ok: [172.35.0.201]
+ok: [172.35.0.147]
+ok: [172.35.0.214]
+ok: [172.35.0.206]
+ok: [172.35.0.134]
+ok: [172.35.0.164]
+ok: [172.35.0.178]
+ok: [172.35.0.182]
+ok: [172.35.1.202]
+ok: [172.35.1.240]
+ok: [172.35.0.9]
+ok: [172.35.0.60]
+ok: [172.35.0.79]
+ok: [172.35.0.43]
+ok: [172.35.0.62]
+ok: [172.35.0.82]
+ok: [172.35.0.137]
+ok: [172.35.0.200]
+ok: [172.35.0.130]
+ok: [172.35.0.157]
+ok: [172.35.0.150]
+ok: [172.35.0.54]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+changed: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Copy execution script] ***********************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+changed: [172.35.1.171]
+ok: [172.35.0.66]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+changed: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Current Value] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+changed: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Get new value] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+changed: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Apply new_url] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+ok: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+ok: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+ok: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Final Value] *********************************************************************************************************************************************************************************************
+changed: [172.35.0.207]
+changed: [172.35.0.145]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.102]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.65]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.219]
+changed: [172.35.1.235]
+changed: [172.35.0.167]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.73]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.52]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.20]
+changed: [172.35.0.121]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.222]
+changed: [172.35.0.109]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.0.175]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.254]
+changed: [172.35.1.120]
+changed: [172.35.0.159]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.158]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.147]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.164]
+changed: [172.35.0.178]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.200]
+changed: [172.35.0.157]
+changed: [172.35.0.150]
+changed: [172.35.0.54]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.122] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.162] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod32platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod32platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod32platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod4.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod4.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod4.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod33platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod33platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod33platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        "https://www.mgmt.cloud.vmware.com/ni,pdpod3.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni,pdpod3.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni,pdpod3.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod10platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod10platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod10platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod28platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod28platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod28platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod34platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod34platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod34platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod1.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod1.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod1.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.219] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.167] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod29platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod29platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod29platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.5] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.61] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.197] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod9platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod9platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod9platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.73] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod36platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod36platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod36platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.52] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod27platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod27platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod27platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.232] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.204] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod20platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod20platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod20platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod13platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod13platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod13platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.222] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod5.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod5.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod5.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod19platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod19platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod19platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.69] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.58] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.254] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.120] => {
+    "msg": [
+        "PodName: pdpod37", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod37platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod37platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod37platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.159] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.7] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod8.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod8.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod8.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod23platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.147] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod24platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        "https://www.mgmt.cloud.vmware.com/,pdpod7.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://us.www.mgmt.cloud.vmware.com/,pdpod7.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://us.www.mgmt.cloud.vmware.com/,pdpod7.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod31platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod31platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod31platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.164] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod22platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod15platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod2.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod2.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod2.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod35platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod35platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod35platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod14platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.79] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.43] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod12platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod12platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod12platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod16platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        "https://www.mgmt.cloud.vmware.com/,pdpod6.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://us.www.mgmt.cloud.vmware.com/,pdpod6.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://us.www.mgmt.cloud.vmware.com/,pdpod6.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.200] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod21platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.150] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.us.pd.ni-onsaas.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod26platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas.com,<tenant>.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod11platform.pd.ni-onsaas-internal.com,<tenant>.us.pd.ni-onsaas.com"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.102               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.122               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.147               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.150               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.159               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.162               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.164               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.167               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.197               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.200               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.204               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.219               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.222               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.232               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.254               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.43                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.5                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.52                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.58                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.61                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.69                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.7                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.73                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.79                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.120               : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=8    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.228               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

@@ -1,0 +1,27 @@
+---
+## /etc/grub.d/40_custom file contains the boot loader password
+# This playbook moves the above file outside of grub.d and updates grub
+# thus removing bootloader password setting in the resulting grub.cfg
+# Filename is a constant as it is hardcoded in the recipe
+# https://github.com/vnera/operations/blob/master/infra-automation/cookbooks/kernel/recipes/grub.rb#L41
+# https://github.com/vnera/operations/blob/master/infra-automation/cookbooks/kernel/recipes/install.rb#L92
+
+- name: Remove bootloader password
+  hosts: all
+  gather_facts: False
+  become: true
+  become_user: root
+
+  vars:
+    ansible_python_interpreter: "/usr/bin/python3"
+    grub_dir_etc: "/etc/grub.d"
+    bootloader_filepath: "{{ grub_dir_etc }}/40_custom"
+    backup_dir: /home/ubuntu/
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+
+    - name: Move the file
+      command: "grep password_pbkdf2 /boot/grub/grub.cfg"
+      ignore_errors: true

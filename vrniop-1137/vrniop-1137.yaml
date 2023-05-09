@@ -1,0 +1,77 @@
+---
+- name: Apply saasservice patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    programs_file: "programs-0.001-SNAPSHOT.jar"
+    common_dependency_dir: /home/ubuntu/build-target/common-dependency/6.3.0
+    backup_dir: /tmp/before_vrniop1137/
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Verify user login
+      shell: |
+        whoami
+        cd ~
+        ls -l
+
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Create directories
+      shell: mkdir -p {{backup_dir}}/staging
+
+    - name: Copy jar to staging directory
+      copy:
+        src: "files/{{ programs_file }}"
+        dest: "{{ backup_dir }}/staging/"
+
+    - name: Take backup
+      shell: |
+        mkdir -p {{backup_dir}}/old
+        cp "{{ common_dependency_dir }}/{{ programs_file }}" "{{ backup_dir }}"/old
+
+    - name: Replace jar in common depdendencies
+      shell: |
+        cp "{{ backup_dir }}"/staging/"{{ programs_file }}" "{{ common_dependency_dir }}"/"{{ programs_file }}"
+
+    - name: Restart restapi service
+      shell: sudo service restapilayer-service restart
+      become: true
+
+    - name: Restart batch analytics
+      shell: sudo service batch-analytics restart
+      become: true
+      ignore_errors: true
+    
+    - name: Check restapi uptime
+      shell: |
+        sleep 3s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 Restapilayer
+      register: restapi
+
+    - name: Check batch uptime
+      shell: |
+        sleep 3s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 BatchAnalytics
+      register: batch
+      ignore_errors: true
+
+    - name: Check md5sum
+      shell: |
+        md5sum "{{ common_dependency_dir }}"/"{{ programs_file }}"
+      register: file_md5
+      ignore_errors: true
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ restapi.stdout_lines }}"
+         - "{{ batch.stdout_lines }}"
+         - "{{ file_md5.stdout }}"

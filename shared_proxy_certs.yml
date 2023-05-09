@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: False
+  tasks:
+    - name: Install VMware Internal CA Cert
+      copy:
+        src: "shared_proxy_cert/vmware_internal_ca.pem"
+        dest: "/usr/local/share/ca-certificates/vmware_internal_ca.crt"
+      become: true
+
+    - name: Update cert index
+      shell: sudo /usr/sbin/update-ca-certificates
+      become: true

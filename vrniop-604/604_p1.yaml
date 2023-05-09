@@ -1,0 +1,32 @@
+---
+- name: Apply UI patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    target_dir: /usr/share/nginx/www
+    backup_dir: /usr/share/nginx/www_before604
+    staging_dir: /tmp/604-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Verify user login
+      shell: |
+        whoami
+        cd ~
+        ls -l
+   
+    - name: Create staging dir
+      shell: |
+        mkdir -p "{{staging_dir}}"
+
+    - name: Stage files
+      copy:
+        src: files/ui-patch.tgz
+        dest: "{{ staging_dir }}"
+
+    - name: Take backup
+      shell: |
+        sudo cp -r "{{target_dir}}" "{{backup_dir}}"
+      become: true

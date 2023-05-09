@@ -1,0 +1,901 @@
+ok: [172.35.0.35]
+ok: [172.35.0.206]
+ok: [172.35.0.8]
+ok: [172.35.1.202]
+ok: [172.35.0.114]
+ok: [172.35.1.171]
+ok: [172.35.0.191]
+ok: [172.35.0.249]
+ok: [172.35.0.137]
+ok: [172.35.0.217]
+ok: [172.35.0.134]
+ok: [172.35.0.168]
+ok: [172.35.0.66]
+ok: [172.55.1.29]
+ok: [172.105.21.52]
+ok: [172.105.21.197]
+ok: [172.45.1.116]
+ok: [172.45.1.230]
+ok: [172.45.1.56]
+ok: [172.75.1.59]
+ok: [172.45.1.239]
+ok: [172.95.1.36]
+ok: [172.95.1.43]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.45.1.116]
+changed: [172.105.21.197]
+changed: [172.45.1.230]
+changed: [172.75.1.59]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Create target dir] ***************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.45.1.116]
+changed: [172.105.21.197]
+changed: [172.45.1.230]
+changed: [172.75.1.59]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Copy jndi execution script] ******************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.45.1.230]
+changed: [172.105.21.52]
+changed: [172.45.1.116]
+changed: [172.105.21.197]
+changed: [172.75.1.59]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [md5sum before] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.45.1.116]
+changed: [172.105.21.197]
+changed: [172.45.1.230]
+changed: [172.75.1.59]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Execute jndi script] *************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.59]
+changed: [172.35.0.62]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.253]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.191]
+changed: [172.35.0.217]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.75.1.59]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [md5sum after] ********************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.45.1.116]
+changed: [172.105.21.197]
+changed: [172.45.1.230]
+changed: [172.75.1.59]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Restart elasticsearch service] ***************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.253]
+changed: [172.35.0.240]
+changed: [172.35.0.51]
+changed: [172.35.0.9]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.1.202]
+changed: [172.35.0.114]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.75.1.59]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Check service health] ************************************************************************************************************************************************************************************
+changed: [172.35.0.110]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.0.62]
+changed: [172.35.0.248]
+changed: [172.35.0.20]
+changed: [172.35.0.240]
+changed: [172.35.0.51]
+changed: [172.35.0.253]
+changed: [172.35.0.9]
+changed: [172.35.0.8]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.1.202]
+changed: [172.35.0.114]
+changed: [172.35.1.171]
+changed: [172.35.0.249]
+changed: [172.35.0.191]
+changed: [172.35.0.217]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.75.1.59]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:00:58"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : fa78d2a720dc08c4b52ba4d117531ad9  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:00:58"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : fa78d2a720dc08c4b52ba4d117531ad9  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:00:58"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : fa78d2a720dc08c4b52ba4d117531ad9  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:00:58"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 4d6ec95c246e99550ecc614178d61a91  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:00:58"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 4d6ec95c246e99550ecc614178d61a91  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 0a5b858d58528854fe8a6435230a8ee1  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : f2ee99415fd2005ae084dc53e297f955  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : f2ee99415fd2005ae084dc53e297f955  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 3b81ca709b2ecf9290b0f4c74d98ed70  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : d36af194f811c62bc89997d2fa8353b5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 7858392c16d5015e9eb32ea809e2ee17  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 7858392c16d5015e9eb32ea809e2ee17  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 7858392c16d5015e9eb32ea809e2ee17  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 7858392c16d5015e9eb32ea809e2ee17  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 3a8c1246c819af45c474545ba6f60b29  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:56"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 1461c8c9ab4d8e27e24ee5c981315057  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:56"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 628703d66fa76c8e40d9b8df5269ff61  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:57"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 628703d66fa76c8e40d9b8df5269ff61  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:56"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : abefa789b3ace521871f751c65f20e5d  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:01:56"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : a6e069aa756463ce1acea04e46cbbe22  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:16"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 747a69389dff61901546b1ae9866dd91  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 747a69389dff61901546b1ae9866dd91  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:16"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 24676d38e3080880dfd346fb695788d8  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 62ba88816e1157f660dd38be34aa79dc  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: pdpod4000", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:17"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 62ba88816e1157f660dd38be34aa79dc  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 6a32fc15c78878af9b8ca642238a1a85  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:37"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 523163ce91e74437957cbfe6a83de1e3  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:38"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 523163ce91e74437957cbfe6a83de1e3  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:38"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : fbce29df73c9d1b99721eef567d22075  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:38"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : ce9816dd775a1b05671f64d95bf12c9e  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:57"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : cf8e89d7406443abc6a3c8dc48623b2b  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:59"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 95c4e58667c0f8162669887c96e77eda  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002", 
+        "Logs", 
+        [
+            "JndiLookup class is removed successfully and elasticsearch is restarted"
+        ], 
+        "Service Health: ", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "ElasticSearch statistics:", 
+            "Uptime:02:59"
+        ], 
+        "Hash Before : b2242de0677be6515d6cefbf48e7e5d5  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+        "Hash After : 8c897c058546e728d456c6163c3cad23  /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=10   changed=8    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0  

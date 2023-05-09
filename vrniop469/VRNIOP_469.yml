@@ -1,0 +1,56 @@
+---
+- name: Apply samzaservice patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    samza_service_dir: /home/ubuntu/build-target/samzajobs/
+    samzaservice_file: "samza-job-package-0.001-SNAPSHOT-dist.tar.gz"
+    programs_file: "programs-0.001-SNAPSHOT.jar"
+    common_dependency_dir: /home/ubuntu/build-target/common-dependency/
+    backup_dir: /tmp/before_vrniop469_samza/
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Verify user login
+      shell: |
+        whoami
+        cd ~
+        ls -l
+
+    - name: Copy samza jar to staging directory
+      copy:
+        src: "files/{{ samzaservice_file }}"
+        dest: "{{ backup_dir }}/staging/"
+
+    - name: Copy programs jar to staging directory
+      copy:
+        src: "files/{{ programs_file }}"
+        dest: "{{ backup_dir }}/staging/"
+
+    - name: Take backup
+      shell: |
+        mkdir -p {{backup_dir}}/old
+        cp "{{ samza_service_dir }}/{{ samzaservice_file }}" "{{ backup_dir }}"/old
+        cp "{{ common_dependency_dir }}/{{ programs_file }}" "{{ backup_dir }}"/old
+
+    - name: Stop samzajobs
+      shell: sudo systemctl stop samzajobs
+      become: true
+    
+    - name: Replace new samza jar in build target
+      shell: |
+        cp "{{ backup_dir }}"/staging/"{{ samzaservice_file }}" "{{ samza_service_dir }}"/"{{ samzaservice_file }}"
+
+    - name: Replace programs jar in common depdendencies
+      shell: |
+        cp "{{ backup_dir }}"/staging/"{{ samzaservice_file }}" "{{ common_dependency_dir }}"/"{{ samzaservice_file }}"
+
+    - name: Start samzajobs
+      shell: sudo systemctl start samzajobs
+      become: true
+    
+    - name: Check uptime
+      shell: /home/ubuntu/check-service-health.sh -u | grep -A 1 SamzaContainer

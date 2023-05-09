@@ -1,0 +1,2243 @@
+
+PLAY [Apply restapi patch] *************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.75.1.59]
+ok: [172.105.21.197]
+ok: [172.95.1.36]
+ok: [172.95.1.146]
+ok: [172.95.1.83]
+ok: [172.95.1.43]
+ok: [172.55.1.29]
+ok: [172.45.1.239]
+ok: [172.45.1.230]
+ok: [172.95.1.244]
+ok: [172.35.0.207]
+ok: [172.35.0.183]
+ok: [172.35.0.35]
+ok: [172.45.1.56]
+ok: [172.35.0.8]
+ok: [172.35.0.249]
+ok: [172.35.0.110]
+ok: [172.35.0.74]
+ok: [172.35.0.253]
+ok: [172.35.0.114]
+ok: [172.35.0.248]
+ok: [172.35.1.235]
+ok: [172.35.0.120]
+ok: [172.35.0.218]
+ok: [172.35.0.51]
+ok: [172.35.0.138]
+ok: [172.35.1.171]
+ok: [172.35.1.226]
+ok: [172.45.1.116]
+ok: [172.35.0.240]
+ok: [172.35.0.93]
+ok: [172.35.0.250]
+ok: [172.35.0.196]
+ok: [172.35.0.217]
+ok: [172.35.0.191]
+ok: [172.35.0.184]
+ok: [172.35.1.120]
+ok: [172.35.0.192]
+ok: [172.35.0.168]
+ok: [172.35.1.228]
+ok: [172.35.0.214]
+ok: [172.35.0.201]
+ok: [172.35.0.206]
+ok: [172.35.1.240]
+ok: [172.35.0.9]
+ok: [172.35.0.182]
+ok: [172.35.1.202]
+ok: [172.35.0.60]
+ok: [172.35.0.66]
+ok: [172.35.0.62]
+ok: [172.35.0.59]
+ok: [172.35.0.82]
+ok: [172.35.0.130]
+ok: [172.35.0.157]
+ok: [172.35.0.54]
+ok: [172.35.0.134]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.146]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.217]
+changed: [172.45.1.116]
+changed: [172.35.0.249]
+changed: [172.45.1.56]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.66]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.0.196]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.191]
+changed: [172.35.0.59]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.0.250]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [MemoryHigh] **********************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.146]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.35.0.207]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.217]
+changed: [172.35.0.114]
+changed: [172.45.1.56]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.45.1.116]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.59]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.130]
+changed: [172.35.0.82]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+changed: [172.35.0.66]
+
+TASK [MemoryMax] ***********************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.45.1.56]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.0.66]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.45.1.116]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+changed: [172.35.0.134]
+changed: [172.35.0.59]
+changed: [172.35.0.217]
+
+TASK [KillMode] ************************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.217]
+changed: [172.45.1.56]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.45.1.116]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+changed: [172.35.0.59]
+fatal: [172.35.0.66]: FAILED! => {"msg": "Timeout (12s) waiting for privilege escalation prompt: "}
+
+TASK [MemoryAccounting] ****************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.35.0.207]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.45.1.56]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.45.1.116]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.0.59]
+changed: [172.35.1.240]
+changed: [172.35.0.134]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [OOMScoreAdjust] ******************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.45.1.56]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.45.1.116]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [MemorySwapMax] *******************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.45.1.56]
+changed: [172.35.0.248]
+changed: [172.35.0.217]
+changed: [172.35.1.235]
+changed: [172.35.0.120]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.45.1.116]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+changed: [172.35.0.134]
+changed: [172.35.0.59]
+
+TASK [es_real_memory_high] *************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.230]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.45.1.56]
+changed: [172.35.0.217]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.45.1.116]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.0.59]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [es_real_memory_max] **************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.45.1.56]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.45.1.116]
+changed: [172.35.0.240]
+changed: [172.35.0.217]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.0.59]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.134]
+changed: [172.35.0.54]
+
+TASK [Reload daemon] *******************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.253]
+changed: [172.45.1.56]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.45.1.116]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.0.218]
+changed: [172.35.0.110]
+changed: [172.35.0.51]
+changed: [172.35.1.235]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.217]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.0.9]
+changed: [172.35.1.240]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+changed: [172.35.0.134]
+changed: [172.35.0.59]
+
+TASK [Restart ES service] **************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.230]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.45.1.56]
+changed: [172.45.1.116]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Fetch properties] ****************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.146]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+changed: [172.45.1.230]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.45.1.56]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.55.1.29]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.45.1.116]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.0.134]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.130]
+changed: [172.35.0.82]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Fetch properties xlarge] *********************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.83]
+changed: [172.95.1.146]
+changed: [172.95.1.43]
+changed: [172.55.1.29]
+changed: [172.95.1.244]
+changed: [172.45.1.230]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.45.1.56]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.45.1.116]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.206]
+changed: [172.35.0.134]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Check ES uptime] *****************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.95.1.83]
+changed: [172.95.1.146]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.55.1.29]
+changed: [172.45.1.239]
+changed: [172.95.1.244]
+changed: [172.45.1.230]
+changed: [172.95.1.43]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.45.1.56]
+changed: [172.35.0.35]
+changed: [172.45.1.116]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.253]
+changed: [172.35.0.110]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.250]
+changed: [172.35.0.93]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.130]
+changed: [172.35.0.82]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:46"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:46"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:47"
+        ]
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:47"
+        ]
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:46"
+        ]
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:59"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:59"
+        ]
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:59"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:59"
+        ]
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:01:59"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:11"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:11"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:11"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:11"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:13"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:25"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:24"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:25"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:25"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:24"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:38"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:38"
+        ]
+    ]
+}
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:39"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:38"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:39"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:50"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:51"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:51"
+        ]
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:52"
+        ]
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:02:54"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:04"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:04"
+        ]
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:04"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:05"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:06"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:17"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:17"
+        ]
+    ]
+}
+ok: [172.35.1.120] => {
+    "msg": [
+        "PodName: pdpod37", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:18"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:18"
+        ]
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:20"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:30"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:30"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:30"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:30"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:33"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:42"
+        ]
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:42"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:42"
+        ]
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:43"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:44"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:54"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:53"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:53"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:55"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "# Process will be killed if memory consumption exceeds MemoryMax", 
+            "#MemoryHigh=9000M", 
+            "#MemoryMax=9000M", 
+            "#KillMode=process", 
+            "#MemoryAccounting=true", 
+            "#OOMScoreAdjust=1000", 
+            "#MemorySwapMax=1"
+        ], 
+        [
+            "es_xmx = 6000m", 
+            "es_max_direct_memory_size = 2500m", 
+            "es_real_memory_high = 20000M", 
+            "es_real_memory_max = 20000M"
+        ], 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:56"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=4    changed=3    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.120               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.228               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.146               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=16   changed=14   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

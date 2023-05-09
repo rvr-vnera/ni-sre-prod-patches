@@ -1,0 +1,26 @@
+---
+- name: Kernel Purge
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"' && hostname
+      register: pod_name
+      become: true
+
+    - name: ntpsec changes
+      shell: |
+        sudo systemctl stop ntpsec.service
+        sudo rm /etc/ntp.conf
+        sudo ln -s /etc/ntpsec/ntp.conf /etc/ntp.conf
+        sudo systemctl start ntpsec.service
+        sudo systemctl status ntpsec.service
+      ignore_errors: true
+

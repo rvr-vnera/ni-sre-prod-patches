@@ -1,0 +1,41 @@
+---
+- name: Apply restapi patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    systemd_file: /etc/systemd/system/multi-user.target.wants/tsdb-server.service
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Remove Bootloader password
+      shell: |
+        sudo cp /etc/grub.d/40_custom.old /etc/grub.d/40_custom
+      become_user: root
+      become: true
+
+    - name: Remove GRUB_HIDDEN params
+      lineinfile:
+        regexp: "^({{item}}).*"
+        path: "/etc/default/grub"
+        state: absent
+        backup: yes
+      with_items:
+        - GRUB_HIDDEN_TIMEOUT
+        - GRUB_HIDDEN_TIMEOUT_QUIET
+      register: settings
+      become: true
+      become_user: root
+
+    - name: Update Grub
+      shell: |
+        sudo update-grub
+      become: true
+      become_user: root

@@ -1,0 +1,53 @@
+---
+- name: Fix UI access file
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    region: onecloud
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Copy execution script
+      copy:
+        src: files/generate_new_url.py
+        dest: "/tmp/generate_new_url.py"
+        mode: '755'
+        owner: ubuntu
+
+    - name: Current Value
+      shell: |
+        cat /home/ubuntu/build-target/deployment/ui-access-url.info
+      register: existing_url
+    
+    - name: Get new value
+      shell: |
+        cd /tmp
+        python ./generate_new_url.py {{ region }} '{{ existing_url.stdout | trim }}'
+      register: new_url
+
+    - name: Apply new_url
+      lineinfile:
+        path: /home/ubuntu/build-target/deployment/ui-access-url.info
+        regexp: "^https://"
+        line: "{{ new_url.stdout }}"
+
+    - name: Final Value
+      shell: |
+        cat /home/ubuntu/build-target/deployment/ui-access-url.info
+      register: final_url
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ existing_url.stdout }}"
+         - "{{ new_url.stdout }}"
+         - "{{ final_url.stdout }}"

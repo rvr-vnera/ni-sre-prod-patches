@@ -1,0 +1,107 @@
+---
+- name: Apply restapi patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    systemd_file: /etc/systemd/system/multi-user.target.wants/tsdb-server.service
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: MemoryHigh
+      lineinfile:
+        regexp: "^MemoryHigh"
+        path: "{{ systemd_file }}"
+        line: '#MemoryHigh=8000M'
+      become_user: root
+
+    - name: MemoryMax
+      lineinfile:
+        regexp: "^MemoryMax"
+        path: "{{ systemd_file }}"
+        line: '#MemoryMax=8000M'
+      become_user: root
+
+    - name: KillMode
+      lineinfile:
+        regexp: "^KillMode"
+        path: "{{ systemd_file }}"
+        line: '#KillMode=process'
+      become_user: root
+
+    - name: MemoryAccounting
+      lineinfile:
+        regexp: "^MemoryAccounting"
+        path: "{{ systemd_file }}"
+        line: '#MemoryAccounting=true'
+      become_user: root
+
+    - name: OOMScoreAdjust
+      lineinfile:
+        regexp: "^OOMScoreAdjust"
+        path: "{{ systemd_file }}"
+        line: '#OOMScoreAdjust=1000'
+      become_user: root
+
+    - name: MemorySwapMax
+      lineinfile:
+        regexp: "^MemorySwapMax"
+        path: "{{ systemd_file }}"
+        line: '#MemorySwapMax=1'
+      become_user: root
+
+    - name: tsdb_real_memory_high
+      lineinfile:
+        regexp: "^tsdb_real_memory_high"
+        path: /home/ubuntu/build-target/server-config-mgmt/xlarge.properties
+        line: 'tsdb_real_memory_high = 9000M'
+      become_user: ubuntu
+
+    - name: tsdb_real_memory_max
+      lineinfile:
+        regexp: "^tsdb_real_memory_max"
+        path: /home/ubuntu/build-target/server-config-mgmt/xlarge.properties
+        line: 'tsdb_real_memory_max = 9000M'
+      become_user: ubuntu
+
+    - name: Reload daemon
+      shell: sudo systemctl daemon-reload
+      become: true
+
+    - name: Restart TSDB service
+      shell: sudo service tsdb-server restart
+      become: true
+
+    - name: Fetch properties
+      shell: |
+        cat "{{ systemd_file }}" | grep -A 6 "# Process will be killed"
+      register: prop_file
+      ignore_errors: true
+
+    - name: Fetch properties xlarge
+      shell: |
+        cat /home/ubuntu/build-target/server-config-mgmt/xlarge.properties | grep tsdb_
+      register: xlarge_file
+      ignore_errors: true
+
+    - name: Check tsdb uptime
+      shell: |
+        sleep 15s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 TSDB
+      register: tsdb
+      ignore_errors: true
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ prop_file.stdout_lines }}"
+         - "{{ xlarge_file.stdout_lines }}"
+         - "{{ tsdb.stdout_lines }}"

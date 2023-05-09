@@ -1,0 +1,1556 @@
+
+PLAY [Flow cache load time] ************************************************************************************************************************************************************************************
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.191]
+changed: [172.35.0.249]
+changed: [172.35.0.9]
+changed: [172.35.0.217]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.110]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.59]
+changed: [172.35.0.62]
+changed: [172.35.0.120]
+changed: [172.35.0.201]
+changed: [172.35.0.63]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.0.93]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.196]
+changed: [172.45.211.130]
+changed: [172.35.0.37]
+changed: [172.45.165.67]
+changed: [172.35.0.175]
+changed: [172.70.0.224]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.55.26.234]
+changed: [172.35.0.51]
+changed: [172.72.0.222]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.45.39.94]
+changed: [172.35.0.114]
+changed: [172.35.0.8]
+changed: [172.45.88.131]
+
+TASK [Flow cache data] *****************************************************************************************************************************************************************************************
+changed: [172.35.0.9]
+changed: [172.35.0.248]
+changed: [172.35.0.249]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.168]
+changed: [172.35.0.134]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.45.211.130]
+changed: [172.35.0.120]
+changed: [172.35.0.201]
+changed: [172.35.0.63]
+fatal: [172.35.0.24]: FAILED! => {"changed": true, "cmd": "grep -roPh  \"bootstrapped \\K.*\" /home/ubuntu/logs/restapilayer/\n", "delta": "0:00:03.203006", "end": "2021-07-29 07:18:45.874341", "msg": "non-zero return code", "rc": 2, "start": "2021-07-29 07:18:42.671335", "stderr": "grep: /home/ubuntu/logs/restapilayer/.restapilayer.STDOUT-2019-02-01-04.30.13.log.swp: Permission denied", "stderr_lines": ["grep: /home/ubuntu/logs/restapilayer/.restapilayer.STDOUT-2019-02-01-04.30.13.log.swp: Permission denied"], "stdout": "customer 1 time_taken=2100 ms\ncustomer 10834 time_taken=98 ms\ncustomer 10374 time_taken=18508 ms\ncustomer 1 time_taken=1471 ms\ncustomer 10374 time_taken=15267 ms\ncustomer 1 time_taken=1471 ms\ncustomer 10834 time_taken=66 ms\ncustomer 10374 time_taken=15267 ms\ncustomer 1 time_taken=2100 ms", "stdout_lines": ["customer 1 time_taken=2100 ms", "customer 10834 time_taken=98 ms", "customer 10374 time_taken=18508 ms", "customer 1 time_taken=1471 ms", "customer 10374 time_taken=15267 ms", "customer 1 time_taken=1471 ms", "customer 10834 time_taken=66 ms", "customer 10374 time_taken=15267 ms", "customer 1 time_taken=2100 ms"]}
+...ignoring
+changed: [172.45.165.67]
+changed: [172.35.0.93]
+changed: [172.35.0.217]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.0.196]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.55.26.234]
+fatal: [172.35.0.37]: FAILED! => {"changed": true, "cmd": "grep -roPh  \"bootstrapped \\K.*\" /home/ubuntu/logs/restapilayer/\n", "delta": "0:00:07.994178", "end": "2021-07-29 07:19:00.268317", "msg": "non-zero return code", "rc": 1, "start": "2021-07-29 07:18:52.274139", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.70.0.224]
+changed: [172.35.0.253]
+changed: [172.35.0.240]
+fatal: [172.35.0.175]: FAILED! => {"changed": true, "cmd": "grep -roPh  \"bootstrapped \\K.*\" /home/ubuntu/logs/restapilayer/\n", "delta": "0:00:09.506170", "end": "2021-07-29 07:19:06.805247", "msg": "non-zero return code", "rc": 1, "start": "2021-07-29 07:18:57.299077", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.72.0.222]
+changed: [172.35.0.51]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+changed: [172.35.0.35]
+changed: [172.35.0.114]
+changed: [172.35.0.8]
+changed: [172.35.0.206]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: \"PDPOD1\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10001 time_taken=1638 ms", 
+            "customer 1 time_taken=1644 ms", 
+            "customer 10004 time_taken=50 ms", 
+            "customer 10769 time_taken=52 ms", 
+            "customer 10804 time_taken=100 ms", 
+            "customer 10818 time_taken=39 ms", 
+            "customer 10199 time_taken=61 ms", 
+            "customer 10200 time_taken=57 ms", 
+            "customer 10201 time_taken=43 ms", 
+            "customer 10205 time_taken=56 ms", 
+            "customer 10856 time_taken=66 ms", 
+            "customer 10001 time_taken=1669 ms", 
+            "customer 1 time_taken=1676 ms", 
+            "customer 10004 time_taken=49 ms", 
+            "customer 10769 time_taken=52 ms", 
+            "customer 10804 time_taken=97 ms", 
+            "customer 10818 time_taken=82 ms", 
+            "customer 10199 time_taken=52 ms", 
+            "customer 10200 time_taken=46 ms", 
+            "customer 10201 time_taken=41 ms", 
+            "customer 10205 time_taken=55 ms", 
+            "customer 10856 time_taken=74 ms"
+        ]
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: \"PDPOD2\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1784 ms", 
+            "customer 10819 time_taken=1779 ms", 
+            "customer 1 time_taken=1563 ms", 
+            "customer 10819 time_taken=1557 ms", 
+            "customer 10334 time_taken=55 ms", 
+            "customer 10401 time_taken=308007 ms", 
+            "customer 1 time_taken=1563 ms", 
+            "customer 10819 time_taken=1557 ms", 
+            "customer 1 time_taken=1784 ms", 
+            "customer 10819 time_taken=1779 ms", 
+            "customer 10334 time_taken=58 ms", 
+            "customer 10401 time_taken=358466 ms"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: \"PDPOD3\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10368 time_taken=1598 ms", 
+            "customer 1 time_taken=1592 ms", 
+            "customer 10317 time_taken=42 ms", 
+            "customer 10805 time_taken=39 ms", 
+            "customer 10034 time_taken=100 ms", 
+            "customer 10364 time_taken=14707 ms", 
+            "customer 10368 time_taken=1504 ms", 
+            "customer 1 time_taken=1498 ms", 
+            "customer 10317 time_taken=60 ms", 
+            "customer 10034 time_taken=78 ms", 
+            "customer 10805 time_taken=36 ms", 
+            "customer 10364 time_taken=27983 ms", 
+            "customer 10368 time_taken=1598 ms", 
+            "customer 1 time_taken=1592 ms", 
+            "customer 10317 time_taken=42 ms", 
+            "customer 10805 time_taken=39 ms", 
+            "customer 10364 time_taken=14707 ms", 
+            "customer 10368 time_taken=1504 ms", 
+            "customer 1 time_taken=1498 ms", 
+            "customer 10317 time_taken=60 ms", 
+            "customer 10034 time_taken=78 ms", 
+            "customer 10805 time_taken=36 ms"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: \"PDPOD4\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1838 ms", 
+            "customer 10270 time_taken=95 ms", 
+            "customer 10031 time_taken=660 ms", 
+            "customer 10942 time_taken=66 ms", 
+            "customer 10639 time_taken=178204 ms", 
+            "customer 10331 time_taken=74529 ms", 
+            "customer 10585 time_taken=324679 ms", 
+            "customer 1 time_taken=1835 ms", 
+            "customer 10270 time_taken=99 ms", 
+            "customer 10031 time_taken=702 ms", 
+            "customer 10942 time_taken=73 ms", 
+            "customer 10639 time_taken=242892 ms", 
+            "customer 1 time_taken=1835 ms", 
+            "customer 10270 time_taken=99 ms", 
+            "customer 10031 time_taken=702 ms", 
+            "customer 10942 time_taken=73 ms", 
+            "customer 10639 time_taken=242892 ms", 
+            "customer 10331 time_taken=119081 ms", 
+            "customer 10585 time_taken=496436 ms", 
+            "Binary file /home/ubuntu/logs/restapilayer/test/com/vnera/storage/flowstore/FlowStore.class matches", 
+            "for language \"%s\".", 
+            "for language \"%s\".", 
+            "Binary file /home/ubuntu/logs/restapilayer/test/org/hibernate/validator/internal/util/logging/Log_$logger.class matches", 
+            "Binary file /home/ubuntu/logs/restapilayer/test/org/hibernate/validator/internal/util/logging/Log.class matches", 
+            "customer 1 time_taken=1838 ms", 
+            "customer 10270 time_taken=95 ms", 
+            "customer 10031 time_taken=660 ms", 
+            "customer 10942 time_taken=66 ms", 
+            "customer 10639 time_taken=178204 ms", 
+            "customer 10331 time_taken=74529 ms"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: \"pdpod5\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 11023 time_taken=1811 ms", 
+            "customer 1 time_taken=1820 ms", 
+            "customer 11027 time_taken=127 ms", 
+            "customer 11026 time_taken=136 ms", 
+            "customer 11031 time_taken=75 ms", 
+            "customer 11036 time_taken=85 ms", 
+            "customer 11037 time_taken=184 ms", 
+            "customer 10271 time_taken=87 ms", 
+            "customer 11048 time_taken=1311 ms", 
+            "customer 10559 time_taken=126 ms", 
+            "customer 10820 time_taken=96 ms", 
+            "customer 10565 time_taken=90 ms", 
+            "customer 10657 time_taken=199 ms", 
+            "customer 10659 time_taken=210 ms", 
+            "customer 10672 time_taken=195 ms", 
+            "customer 10699 time_taken=209 ms", 
+            "customer 10700 time_taken=172 ms", 
+            "customer 10209 time_taken=238 ms", 
+            "customer 10210 time_taken=142 ms", 
+            "customer 10212 time_taken=129 ms", 
+            "customer 11030 time_taken=36842 ms", 
+            "customer 10724 time_taken=35931 ms", 
+            "customer 11023 time_taken=1811 ms", 
+            "customer 1 time_taken=1820 ms", 
+            "customer 11027 time_taken=127 ms", 
+            "customer 11026 time_taken=136 ms", 
+            "customer 11031 time_taken=75 ms", 
+            "customer 11036 time_taken=85 ms", 
+            "customer 11037 time_taken=184 ms", 
+            "customer 10271 time_taken=87 ms", 
+            "customer 11048 time_taken=1311 ms", 
+            "customer 10559 time_taken=126 ms", 
+            "customer 10820 time_taken=96 ms", 
+            "customer 10565 time_taken=90 ms", 
+            "customer 10657 time_taken=199 ms", 
+            "customer 10659 time_taken=210 ms", 
+            "customer 10672 time_taken=195 ms", 
+            "customer 10699 time_taken=209 ms", 
+            "customer 10700 time_taken=172 ms", 
+            "customer 10209 time_taken=238 ms", 
+            "customer 10210 time_taken=142 ms", 
+            "customer 10212 time_taken=129 ms", 
+            "customer 1 time_taken=1664 ms", 
+            "customer 11023 time_taken=1658 ms", 
+            "customer 11026 time_taken=90 ms", 
+            "customer 11027 time_taken=116 ms", 
+            "customer 11031 time_taken=94 ms", 
+            "customer 11036 time_taken=102 ms", 
+            "customer 11037 time_taken=71 ms", 
+            "customer 10271 time_taken=68 ms", 
+            "customer 11048 time_taken=1105 ms", 
+            "customer 10559 time_taken=212 ms", 
+            "customer 10820 time_taken=47 ms", 
+            "customer 10565 time_taken=66 ms", 
+            "customer 10657 time_taken=68 ms", 
+            "customer 10659 time_taken=92 ms", 
+            "customer 10672 time_taken=91 ms", 
+            "customer 10699 time_taken=88 ms", 
+            "customer 10700 time_taken=85 ms", 
+            "customer 10209 time_taken=59 ms", 
+            "customer 10210 time_taken=51 ms", 
+            "customer 10212 time_taken=60 ms", 
+            "customer 11030 time_taken=15627 ms", 
+            "customer 10724 time_taken=15920 ms", 
+            "customer 1 time_taken=1664 ms", 
+            "customer 11023 time_taken=1658 ms", 
+            "customer 11026 time_taken=90 ms", 
+            "customer 11027 time_taken=116 ms", 
+            "customer 11031 time_taken=94 ms", 
+            "customer 11036 time_taken=102 ms", 
+            "customer 11037 time_taken=71 ms", 
+            "customer 10271 time_taken=68 ms", 
+            "customer 11048 time_taken=1105 ms", 
+            "customer 10559 time_taken=212 ms", 
+            "customer 10820 time_taken=47 ms", 
+            "customer 10565 time_taken=66 ms", 
+            "customer 10657 time_taken=68 ms", 
+            "customer 10659 time_taken=92 ms", 
+            "customer 10672 time_taken=91 ms", 
+            "customer 10699 time_taken=88 ms", 
+            "customer 10700 time_taken=85 ms", 
+            "customer 10209 time_taken=59 ms", 
+            "customer 10210 time_taken=51 ms", 
+            "customer 10212 time_taken=60 ms"
+        ]
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: \"pdpod6\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 11154 time_taken=2246 ms", 
+            "customer 1 time_taken=2248 ms", 
+            "customer 10775 time_taken=188 ms", 
+            "customer 11160 time_taken=96940 ms", 
+            "customer 11159 time_taken=127244 ms", 
+            "customer 10788 time_taken=168 ms", 
+            "customer 10817 time_taken=109 ms", 
+            "customer 10821 time_taken=111 ms", 
+            "customer 11154 time_taken=2246 ms", 
+            "customer 1 time_taken=2248 ms", 
+            "customer 10775 time_taken=188 ms", 
+            "customer 11160 time_taken=96940 ms", 
+            "customer 11159 time_taken=127244 ms", 
+            "customer 10788 time_taken=168 ms", 
+            "customer 10817 time_taken=109 ms", 
+            "customer 10821 time_taken=111 ms", 
+            "customer 10324 time_taken=91 ms", 
+            "customer 11161 time_taken=131420 ms", 
+            "customer 11154 time_taken=1597 ms", 
+            "customer 1 time_taken=1602 ms", 
+            "customer 10775 time_taken=432 ms", 
+            "customer 11160 time_taken=47640 ms", 
+            "customer 11159 time_taken=86510 ms", 
+            "customer 10788 time_taken=166 ms", 
+            "customer 10817 time_taken=114 ms", 
+            "customer 10821 time_taken=104 ms", 
+            "customer 11154 time_taken=1597 ms", 
+            "customer 1 time_taken=1602 ms", 
+            "customer 10775 time_taken=432 ms", 
+            "customer 11160 time_taken=47640 ms", 
+            "customer 11159 time_taken=86510 ms", 
+            "customer 10788 time_taken=166 ms", 
+            "customer 10817 time_taken=114 ms", 
+            "customer 10821 time_taken=104 ms", 
+            "customer 10324 time_taken=109 ms", 
+            "customer 11161 time_taken=285675 ms"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: \"pdpod7\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=2258 ms", 
+            "customer 10752 time_taken=2264 ms", 
+            "customer 10768 time_taken=216 ms", 
+            "customer 10242 time_taken=233 ms", 
+            "customer 10783 time_taken=135 ms", 
+            "customer 10273 time_taken=205 ms", 
+            "customer 10822 time_taken=487 ms", 
+            "customer 11075 time_taken=85690 ms", 
+            "customer 11080 time_taken=61912 ms", 
+            "customer 11078 time_taken=553030 ms", 
+            "customer 10893 time_taken=81 ms", 
+            "customer 11188 time_taken=67 ms", 
+            "customer 11085 time_taken=667436 ms", 
+            "customer 10216 time_taken=47717 ms", 
+            "customer 10217 time_taken=80 ms", 
+            "customer 10732 time_taken=83 ms", 
+            "customer 10733 time_taken=68 ms", 
+            "customer 10734 time_taken=86 ms", 
+            "customer 10735 time_taken=81 ms", 
+            "customer 10749 time_taken=81 ms", 
+            "customer 1 time_taken=1861 ms", 
+            "customer 10752 time_taken=1871 ms", 
+            "customer 10768 time_taken=104 ms", 
+            "customer 10242 time_taken=122 ms", 
+            "customer 10783 time_taken=123 ms", 
+            "customer 10273 time_taken=452 ms", 
+            "customer 10822 time_taken=163 ms", 
+            "customer 11075 time_taken=67372 ms", 
+            "customer 11080 time_taken=26341 ms", 
+            "customer 11078 time_taken=333494 ms", 
+            "customer 10893 time_taken=85 ms", 
+            "customer 11188 time_taken=72 ms", 
+            "customer 11085 time_taken=441224 ms", 
+            "customer 10216 time_taken=8 ms", 
+            "customer 10217 time_taken=8 ms", 
+            "customer 10732 time_taken=7 ms", 
+            "customer 10733 time_taken=6 ms", 
+            "customer 10734 time_taken=6 ms", 
+            "customer 10735 time_taken=7 ms", 
+            "customer 10749 time_taken=8 ms", 
+            "customer 10238 time_taken=8 ms"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: \"pdpod8\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10767 time_taken=1543 ms", 
+            "customer 1 time_taken=1549 ms", 
+            "customer 10768 time_taken=80 ms", 
+            "customer 10901 time_taken=21502 ms", 
+            "customer 10906 time_taken=65 ms", 
+            "customer 10907 time_taken=70 ms", 
+            "customer 10914 time_taken=65 ms", 
+            "customer 10915 time_taken=62 ms", 
+            "customer 10929 time_taken=53 ms", 
+            "customer 10935 time_taken=62 ms", 
+            "customer 10263 time_taken=191786 ms", 
+            "customer 10938 time_taken=52922 ms", 
+            "customer 10946 time_taken=51 ms", 
+            "customer 10823 time_taken=61 ms", 
+            "customer 10958 time_taken=49 ms", 
+            "customer 10732 time_taken=52 ms", 
+            "customer 10936 time_taken=508024 ms", 
+            "customer 10767 time_taken=2106 ms", 
+            "customer 1 time_taken=2109 ms", 
+            "customer 10768 time_taken=93 ms", 
+            "customer 10901 time_taken=34992 ms", 
+            "customer 10906 time_taken=161 ms", 
+            "customer 10907 time_taken=73 ms", 
+            "customer 10914 time_taken=77 ms", 
+            "customer 10915 time_taken=78 ms", 
+            "customer 10929 time_taken=66 ms", 
+            "customer 10935 time_taken=92 ms", 
+            "customer 10263 time_taken=169125 ms", 
+            "customer 10938 time_taken=42727 ms", 
+            "customer 10946 time_taken=37 ms", 
+            "customer 10823 time_taken=50 ms", 
+            "customer 10958 time_taken=33 ms", 
+            "customer 10732 time_taken=40 ms", 
+            "customer 10936 time_taken=347060 ms", 
+            "customer 10767 time_taken=2106 ms", 
+            "customer 1 time_taken=2109 ms", 
+            "customer 10768 time_taken=93 ms", 
+            "customer 10901 time_taken=34992 ms", 
+            "customer 10906 time_taken=161 ms", 
+            "customer 10907 time_taken=73 ms", 
+            "customer 10914 time_taken=77 ms", 
+            "customer 10915 time_taken=78 ms", 
+            "customer 10929 time_taken=66 ms", 
+            "customer 10935 time_taken=92 ms", 
+            "customer 10263 time_taken=169125 ms", 
+            "customer 10938 time_taken=42727 ms", 
+            "customer 10946 time_taken=37 ms", 
+            "customer 10823 time_taken=50 ms", 
+            "customer 10958 time_taken=33 ms", 
+            "customer 10732 time_taken=40 ms", 
+            "customer 10767 time_taken=1543 ms", 
+            "customer 1 time_taken=1549 ms", 
+            "customer 10768 time_taken=80 ms", 
+            "customer 10901 time_taken=21502 ms", 
+            "customer 10906 time_taken=65 ms", 
+            "customer 10907 time_taken=70 ms", 
+            "customer 10914 time_taken=65 ms", 
+            "customer 10915 time_taken=62 ms", 
+            "customer 10929 time_taken=53 ms", 
+            "customer 10935 time_taken=62 ms", 
+            "customer 10263 time_taken=191786 ms", 
+            "customer 10938 time_taken=52922 ms", 
+            "customer 10946 time_taken=51 ms", 
+            "customer 10823 time_taken=61 ms", 
+            "customer 10958 time_taken=49 ms"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: \"pdpod9\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10388 time_taken=1582 ms", 
+            "customer 1 time_taken=1588 ms", 
+            "customer 10392 time_taken=136 ms", 
+            "customer 10269 time_taken=448 ms", 
+            "customer 10276 time_taken=91 ms", 
+            "customer 11049 time_taken=112 ms", 
+            "customer 10289 time_taken=95 ms", 
+            "customer 11164 time_taken=5688 ms", 
+            "customer 11186 time_taken=4806 ms", 
+            "customer 10295 time_taken=92 ms", 
+            "customer 10299 time_taken=29865 ms", 
+            "customer 10824 time_taken=113 ms", 
+            "customer 10326 time_taken=96 ms", 
+            "customer 11224 time_taken=106 ms", 
+            "customer 11225 time_taken=95 ms", 
+            "customer 11226 time_taken=416577 ms", 
+            "customer 11227 time_taken=82 ms", 
+            "customer 10335 time_taken=86 ms", 
+            "customer 10388 time_taken=1582 ms", 
+            "customer 1 time_taken=1588 ms", 
+            "customer 10392 time_taken=136 ms", 
+            "customer 10269 time_taken=448 ms", 
+            "customer 10276 time_taken=91 ms", 
+            "customer 11049 time_taken=112 ms", 
+            "customer 10289 time_taken=95 ms", 
+            "customer 11164 time_taken=5688 ms", 
+            "customer 11186 time_taken=4806 ms", 
+            "customer 10295 time_taken=92 ms", 
+            "customer 10299 time_taken=29865 ms", 
+            "customer 10824 time_taken=113 ms", 
+            "customer 10326 time_taken=96 ms", 
+            "customer 11224 time_taken=106 ms", 
+            "customer 11225 time_taken=95 ms", 
+            "customer 11226 time_taken=416577 ms", 
+            "customer 11227 time_taken=82 ms", 
+            "customer 10335 time_taken=86 ms", 
+            "customer 10336 time_taken=88 ms", 
+            "customer 10304 time_taken=584663 ms", 
+            "customer 10388 time_taken=1899 ms", 
+            "customer 1 time_taken=1904 ms", 
+            "customer 10392 time_taken=219 ms", 
+            "customer 10269 time_taken=118 ms", 
+            "customer 10276 time_taken=417 ms", 
+            "customer 11049 time_taken=149 ms", 
+            "customer 10289 time_taken=106 ms", 
+            "customer 11186 time_taken=8099 ms", 
+            "customer 10295 time_taken=98 ms", 
+            "customer 11164 time_taken=9560 ms", 
+            "customer 10299 time_taken=48993 ms", 
+            "customer 10824 time_taken=76 ms", 
+            "customer 10326 time_taken=71 ms", 
+            "customer 11224 time_taken=81 ms", 
+            "customer 11225 time_taken=73 ms", 
+            "customer 11226 time_taken=254676 ms", 
+            "customer 11227 time_taken=73 ms", 
+            "customer 10335 time_taken=57 ms", 
+            "customer 10336 time_taken=56 ms", 
+            "customer 10304 time_taken=396788 ms", 
+            "customer 10388 time_taken=1899 ms", 
+            "customer 1 time_taken=1904 ms", 
+            "customer 10392 time_taken=219 ms", 
+            "customer 10269 time_taken=118 ms", 
+            "customer 10276 time_taken=417 ms", 
+            "customer 11049 time_taken=149 ms", 
+            "customer 10289 time_taken=106 ms", 
+            "customer 11186 time_taken=8099 ms", 
+            "customer 10295 time_taken=98 ms", 
+            "customer 11164 time_taken=9560 ms", 
+            "customer 10299 time_taken=48993 ms", 
+            "customer 10824 time_taken=76 ms", 
+            "customer 10326 time_taken=71 ms", 
+            "customer 11224 time_taken=81 ms", 
+            "customer 11225 time_taken=73 ms", 
+            "customer 11226 time_taken=254676 ms", 
+            "customer 11227 time_taken=73 ms", 
+            "customer 10335 time_taken=57 ms", 
+            "customer 10336 time_taken=56 ms", 
+            "customer 10304 time_taken=396788 ms"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: \"pdpod10\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1836 ms", 
+            "customer 10277 time_taken=148 ms", 
+            "customer 10786 time_taken=400942 ms", 
+            "customer 10283 time_taken=92 ms", 
+            "customer 10825 time_taken=92 ms", 
+            "customer 10959 time_taken=77 ms", 
+            "customer 10968 time_taken=662208 ms", 
+            "customer 10361 time_taken=89 ms", 
+            "customer 1 time_taken=2059 ms", 
+            "customer 10277 time_taken=144 ms", 
+            "customer 10786 time_taken=268734 ms", 
+            "customer 10283 time_taken=63 ms", 
+            "customer 10825 time_taken=62 ms", 
+            "customer 10959 time_taken=59 ms", 
+            "customer 10968 time_taken=389668 ms", 
+            "customer 10361 time_taken=229 ms", 
+            "customer 10877 time_taken=231 ms", 
+            "customer 10922 time_taken=765464 ms", 
+            "customer 1 time_taken=1836 ms", 
+            "customer 10277 time_taken=148 ms", 
+            "customer 10786 time_taken=400942 ms", 
+            "customer 10283 time_taken=92 ms", 
+            "customer 10825 time_taken=92 ms", 
+            "customer 10959 time_taken=77 ms", 
+            "customer 10968 time_taken=662208 ms", 
+            "customer 10361 time_taken=89 ms", 
+            "customer 10877 time_taken=102 ms", 
+            "customer 10922 time_taken=1525925 ms", 
+            "customer 1 time_taken=2059 ms", 
+            "customer 10277 time_taken=144 ms", 
+            "customer 10786 time_taken=268734 ms", 
+            "customer 10283 time_taken=63 ms", 
+            "customer 10825 time_taken=62 ms", 
+            "customer 10959 time_taken=59 ms", 
+            "customer 10968 time_taken=389668 ms", 
+            "customer 10361 time_taken=229 ms"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: \"pdpod11\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1400 ms", 
+            "customer 10534 time_taken=1393 ms", 
+            "customer 10797 time_taken=73 ms", 
+            "customer 10798 time_taken=58 ms", 
+            "customer 10800 time_taken=64 ms", 
+            "customer 10826 time_taken=56 ms", 
+            "customer 11228 time_taken=55 ms", 
+            "customer 11229 time_taken=4573 ms", 
+            "customer 11230 time_taken=2678 ms", 
+            "customer 10727 time_taken=33 ms", 
+            "customer 10858 time_taken=63 ms", 
+            "customer 10414 time_taken=65550 ms", 
+            "customer 10865 time_taken=64 ms", 
+            "customer 10862 time_taken=566035 ms", 
+            "customer 1 time_taken=1745 ms", 
+            "customer 10534 time_taken=1721 ms", 
+            "customer 10797 time_taken=72 ms", 
+            "customer 10798 time_taken=58 ms", 
+            "customer 10800 time_taken=63 ms", 
+            "customer 10826 time_taken=66 ms", 
+            "customer 11228 time_taken=63 ms", 
+            "customer 11229 time_taken=1481 ms", 
+            "customer 11230 time_taken=8869 ms", 
+            "customer 10727 time_taken=43 ms", 
+            "customer 10858 time_taken=57 ms", 
+            "customer 10414 time_taken=63764 ms", 
+            "customer 10865 time_taken=38 ms", 
+            "customer 10862 time_taken=291209 ms", 
+            "customer 1 time_taken=1745 ms", 
+            "customer 10534 time_taken=1721 ms", 
+            "customer 10797 time_taken=72 ms", 
+            "customer 10798 time_taken=58 ms", 
+            "customer 10800 time_taken=63 ms", 
+            "customer 10826 time_taken=66 ms", 
+            "customer 11228 time_taken=63 ms", 
+            "customer 11229 time_taken=1481 ms", 
+            "customer 11230 time_taken=8869 ms", 
+            "customer 10727 time_taken=43 ms", 
+            "customer 10858 time_taken=57 ms", 
+            "customer 10414 time_taken=63764 ms", 
+            "customer 1 time_taken=1400 ms", 
+            "customer 10534 time_taken=1393 ms", 
+            "customer 10797 time_taken=73 ms", 
+            "customer 10798 time_taken=58 ms", 
+            "customer 10800 time_taken=64 ms", 
+            "customer 10826 time_taken=56 ms", 
+            "customer 11228 time_taken=55 ms", 
+            "customer 11229 time_taken=4573 ms", 
+            "customer 11230 time_taken=2678 ms", 
+            "customer 10727 time_taken=33 ms", 
+            "customer 10858 time_taken=63 ms", 
+            "customer 10414 time_taken=65550 ms"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: \"pdpod12\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10503 time_taken=1790 ms", 
+            "customer 1 time_taken=1796 ms", 
+            "customer 10503 time_taken=2105 ms", 
+            "customer 1 time_taken=2115 ms"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: \"pdpod13\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 11061 time_taken=2136 ms", 
+            "customer 1 time_taken=2141 ms", 
+            "customer 10316 time_taken=201 ms", 
+            "customer 11070 time_taken=224 ms", 
+            "customer 10832 time_taken=125 ms", 
+            "customer 10828 time_taken=210 ms", 
+            "customer 10846 time_taken=105354 ms", 
+            "customer 10847 time_taken=59 ms", 
+            "customer 11168 time_taken=73 ms", 
+            "customer 10591 time_taken=114570 ms", 
+            "customer 11169 time_taken=89237 ms", 
+            "customer 10408 time_taken=69274 ms", 
+            "customer 11177 time_taken=43699 ms", 
+            "customer 10403 time_taken=592313 ms", 
+            "customer 11061 time_taken=1944 ms", 
+            "customer 1 time_taken=1968 ms", 
+            "customer 11070 time_taken=124 ms", 
+            "customer 10316 time_taken=125 ms", 
+            "customer 10828 time_taken=123 ms", 
+            "customer 10832 time_taken=139 ms", 
+            "customer 10846 time_taken=102986 ms", 
+            "customer 10847 time_taken=74 ms", 
+            "customer 11168 time_taken=75 ms", 
+            "customer 10591 time_taken=112429 ms", 
+            "customer 11169 time_taken=173163 ms", 
+            "customer 10408 time_taken=116275 ms", 
+            "customer 11177 time_taken=65366 ms", 
+            "customer 10403 time_taken=1185819 ms"
+        ]
+    ]
+}
+ok: [172.45.211.130] => {
+    "msg": [
+        "PodName: \"pdpod1000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1515 ms", 
+            "customer 70037 time_taken=65621 ms", 
+            "customer 10308 time_taken=269109 ms", 
+            "customer 70045 time_taken=212822 ms", 
+            "customer 10343 time_taken=83 ms", 
+            "customer 10344 time_taken=92 ms", 
+            "customer 70001 time_taken=109 ms", 
+            "customer 70065 time_taken=162689 ms", 
+            "customer 70000 time_taken=91 ms", 
+            "customer 70002 time_taken=118 ms", 
+            "customer 70007 time_taken=88 ms", 
+            "customer 70046 time_taken=238489 ms", 
+            "customer 1 time_taken=1966 ms", 
+            "customer 70037 time_taken=83755 ms", 
+            "customer 70045 time_taken=143160 ms", 
+            "customer 10308 time_taken=243312 ms", 
+            "customer 10343 time_taken=81 ms", 
+            "customer 10344 time_taken=52 ms", 
+            "customer 70001 time_taken=59 ms", 
+            "customer 70065 time_taken=85725 ms", 
+            "customer 70000 time_taken=68 ms", 
+            "customer 70002 time_taken=75 ms", 
+            "customer 70045 time_taken=226778 ms", 
+            "customer 10343 time_taken=72 ms", 
+            "customer 10344 time_taken=76 ms", 
+            "customer 70001 time_taken=63 ms", 
+            "customer 1 time_taken=1966 ms", 
+            "customer 70037 time_taken=83755 ms", 
+            "customer 70045 time_taken=143160 ms", 
+            "customer 10308 time_taken=243312 ms", 
+            "customer 10343 time_taken=81 ms", 
+            "customer 10344 time_taken=52 ms", 
+            "customer 70001 time_taken=59 ms", 
+            "customer 70065 time_taken=85725 ms", 
+            "customer 70000 time_taken=68 ms", 
+            "customer 70002 time_taken=75 ms", 
+            "customer 70007 time_taken=76 ms", 
+            "customer 70046 time_taken=122745 ms", 
+            "customer 1 time_taken=1515 ms", 
+            "customer 70037 time_taken=65621 ms", 
+            "customer 10308 time_taken=269109 ms", 
+            "customer 70045 time_taken=212822 ms", 
+            "customer 10343 time_taken=83 ms", 
+            "customer 10344 time_taken=92 ms", 
+            "customer 70001 time_taken=109 ms", 
+            "customer 70065 time_taken=162689 ms", 
+            "customer 70000 time_taken=91 ms", 
+            "customer 70002 time_taken=118 ms", 
+            "customer 1 time_taken=4336 ms", 
+            "customer 70037 time_taken=77244 ms", 
+            "customer 10308 time_taken=298867 ms", 
+            "customer 70045 time_taken=226778 ms", 
+            "customer 10343 time_taken=72 ms", 
+            "customer 10344 time_taken=76 ms", 
+            "customer 70001 time_taken=63 ms", 
+            "customer 70065 time_taken=188995 ms", 
+            "customer 70000 time_taken=67 ms", 
+            "customer 70002 time_taken=58 ms", 
+            "customer 70007 time_taken=64 ms", 
+            "customer 70046 time_taken=276846 ms"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: \"pdpod14platform\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10829 time_taken=3846 ms", 
+            "customer 1 time_taken=3893 ms", 
+            "customer 10829 time_taken=3408 ms", 
+            "customer 1 time_taken=3452 ms", 
+            "customer 10320 time_taken=3359824 ms", 
+            "customer 10829 time_taken=3846 ms", 
+            "customer 1 time_taken=3893 ms", 
+            "customer 10829 time_taken=3408 ms", 
+            "customer 1 time_taken=3452 ms"
+        ]
+    ]
+}
+ok: [172.45.165.67] => {
+    "msg": [
+        "PodName: \"pdpod1001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1536 ms", 
+            "customer 10329 time_taken=78 ms", 
+            "customer 10342 time_taken=483 ms", 
+            "customer 10343 time_taken=67 ms", 
+            "customer 70054 time_taken=274518 ms", 
+            "customer 10344 time_taken=49 ms", 
+            "customer 10488 time_taken=45 ms", 
+            "customer 70008 time_taken=38 ms", 
+            "customer 70021 time_taken=762258 ms", 
+            "customer 70021 time_taken=1965824 ms", 
+            "customer 1 time_taken=1536 ms", 
+            "customer 10329 time_taken=78 ms", 
+            "customer 10342 time_taken=483 ms", 
+            "customer 10343 time_taken=67 ms", 
+            "customer 70054 time_taken=274518 ms", 
+            "customer 10344 time_taken=49 ms", 
+            "customer 10488 time_taken=45 ms", 
+            "customer 1 time_taken=7021 ms", 
+            "customer 10329 time_taken=194 ms", 
+            "customer 10342 time_taken=1583 ms", 
+            "customer 10343 time_taken=71 ms", 
+            "customer 70054 time_taken=439324 ms", 
+            "customer 10344 time_taken=69 ms", 
+            "customer 10488 time_taken=117 ms", 
+            "customer 70008 time_taken=55 ms", 
+            "customer 70021 time_taken=1965824 ms", 
+            "customer 1 time_taken=1579 ms", 
+            "customer 10329 time_taken=321 ms", 
+            "customer 10342 time_taken=631 ms", 
+            "customer 10343 time_taken=68 ms", 
+            "customer 70054 time_taken=556431 ms", 
+            "customer 10344 time_taken=54 ms", 
+            "customer 10488 time_taken=52 ms", 
+            "customer 70008 time_taken=45 ms", 
+            "customer 70021 time_taken=2030867 ms", 
+            "customer 1 time_taken=1579 ms", 
+            "customer 10329 time_taken=321 ms", 
+            "customer 10342 time_taken=631 ms", 
+            "customer 10343 time_taken=68 ms", 
+            "customer 70054 time_taken=556431 ms", 
+            "customer 10344 time_taken=54 ms", 
+            "customer 10488 time_taken=52 ms"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: \"pdpod16\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=3410 ms", 
+            "customer 10831 time_taken=365 ms", 
+            "customer 10348 time_taken=1468358 ms", 
+            "customer 1 time_taken=2274 ms", 
+            "customer 10831 time_taken=159 ms", 
+            "customer 10348 time_taken=2624831 ms", 
+            "customer 1 time_taken=3410 ms", 
+            "customer 10831 time_taken=365 ms", 
+            "customer 1 time_taken=2274 ms", 
+            "customer 10831 time_taken=159 ms"
+        ]
+    ]
+}
+ok: [172.35.0.63] => {
+    "msg": [
+        "PodName: \"pdpod17\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10833 time_taken=1796 ms", 
+            "customer 1 time_taken=1834 ms", 
+            "customer 10366 time_taken=266522 ms", 
+            "customer 10833 time_taken=1796 ms", 
+            "customer 1 time_taken=1665 ms", 
+            "customer 10833 time_taken=1657 ms", 
+            "customer 1 time_taken=1665 ms", 
+            "customer 10833 time_taken=1657 ms", 
+            "customer 10366 time_taken=898441 ms"
+        ]
+    ]
+}
+ok: [172.35.0.24] => {
+    "msg": [
+        "PodName: \"pdpod18platform\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=2100 ms", 
+            "customer 10834 time_taken=98 ms", 
+            "customer 10374 time_taken=18508 ms", 
+            "customer 1 time_taken=1471 ms", 
+            "customer 10374 time_taken=15267 ms", 
+            "customer 1 time_taken=1471 ms", 
+            "customer 10834 time_taken=66 ms", 
+            "customer 10374 time_taken=15267 ms", 
+            "customer 1 time_taken=2100 ms"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: \"pdpod19platform\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=2023 ms", 
+            "customer 10018 time_taken=332 ms", 
+            "customer 10835 time_taken=88 ms", 
+            "customer 10972 time_taken=82 ms", 
+            "customer 10973 time_taken=38 ms", 
+            "customer 10979 time_taken=40 ms", 
+            "customer 10990 time_taken=39 ms", 
+            "customer 1 time_taken=2023 ms", 
+            "customer 10018 time_taken=332 ms", 
+            "customer 10835 time_taken=88 ms", 
+            "customer 10972 time_taken=82 ms", 
+            "customer 10973 time_taken=38 ms", 
+            "customer 10979 time_taken=40 ms", 
+            "customer 10990 time_taken=39 ms", 
+            "customer 11008 time_taken=2701 ms", 
+            "customer 10991 time_taken=15327 ms", 
+            "customer 1 time_taken=1598 ms", 
+            "customer 10018 time_taken=85 ms", 
+            "customer 10835 time_taken=75 ms", 
+            "customer 10972 time_taken=79 ms", 
+            "customer 10973 time_taken=297 ms", 
+            "customer 11008 time_taken=2178 ms", 
+            "customer 10979 time_taken=41 ms", 
+            "customer 10990 time_taken=39 ms", 
+            "customer 10991 time_taken=24458 ms", 
+            "customer 1 time_taken=1598 ms", 
+            "customer 10018 time_taken=85 ms", 
+            "customer 10835 time_taken=75 ms", 
+            "customer 10972 time_taken=79 ms", 
+            "customer 10973 time_taken=297 ms", 
+            "customer 11008 time_taken=2178 ms", 
+            "customer 10979 time_taken=41 ms"
+        ]
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: \"pdpod20\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1715 ms", 
+            "customer 10437 time_taken=84 ms", 
+            "customer 10435 time_taken=184850 ms", 
+            "customer 10836 time_taken=43 ms", 
+            "customer 11033 time_taken=56143 ms", 
+            "customer 1 time_taken=1635 ms", 
+            "customer 10437 time_taken=62 ms", 
+            "customer 10435 time_taken=310341 ms", 
+            "customer 10836 time_taken=60 ms", 
+            "customer 11033 time_taken=83698 ms", 
+            "customer 11021 time_taken=867097 ms", 
+            "customer 10548 time_taken=818989 ms", 
+            "customer 1 time_taken=1635 ms", 
+            "customer 10437 time_taken=62 ms", 
+            "customer 10435 time_taken=310341 ms", 
+            "customer 10836 time_taken=60 ms", 
+            "customer 11033 time_taken=83698 ms"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: \"pdpod15\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 10830 time_taken=1558 ms", 
+            "customer 1 time_taken=1564 ms", 
+            "customer 10672 time_taken=86 ms", 
+            "customer 10684 time_taken=1206402 ms", 
+            "customer 10830 time_taken=1656 ms", 
+            "customer 1 time_taken=1664 ms", 
+            "customer 10672 time_taken=86 ms", 
+            "customer 10684 time_taken=481713 ms", 
+            "customer 10830 time_taken=1558 ms", 
+            "customer 1 time_taken=1564 ms", 
+            "customer 10830 time_taken=1656 ms", 
+            "customer 1 time_taken=1664 ms"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: \"pdpod21\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1872 ms", 
+            "customer 10837 time_taken=1885 ms", 
+            "customer 10488 time_taken=39619 ms", 
+            "customer 10477 time_taken=898770 ms", 
+            "customer 11084 time_taken=3289554 ms", 
+            "customer 1 time_taken=2800 ms", 
+            "customer 10837 time_taken=2791 ms", 
+            "customer 10488 time_taken=78920 ms", 
+            "customer 10477 time_taken=313739 ms", 
+            "customer 11084 time_taken=843215 ms", 
+            "customer 1 time_taken=1872 ms", 
+            "customer 10837 time_taken=1885 ms", 
+            "customer 10488 time_taken=39619 ms", 
+            "customer 1 time_taken=2800 ms", 
+            "customer 10837 time_taken=2791 ms", 
+            "customer 10488 time_taken=78920 ms", 
+            "customer 11084 time_taken=843215 ms"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1580 ms", 
+            "customer 1 time_taken=1865 ms", 
+            "customer 1 time_taken=1865 ms", 
+            "customer 10838 time_taken=523 ms", 
+            "customer 1 time_taken=1580 ms", 
+            "customer 10838 time_taken=160 ms", 
+            "customer 10722 time_taken=15946247 ms"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: \"pdpod23platform\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1484 ms", 
+            "customer 1 time_taken=1900 ms", 
+            "customer 10839 time_taken=437 ms", 
+            "customer 10539 time_taken=1160125 ms", 
+            "customer 1 time_taken=1900 ms", 
+            "customer 1 time_taken=1484 ms", 
+            "customer 10839 time_taken=94 ms", 
+            "customer 10539 time_taken=1754927 ms"
+        ]
+    ]
+}
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: \"pdpod24\"", 
+        "Flowstore bootstrap time", 
+        []
+    ]
+}
+ok: [172.55.26.234] => {
+    "msg": [
+        "PodName: \"pdpod2001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 90001 time_taken=1662 ms", 
+            "customer 1 time_taken=1668 ms", 
+            "customer 90003 time_taken=85 ms", 
+            "customer 90002 time_taken=62 ms", 
+            "customer 90005 time_taken=36 ms", 
+            "customer 90004 time_taken=45 ms", 
+            "customer 90012 time_taken=35 ms", 
+            "customer 90017 time_taken=50 ms", 
+            "customer 90018 time_taken=35 ms", 
+            "customer 90032 time_taken=308 ms", 
+            "customer 90000 time_taken=31847 ms", 
+            "customer 90001 time_taken=1662 ms", 
+            "customer 1 time_taken=1668 ms", 
+            "customer 90003 time_taken=85 ms", 
+            "customer 90002 time_taken=62 ms", 
+            "customer 90005 time_taken=36 ms", 
+            "customer 90004 time_taken=45 ms", 
+            "customer 90012 time_taken=35 ms", 
+            "customer 90017 time_taken=50 ms", 
+            "customer 90018 time_taken=35 ms", 
+            "customer 1 time_taken=1478 ms", 
+            "customer 90001 time_taken=1452 ms", 
+            "customer 90003 time_taken=43 ms", 
+            "customer 90002 time_taken=46 ms", 
+            "customer 90005 time_taken=35 ms", 
+            "customer 90004 time_taken=37 ms", 
+            "customer 90012 time_taken=26 ms", 
+            "customer 90017 time_taken=33 ms", 
+            "customer 90018 time_taken=269 ms", 
+            "customer 90032 time_taken=88 ms", 
+            "customer 90000 time_taken=149165 ms", 
+            "customer 1 time_taken=1478 ms", 
+            "customer 90001 time_taken=1452 ms", 
+            "customer 90003 time_taken=43 ms", 
+            "customer 90002 time_taken=46 ms", 
+            "customer 90005 time_taken=35 ms", 
+            "customer 90004 time_taken=37 ms", 
+            "customer 90012 time_taken=26 ms", 
+            "customer 90017 time_taken=33 ms", 
+            "customer 90018 time_taken=269 ms"
+        ]
+    ]
+}
+ok: [172.72.0.222] => {
+    "msg": [
+        "PodName: \"pdpod4000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1775 ms", 
+            "customer 150022 time_taken=189416 ms", 
+            "customer 150027 time_taken=76 ms", 
+            "customer 150026 time_taken=706636 ms", 
+            "customer 150028 time_taken=75 ms", 
+            "customer 150002 time_taken=100 ms", 
+            "customer 150003 time_taken=88 ms", 
+            "customer 150001 time_taken=174 ms", 
+            "customer 1 time_taken=2174 ms", 
+            "customer 150022 time_taken=131775 ms", 
+            "customer 150027 time_taken=73 ms", 
+            "customer 150026 time_taken=355305 ms", 
+            "customer 150028 time_taken=67 ms", 
+            "customer 150002 time_taken=66 ms", 
+            "customer 150003 time_taken=68 ms", 
+            "customer 150001 time_taken=272 ms", 
+            "customer 1 time_taken=1775 ms", 
+            "customer 150022 time_taken=189416 ms", 
+            "customer 150027 time_taken=76 ms", 
+            "customer 150026 time_taken=706636 ms", 
+            "customer 150028 time_taken=75 ms", 
+            "customer 150002 time_taken=100 ms", 
+            "customer 150003 time_taken=88 ms", 
+            "customer 150001 time_taken=174 ms", 
+            "customer 150004 time_taken=88 ms", 
+            "customer 150025 time_taken=2305741 ms", 
+            "customer 1 time_taken=2174 ms", 
+            "customer 150022 time_taken=131775 ms", 
+            "customer 150027 time_taken=73 ms", 
+            "customer 150026 time_taken=355305 ms", 
+            "customer 150028 time_taken=67 ms", 
+            "customer 150002 time_taken=66 ms", 
+            "customer 150003 time_taken=68 ms", 
+            "customer 150001 time_taken=272 ms", 
+            "customer 150004 time_taken=82 ms"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1888 ms", 
+            "customer 330001 time_taken=3194460 ms", 
+            "customer 330001 time_taken=1140991 ms", 
+            "customer 1 time_taken=2389 ms", 
+            "customer 330001 time_taken=1140991 ms"
+        ]
+    ]
+}
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: \"pdpod26\"", 
+        "Flowstore bootstrap time", 
+        []
+    ]
+}
+ok: [172.45.39.94] => {
+    "msg": [
+        "PodName: \"pdpod1002\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 70028 time_taken=463901 ms"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: \"pdpod27\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=2022 ms", 
+            "customer 11125 time_taken=2015 ms", 
+            "customer 11019 time_taken=230796 ms", 
+            "customer 1 time_taken=1638 ms", 
+            "customer 11125 time_taken=1505 ms", 
+            "customer 11019 time_taken=223032 ms", 
+            "customer 1 time_taken=2022 ms", 
+            "customer 11125 time_taken=2015 ms", 
+            "customer 1 time_taken=1638 ms", 
+            "customer 11125 time_taken=1505 ms"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: \"pdpod28\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 11127 time_taken=1478 ms", 
+            "customer 1 time_taken=1484 ms", 
+            "customer 11127 time_taken=1478 ms", 
+            "customer 1 time_taken=1484 ms", 
+            "customer 11038 time_taken=10033 ms", 
+            "customer 1 time_taken=1603 ms", 
+            "customer 11127 time_taken=1597 ms", 
+            "customer 1 time_taken=1603 ms", 
+            "customer 11127 time_taken=1597 ms", 
+            "customer 11038 time_taken=30937 ms"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: \"pdpod29\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=2492 ms", 
+            "customer 11098 time_taken=26387 ms", 
+            "customer 11128 time_taken=154 ms", 
+            "customer 11121 time_taken=104397 ms", 
+            "customer 11132 time_taken=756709 ms", 
+            "customer 11193 time_taken=876127 ms", 
+            "customer 1 time_taken=2492 ms", 
+            "customer 11098 time_taken=26387 ms", 
+            "customer 11128 time_taken=154 ms", 
+            "customer 11121 time_taken=104397 ms", 
+            "customer 11132 time_taken=756709 ms", 
+            "customer 11193 time_taken=876127 ms", 
+            "customer 1 time_taken=1709 ms", 
+            "customer 11098 time_taken=25027 ms", 
+            "customer 11128 time_taken=115 ms", 
+            "customer 11121 time_taken=173873 ms", 
+            "customer 1 time_taken=1709 ms", 
+            "customer 11098 time_taken=25027 ms", 
+            "customer 11128 time_taken=115 ms", 
+            "customer 11121 time_taken=173873 ms", 
+            "customer 11132 time_taken=1308495 ms", 
+            "customer 11193 time_taken=1584282 ms"
+        ]
+    ]
+}
+ok: [172.45.88.131] => {
+    "msg": [
+        "PodName: \"pdpod1003\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1767 ms", 
+            "customer 70083 time_taken=48 ms", 
+            "customer 70081 time_taken=14191 ms", 
+            "customer 70085 time_taken=39 ms", 
+            "customer 70084 time_taken=42 ms", 
+            "customer 70087 time_taken=34 ms", 
+            "customer 70086 time_taken=22274 ms", 
+            "customer 70089 time_taken=31 ms", 
+            "customer 70088 time_taken=32 ms", 
+            "customer 70053 time_taken=31 ms", 
+            "customer 70062 time_taken=28 ms", 
+            "customer 70073 time_taken=32 ms", 
+            "customer 70072 time_taken=37837 ms", 
+            "customer 70075 time_taken=30 ms", 
+            "customer 70076 time_taken=22 ms", 
+            "customer 70079 time_taken=21 ms", 
+            "customer 70078 time_taken=46 ms", 
+            "customer 70082 time_taken=83957 ms", 
+            "customer 1 time_taken=3170 ms", 
+            "customer 70083 time_taken=247 ms", 
+            "customer 70081 time_taken=8211 ms", 
+            "customer 70085 time_taken=55 ms", 
+            "customer 70084 time_taken=67 ms", 
+            "customer 70087 time_taken=46 ms", 
+            "customer 70086 time_taken=14964 ms", 
+            "customer 70089 time_taken=35 ms", 
+            "customer 70088 time_taken=37 ms", 
+            "customer 70053 time_taken=37 ms", 
+            "customer 70062 time_taken=38 ms", 
+            "customer 70073 time_taken=39 ms", 
+            "customer 70072 time_taken=21825 ms", 
+            "customer 70075 time_taken=46 ms", 
+            "customer 70076 time_taken=82 ms", 
+            "customer 70079 time_taken=51 ms", 
+            "customer 1 time_taken=1767 ms", 
+            "customer 70083 time_taken=48 ms", 
+            "customer 70081 time_taken=14191 ms", 
+            "customer 70085 time_taken=39 ms", 
+            "customer 70084 time_taken=42 ms", 
+            "customer 70087 time_taken=34 ms", 
+            "customer 70086 time_taken=22274 ms", 
+            "customer 70089 time_taken=31 ms", 
+            "customer 70088 time_taken=32 ms", 
+            "customer 70053 time_taken=31 ms", 
+            "customer 70062 time_taken=28 ms", 
+            "customer 70073 time_taken=32 ms", 
+            "customer 70072 time_taken=37837 ms", 
+            "customer 70075 time_taken=30 ms", 
+            "customer 70076 time_taken=22 ms", 
+            "customer 70079 time_taken=21 ms", 
+            "customer 1 time_taken=3170 ms", 
+            "customer 70083 time_taken=247 ms", 
+            "customer 70081 time_taken=8211 ms", 
+            "customer 70085 time_taken=55 ms", 
+            "customer 70084 time_taken=67 ms", 
+            "customer 70087 time_taken=46 ms", 
+            "customer 70086 time_taken=14964 ms", 
+            "customer 70089 time_taken=35 ms", 
+            "customer 70088 time_taken=37 ms", 
+            "customer 70053 time_taken=37 ms", 
+            "customer 70062 time_taken=38 ms", 
+            "customer 70073 time_taken=39 ms", 
+            "customer 70072 time_taken=21825 ms", 
+            "customer 70075 time_taken=46 ms", 
+            "customer 70076 time_taken=82 ms", 
+            "customer 70079 time_taken=51 ms", 
+            "customer 70078 time_taken=37 ms", 
+            "customer 70082 time_taken=58883 ms", 
+            "customer 1 time_taken=3791 ms", 
+            "customer 70083 time_taken=404 ms", 
+            "customer 70081 time_taken=26822 ms", 
+            "customer 70085 time_taken=51 ms", 
+            "customer 70084 time_taken=55 ms", 
+            "customer 70087 time_taken=40 ms", 
+            "customer 70086 time_taken=37542 ms", 
+            "customer 70089 time_taken=37 ms", 
+            "customer 70088 time_taken=28 ms", 
+            "customer 70053 time_taken=25 ms", 
+            "customer 70059 time_taken=38 ms", 
+            "customer 70062 time_taken=30 ms", 
+            "customer 70073 time_taken=34 ms", 
+            "customer 70072 time_taken=54606 ms", 
+            "customer 70075 time_taken=58 ms", 
+            "customer 70076 time_taken=50 ms", 
+            "customer 70079 time_taken=40 ms", 
+            "customer 70078 time_taken=43 ms", 
+            "customer 70082 time_taken=154036 ms"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: \"pdpod31\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=3623 ms", 
+            "customer 11201 time_taken=591 ms", 
+            "customer 11202 time_taken=48031 ms", 
+            "customer 11204 time_taken=320 ms", 
+            "customer 11205 time_taken=151 ms", 
+            "customer 11200 time_taken=60638 ms", 
+            "customer 11209 time_taken=99 ms", 
+            "customer 11210 time_taken=112 ms", 
+            "customer 11211 time_taken=104 ms", 
+            "customer 11208 time_taken=38990 ms", 
+            "customer 11213 time_taken=115 ms", 
+            "customer 11214 time_taken=123 ms", 
+            "customer 11215 time_taken=102 ms", 
+            "customer 11197 time_taken=155637 ms", 
+            "customer 11212 time_taken=379231 ms", 
+            "customer 1 time_taken=3507 ms", 
+            "customer 11201 time_taken=294 ms", 
+            "customer 11202 time_taken=49889 ms", 
+            "customer 11204 time_taken=253 ms", 
+            "customer 11205 time_taken=262 ms", 
+            "customer 11200 time_taken=60735 ms", 
+            "customer 11209 time_taken=120 ms", 
+            "customer 11210 time_taken=96 ms", 
+            "customer 11211 time_taken=100 ms", 
+            "customer 11208 time_taken=33074 ms", 
+            "customer 11213 time_taken=81 ms", 
+            "customer 11214 time_taken=97 ms", 
+            "customer 11215 time_taken=121 ms", 
+            "customer 1 time_taken=3623 ms", 
+            "customer 11201 time_taken=591 ms", 
+            "customer 11202 time_taken=48031 ms", 
+            "customer 11204 time_taken=320 ms", 
+            "customer 11205 time_taken=151 ms", 
+            "customer 11200 time_taken=60638 ms", 
+            "customer 11209 time_taken=99 ms", 
+            "customer 11210 time_taken=112 ms", 
+            "customer 11211 time_taken=104 ms", 
+            "customer 11208 time_taken=38990 ms", 
+            "customer 11213 time_taken=115 ms", 
+            "customer 11214 time_taken=123 ms", 
+            "customer 11215 time_taken=102 ms", 
+            "customer 11212 time_taken=379231 ms", 
+            "customer 1 time_taken=3507 ms", 
+            "customer 11201 time_taken=294 ms", 
+            "customer 11202 time_taken=49889 ms", 
+            "customer 11204 time_taken=253 ms", 
+            "customer 11205 time_taken=262 ms", 
+            "customer 11200 time_taken=60735 ms", 
+            "customer 11209 time_taken=120 ms", 
+            "customer 11210 time_taken=96 ms", 
+            "customer 11211 time_taken=100 ms", 
+            "customer 11208 time_taken=33074 ms", 
+            "customer 11213 time_taken=81 ms", 
+            "customer 11214 time_taken=97 ms", 
+            "customer 11215 time_taken=121 ms", 
+            "customer 11197 time_taken=250727 ms", 
+            "customer 11212 time_taken=672285 ms"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: \"pdpod32\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1750 ms", 
+            "customer 11206 time_taken=35 ms", 
+            "customer 11207 time_taken=3861 ms", 
+            "customer 11201 time_taken=12102 ms", 
+            "customer 1 time_taken=2411 ms", 
+            "customer 11206 time_taken=96 ms", 
+            "customer 11201 time_taken=12839 ms", 
+            "customer 1 time_taken=1750 ms", 
+            "customer 11206 time_taken=35 ms", 
+            "customer 1 time_taken=2411 ms", 
+            "customer 11206 time_taken=96 ms", 
+            "customer 11207 time_taken=2944 ms", 
+            "customer 11201 time_taken=12839 ms"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: \"pdpod33\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1831 ms", 
+            "customer 11216 time_taken=1837 ms", 
+            "customer 11218 time_taken=124 ms", 
+            "customer 11219 time_taken=118 ms", 
+            "customer 11220 time_taken=806 ms", 
+            "customer 11217 time_taken=26196 ms", 
+            "customer 11222 time_taken=151 ms", 
+            "customer 11216 time_taken=2393 ms", 
+            "customer 1 time_taken=2379 ms", 
+            "customer 11218 time_taken=183 ms", 
+            "customer 11219 time_taken=191 ms", 
+            "customer 11220 time_taken=862 ms", 
+            "customer 11217 time_taken=41796 ms", 
+            "customer 11222 time_taken=85 ms", 
+            "customer 11223 time_taken=449171 ms", 
+            "customer 1 time_taken=1831 ms", 
+            "customer 11216 time_taken=1837 ms", 
+            "customer 11218 time_taken=124 ms", 
+            "customer 11219 time_taken=118 ms", 
+            "customer 11220 time_taken=806 ms", 
+            "customer 11217 time_taken=26196 ms", 
+            "customer 11222 time_taken=151 ms", 
+            "customer 11221 time_taken=131139 ms", 
+            "customer 11223 time_taken=2799309 ms", 
+            "customer 11216 time_taken=2393 ms", 
+            "customer 1 time_taken=2379 ms", 
+            "customer 11218 time_taken=183 ms", 
+            "customer 11219 time_taken=191 ms", 
+            "customer 11220 time_taken=862 ms", 
+            "customer 11217 time_taken=41796 ms", 
+            "customer 11222 time_taken=85 ms", 
+            "customer 11221 time_taken=103432 ms", 
+            "customer 11223 time_taken=449171 ms"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: \"pdpod34\"", 
+        "Flowstore bootstrap time", 
+        [
+            "customer 1 time_taken=1947 ms", 
+            "customer 11233 time_taken=64 ms", 
+            "customer 11234 time_taken=47 ms", 
+            "customer 11235 time_taken=42 ms", 
+            "customer 11236 time_taken=39 ms", 
+            "customer 11232 time_taken=13292 ms", 
+            "customer 11238 time_taken=34 ms", 
+            "customer 11239 time_taken=2062 ms", 
+            "customer 11240 time_taken=27 ms", 
+            "customer 11241 time_taken=22 ms", 
+            "customer 11242 time_taken=25 ms", 
+            "customer 11243 time_taken=20 ms", 
+            "customer 11244 time_taken=18 ms", 
+            "customer 11237 time_taken=13364 ms", 
+            "customer 1 time_taken=1600 ms", 
+            "customer 11233 time_taken=71 ms", 
+            "customer 11234 time_taken=66 ms", 
+            "customer 11235 time_taken=72 ms", 
+            "customer 11236 time_taken=29 ms", 
+            "customer 11232 time_taken=12136 ms", 
+            "customer 11238 time_taken=27 ms", 
+            "customer 11237 time_taken=13071 ms", 
+            "customer 11240 time_taken=19 ms", 
+            "customer 11241 time_taken=17 ms", 
+            "customer 11242 time_taken=18 ms", 
+            "customer 11243 time_taken=34 ms", 
+            "customer 11244 time_taken=19 ms", 
+            "customer 11245 time_taken=17 ms", 
+            "customer 11231 time_taken=18 ms", 
+            "customer 11239 time_taken=3946 ms", 
+            "customer 1 time_taken=1947 ms", 
+            "customer 11233 time_taken=64 ms", 
+            "customer 11234 time_taken=47 ms", 
+            "customer 11235 time_taken=42 ms", 
+            "customer 11236 time_taken=39 ms", 
+            "customer 11232 time_taken=13292 ms", 
+            "customer 11238 time_taken=34 ms", 
+            "customer 11239 time_taken=2062 ms", 
+            "customer 11240 time_taken=27 ms", 
+            "customer 11241 time_taken=22 ms", 
+            "customer 11242 time_taken=25 ms", 
+            "customer 11243 time_taken=20 ms", 
+            "customer 11244 time_taken=18 ms", 
+            "customer 11237 time_taken=13364 ms", 
+            "customer 11245 time_taken=25 ms", 
+            "customer 11231 time_taken=20 ms", 
+            "customer 1 time_taken=1600 ms", 
+            "customer 11233 time_taken=71 ms", 
+            "customer 11234 time_taken=66 ms", 
+            "customer 11235 time_taken=72 ms", 
+            "customer 11236 time_taken=29 ms", 
+            "customer 11232 time_taken=12136 ms", 
+            "customer 11238 time_taken=27 ms", 
+            "customer 11237 time_taken=13071 ms", 
+            "customer 11240 time_taken=19 ms", 
+            "customer 11241 time_taken=17 ms", 
+            "customer 11242 time_taken=18 ms", 
+            "customer 11243 time_taken=34 ms", 
+            "customer 11244 time_taken=19 ms", 
+            "customer 11245 time_taken=17 ms"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.110               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.184               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.240               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.51                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.63                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.165.67              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.211.130             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.39.94               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.88.131              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.26.234              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.72.0.222               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

@@ -1,0 +1,41 @@
+---
+- name: Scan JNDILookup class
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  strategy: free
+  #serial: 1
+  vars:
+    target_dir: /tmp/log4shell
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Create target dir
+      command: "mkdir -p  {{ target_dir }}"
+
+    - name: Copy scan script
+      copy:
+        src: files/scan_jndi_class.sh
+        dest: "{{ target_dir }}/scan_jndi_class.sh"
+        mode: '755'
+        owner: ubuntu
+
+    - name: Execute scan script
+      shell: |
+        cd {{ target_dir }}
+        ./scan_jndi_class.sh > /home/ubuntu/logs/scan_jndi_class{{ pod_name.stdout }}.log
+        cat /home/ubuntu/logs/scan_jndi_class{{ pod_name.stdout }}.log
+      register: jndi_scan
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "Logs"
+         - "{{ jndi_scan.stdout_lines }}"

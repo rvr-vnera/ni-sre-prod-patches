@@ -1,0 +1,101 @@
+ok: [172.35.0.164] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:53"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.167] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:51"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.200] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:01:00"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.43] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:56"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.150] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:57"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.159] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:45"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.222] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:33"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.254] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:36"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.79] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:36"
+        ], 
+        "File Hash: 1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar"
+    ]
+}
+
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:21"
+        ], 
+        "File Hash: {'stderr_lines': [], u'changed': True, u'end': u'2022-10-18 16:34:21.488321', 'failed': False, u'stdout': u'1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar', u'cmd': u'cp \"/tmp/before_databus_patch/\"/staging/\"databus-0.001-SNAPSHOT.jar\" \"/home/ubuntu/build-target/common-dependency/6.7.0\"/\"databus-0.001-SNAPSHOT.jar\"\\nchmod 640 \"/home/ubuntu/build-target/common-dependency/6.7.0\"/\"databus-0.001-SNAPSHOT.jar\"\\nmd5sum \"/home/ubuntu/build-target/common-dependency/6.7.0\"/\"databus-0.001-SNAPSHOT.jar\"\\n', u'rc': 0, u'start': u'2022-10-18 16:34:21.481212', u'stderr': u'', u'delta': u'0:00:00.007109', 'stdout_lines': [u'1b44646ce43abefa912f744e10296711  /home/ubuntu/build-target/common-dependency/6.7.0/databus-0.001-SNAPSHOT.jar']}"
+    ]
+}

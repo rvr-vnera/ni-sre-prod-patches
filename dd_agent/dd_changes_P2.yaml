@@ -1,0 +1,28 @@
+---
+- name: Apply dd-agent patch
+  hosts: "{{ HOSTS }}"
+  #strategy: free
+  #gather_facts: no
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    infra_base: /home/ubuntu/build-target/infra-base
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Force Reconfigure dd agent
+      shell: |
+        sudo bash -c "source /home/ubuntu/build-target/infra-base/telemetry/configure-datadog.sh /home/ubuntu/build-target/infra-base true ; main_configure"
+      register: dd_reconfigure
+
+    - name: Print
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"

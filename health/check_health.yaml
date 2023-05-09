@@ -1,0 +1,38 @@
+---
+- name: Apply restapi patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    rest_api_jar: "restapilayer-0.001-SNAPSHOT.jar"
+    backup_dir: /tmp/vrniop1402
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    rest_api_root_dir: /home/ubuntu/build-target/restapilayer
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"' && hostname
+      register: pod_name
+
+      become: true
+
+    - name: Check service health es
+      shell: |
+        /home/ubuntu/check-service-health.sh | grep -i "not healthy"
+      register: es
+      ignore_errors: true
+
+    #- name: Check service health policy
+      #shell: |
+        #/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager
+      #register: policy
+      #ignore_errors: true
+   
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ es.stdout_lines }}"

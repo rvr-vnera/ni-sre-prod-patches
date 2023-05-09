@@ -1,0 +1,181 @@
+
+PLAY [Fix UI access file] **************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.70.0.228]
+ok: [172.70.0.214]
+ok: [172.70.0.248]
+ok: [172.70.0.197]
+ok: [172.70.0.200]
+ok: [172.70.0.196]
+ok: [172.70.0.224]
+ok: [172.70.0.198]
+ok: [172.70.0.206]
+ok: [172.70.0.217]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Copy execution script] ***********************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+changed: [172.70.0.214]
+changed: [172.70.0.228]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Current Value] *******************************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Get new value] *******************************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Apply new_url] *******************************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Final Value] *********************************************************************************************************************************************************************************************
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "https://www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.onecloud.pd.ni-onsaas.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com", 
+        "https://onecloud.www.mgmt.cloud.vmware.com/ni/,pdpod7000platform.pd.ni-onsaas-internal.com,<tenant>.onecloud.pd.ni-onsaas.com"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.70.0.196               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

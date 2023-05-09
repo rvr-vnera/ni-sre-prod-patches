@@ -1,0 +1,5 @@
+[PRODUCTION]
+172.35.0.175
+
+[PRODUCTION:vars]
+key_pair="~/.ssh/keys/vnera-infra-ec2.pem"

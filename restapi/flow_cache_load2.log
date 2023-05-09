@@ -1,0 +1,463 @@
+
+PLAY [Flow cache load time] ************************************************************************************************************************************************************************************
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.55.1.29]
+changed: [172.45.1.116]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.70.0.224]
+changed: [172.75.1.59]
+changed: [172.105.21.197]
+changed: [172.105.21.52]
+changed: [172.95.1.244]
+changed: [172.95.1.36]
+
+TASK [Flow cache data] *****************************************************************************************************************************************************************************************
+changed: [172.55.1.29]
+changed: [172.45.1.116]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.45.1.230]
+changed: [172.75.1.59]
+changed: [172.70.0.224]
+changed: [172.95.1.36]
+changed: [172.95.1.244]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: \"pdpod1001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 1 time_taken=1450 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 10329 time_taken=331 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 10342 time_taken=404 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 10343 time_taken=67 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 70054 time_taken=227859 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 10344 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 10488 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log.error:customer 70021 time_taken=788340 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 1 time_taken=343 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 10329 time_taken=45 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 10342 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 70054 time_taken=1306 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 10344 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log.error:customer 10488 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 1 time_taken=343 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 10329 time_taken=45 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 10342 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 10343 time_taken=42 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 70054 time_taken=1306 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 10344 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 10488 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 70008 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.04.26.log:customer 70021 time_taken=4687 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 1 time_taken=1450 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 10329 time_taken=331 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 10342 time_taken=404 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 10343 time_taken=67 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 70054 time_taken=227859 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 10344 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 10488 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 70008 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.27.54.log:customer 70021 time_taken=788340 ms"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: \"pdpod1000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 1 time_taken=1709 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70096 time_taken=76 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 10308 time_taken=98057 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70037 time_taken=109441 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70045 time_taken=25024 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 10343 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 10344 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70001 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70065 time_taken=106817 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70000 time_taken=402 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 70002 time_taken=230 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 1 time_taken=1709 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70096 time_taken=76 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 10308 time_taken=98057 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70037 time_taken=109441 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70045 time_taken=25024 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 10343 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 10344 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70001 time_taken=58 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70065 time_taken=106817 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70000 time_taken=402 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70002 time_taken=230 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70007 time_taken=188 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 70046 time_taken=165064 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 1 time_taken=355 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 70037 time_taken=1080 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 10343 time_taken=43 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 10344 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 70065 time_taken=526 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 70000 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 70002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log.error:customer 70007 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 1 time_taken=355 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70096 time_taken=82 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 10308 time_taken=1300 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70045 time_taken=104 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70037 time_taken=1080 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 10343 time_taken=43 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 10344 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70001 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70065 time_taken=526 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70000 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70007 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.49.38.log:customer 70046 time_taken=1437 ms"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: \"pdpod1002\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.28.30.log:customer 1 time_taken=1459 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.28.30.log:customer 70028 time_taken=365397 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.58.43.log:customer 1 time_taken=394 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.58.43.log:customer 70028 time_taken=4349 ms"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: \"pdpod1003\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 1 time_taken=1426 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70099 time_taken=337 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70098 time_taken=72 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70101 time_taken=53 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70100 time_taken=57 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70072 time_taken=29127 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log.error:customer 70094 time_taken=143034 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 1 time_taken=260 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 70099 time_taken=102 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 70098 time_taken=52 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 70101 time_taken=45 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 70072 time_taken=533 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log.error:customer 70076 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 1 time_taken=1426 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70099 time_taken=337 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70098 time_taken=72 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70101 time_taken=53 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70100 time_taken=57 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70072 time_taken=29127 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70076 time_taken=55 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.57.log:customer 70094 time_taken=143034 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 1 time_taken=260 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70099 time_taken=102 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70098 time_taken=52 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70101 time_taken=45 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70100 time_taken=53 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70072 time_taken=533 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70076 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.39.46.log:customer 70094 time_taken=1368 ms"
+        ]
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: \"pdpod2001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 1 time_taken=152 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90001 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90003 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90005 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90004 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90012 time_taken=16 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log.error:customer 90017 time_taken=17 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 1 time_taken=152 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90001 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90003 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90005 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90004 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90012 time_taken=16 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90017 time_taken=17 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90018 time_taken=18 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.30.39.log:customer 90032 time_taken=17 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90001 time_taken=1336 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 1 time_taken=1341 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90003 time_taken=40 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90002 time_taken=43 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90005 time_taken=42 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90004 time_taken=47 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90012 time_taken=271 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90017 time_taken=270 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90018 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log:customer 90032 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90001 time_taken=1336 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 1 time_taken=1341 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90003 time_taken=40 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90002 time_taken=43 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90005 time_taken=42 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90004 time_taken=47 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90012 time_taken=271 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.15.12.log.error:customer 90017 time_taken=270 ms"
+        ]
+    ]
+}
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: \"pdpod4001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 1 time_taken=197 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150035 time_taken=191 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150036 time_taken=46 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150038 time_taken=46 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150042 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150040 time_taken=26 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log.error:customer 150043 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 1 time_taken=2327 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 150035 time_taken=2322 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 150038 time_taken=47 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 150036 time_taken=49 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 150042 time_taken=37 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-11-16.24.45.log.error:customer 150037 time_taken=41 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 1 time_taken=1807 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150035 time_taken=1801 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150038 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150036 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150042 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150037 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150043 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log.error:customer 150040 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 1 time_taken=197 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150035 time_taken=191 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150036 time_taken=46 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150038 time_taken=46 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150037 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150042 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150040 time_taken=26 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150043 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.26.07.log:customer 150041 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 1 time_taken=1807 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150035 time_taken=1801 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150038 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150036 time_taken=39 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150042 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150037 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150043 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150040 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.09.54.log:customer 150041 time_taken=21 ms"
+        ]
+    ]
+}
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: \"pdpod4000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 1 time_taken=428 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150022 time_taken=1299 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150030 time_taken=658 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150029 time_taken=70 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150033 time_taken=1143 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150039 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150003 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150001 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150004 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log:customer 150026 time_taken=2953 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 1 time_taken=1861 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150022 time_taken=117898 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150030 time_taken=70976 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150029 time_taken=8 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150033 time_taken=6 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150039 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150002 time_taken=8 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150003 time_taken=6 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150001 time_taken=19 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150004 time_taken=20 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log:customer 150026 time_taken=493362 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 1 time_taken=1861 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150022 time_taken=117898 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150030 time_taken=70976 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150029 time_taken=8 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150033 time_taken=6 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150039 time_taken=7 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150002 time_taken=8 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150003 time_taken=6 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150001 time_taken=19 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.17.53.log.error:customer 150026 time_taken=493362 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150030 time_taken=658 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150033 time_taken=1143 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150039 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150002 time_taken=27 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150003 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-12.55.26.log.error:customer 150001 time_taken=28 ms"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-09-11-14.58.08.log.error:customer 1 time_taken=2514 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.07.21.log:customer 1 time_taken=1920 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.07.21.log:customer 330001 time_taken=791134 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.55.41.log:customer 1 time_taken=491 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.55.41.log:customer 330001 time_taken=18248 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-09-09-07.27.13.log.error:customer 1 time_taken=1773 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-09-09-07.27.13.log.error:customer 330001 time_taken=1558320 ms"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: \"pdpod5000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 1 time_taken=1406 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 420002 time_taken=1402 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 420000 time_taken=285 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log:customer 420001 time_taken=285 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log.error:customer 1 time_taken=152 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log.error:customer 420002 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log:customer 1 time_taken=152 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log:customer 420002 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log:customer 420000 time_taken=22 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.37.24.log:customer 420001 time_taken=22 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 1 time_taken=1406 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.23.47.log.error:customer 420002 time_taken=1402 ms"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: \"pdpod6000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180002 time_taken=230 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 1 time_taken=224 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180001 time_taken=52 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180003 time_taken=53 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180006 time_taken=72 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180007 time_taken=73 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180004 time_taken=35 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log:customer 180005 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180002 time_taken=1386 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 1 time_taken=1381 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180003 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180001 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180006 time_taken=33 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180007 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180004 time_taken=22 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log:customer 180005 time_taken=24 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 180002 time_taken=1386 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 1 time_taken=1381 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 180003 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 180001 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 180006 time_taken=33 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.16.30.log.error:customer 180007 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 180002 time_taken=1365 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 1 time_taken=1358 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 180003 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 180001 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 180006 time_taken=15 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log.error:customer 180007 time_taken=24 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 180002 time_taken=1489 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 1 time_taken=1484 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 180001 time_taken=47 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 180003 time_taken=60 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 180006 time_taken=35 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log.error:customer 180007 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180002 time_taken=1489 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 1 time_taken=1484 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180001 time_taken=47 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180003 time_taken=60 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180006 time_taken=35 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180007 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180004 time_taken=30 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-16.59.24.log:customer 180005 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 1 time_taken=1644 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 180002 time_taken=1650 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 180003 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 180001 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 180006 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log.error:customer 180007 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180002 time_taken=1365 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 1 time_taken=1358 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180003 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180001 time_taken=32 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180006 time_taken=15 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180007 time_taken=24 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180004 time_taken=21 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-18.00.15.log:customer 180005 time_taken=20 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 1 time_taken=1644 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180002 time_taken=1650 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180003 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180001 time_taken=36 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180006 time_taken=28 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180007 time_taken=31 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180004 time_taken=35 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.41.11.log:customer 180005 time_taken=34 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 180002 time_taken=230 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 1 time_taken=224 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 180001 time_taken=52 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 180003 time_taken=53 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 180006 time_taken=72 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-05.02.09.log.error:customer 180007 time_taken=73 ms"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: \"pdpod6001\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.25.43.log:customer 1 time_taken=1891 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-13-16.25.43.log:customer 180008 time_taken=1885 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-12-16.04.54.log:customer 1 time_taken=1654 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.25.12.log:customer 1 time_taken=1520 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.25.12.log:customer 180008 time_taken=1515 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.25.12.log:customer 180009 time_taken=29 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-12-17.11.01.log:customer 1 time_taken=1422 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.25.12.log.error:customer 1 time_taken=1520 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.25.12.log.error:customer 180008 time_taken=1515 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-17.26.28.log:customer 1 time_taken=1917 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-14-17.26.28.log:customer 180008 time_taken=1911 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-12-17.19.18.log:customer 1 time_taken=1374 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-12-17.07.17.log:customer 1 time_taken=1308 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.40.30.log:customer 180008 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.40.30.log:customer 1 time_taken=151 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.40.30.log:customer 180009 time_taken=18 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-12-16.57.49.log:customer 1 time_taken=1326 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.40.30.log.error:customer 180008 time_taken=147 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-10-20-04.40.30.log.error:customer 1 time_taken=151 ms"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

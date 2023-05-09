@@ -1,0 +1,40 @@
+---
+- name: Check small boot
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Check boot space before
+      shell: |
+        df -h /boot/ | awk '{print $2}' | grep M | wc -l
+      register: boot_space_small
+      ignore_errors: true
+    
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"' && hostname
+      register: pod_name
+      become: true
+      when: boot_space_small.stdout == "1"
+    
+    - name: Kernel Details
+      shell: |
+        uname -r
+        df -h /boot/ | grep /boot
+      register: current_kernel
+      become: true
+      when: boot_space_small.stdout == "1"
+    
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ boot_space_small.stdout }}"
+         - "{{ current_kernel.stdout_lines}}" 
+      when: boot_space_small.stdout == "1"
+

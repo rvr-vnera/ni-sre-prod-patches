@@ -1,0 +1,73 @@
+---
+- name: Apply saasservice patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    unzipped_archive_folder: "671.allpods"
+    saas_service_dir: /home/ubuntu/build-target/saasservice/
+    saasservice_file: "saasservice-0.001-SNAPSHOT.jar"
+    common_jar_file: "common-0.001-SNAPSHOT.jar"
+    support_request_jar_file: "support-request-0.001-SNAPSHOT.jar"
+    common_dependency_dir: /home/ubuntu/build-target/common-dependency/6.7.0
+    backup_dir: /tmp/before_vuln_patch/
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Copy jar to staging directory
+      copy:
+        src: "files/{{ unzipped_archive_folder }}.tgz"
+        dest: "{{ backup_dir }}/staging/"
+
+    - name: unzip the files
+      shell: |
+        cd {{ backup_dir }}/staging
+        tar -xzf {{ unzipped_archive_folder }}.tgz
+
+    - name: Take backup
+      shell: |
+        mkdir -p {{backup_dir}}/old
+        cp "{{ saas_service_dir }}/{{ saasservice_file }}" "{{ backup_dir }}"/old/
+        cp "{{ common_dependency_dir }}/{{ common_jar_file }}" "{{ backup_dir }}"/old/
+        cp "{{ common_dependency_dir }}/{{ support_request_jar_file }}" "{{ backup_dir }}"/old/
+    
+    - name: Replace saasservice jar in build target
+      shell: |
+        cp "{{ backup_dir }}"/staging/"{{ unzipped_archive_folder}}"/"{{ saasservice_file }}" "{{ saas_service_dir }}"/"{{ saasservice_file }}"
+
+    - name: Replace other jars in common depdendencies
+      shell: |
+        cp "{{ backup_dir }}"/staging/"{{ unzipped_archive_folder}}"/"{{ saasservice_file }}" "{{ common_dependency_dir }}"/"{{ saasservice_file }}"
+        cp "{{ backup_dir }}"/staging/"{{ unzipped_archive_folder}}"/"{{ common_jar_file }}" "{{ common_dependency_dir }}"/"{{ common_jar_file }}"
+        cp "{{ backup_dir }}"/staging/"{{ unzipped_archive_folder}}"/"{{ support_request_jar_file }}" "{{ common_dependency_dir }}"/"{{ support_request_jar_file }}"
+
+    - name: Restart restapi service
+      shell: sudo service restapilayer-service restart
+      become: true
+
+    - name: Restart saasservice
+      shell: sudo service saasservice restart
+      become: true
+    
+    - name: Sleep 15 secs
+      shell: sleep 15s
+    
+    - name: Check uptime
+      shell: |
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 Restapilayer
+      register: services_uptime
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ services_uptime.stdout_lines }}"
+

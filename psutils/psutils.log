@@ -1,0 +1,1799 @@
+
+PLAY [Apply psutils patch] *******************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************************************************************************************************************
+ok: [172.35.0.249]
+ok: [172.35.0.191]
+ok: [172.35.0.137]
+ok: [172.35.0.248]
+ok: [172.35.0.217]
+ok: [172.35.0.134]
+ok: [172.35.0.168]
+ok: [172.35.0.66]
+ok: [172.35.1.233]
+ok: [172.35.1.15]
+ok: [172.35.0.110]
+ok: [172.35.0.130]
+ok: [172.35.0.54]
+ok: [172.35.0.138]
+ok: [172.35.0.62]
+ok: [172.35.0.59]
+ok: [172.35.0.60]
+ok: [172.35.0.250]
+ok: [172.35.0.120]
+ok: [172.45.1.116]
+ok: [172.35.0.192]
+ok: [172.35.0.82]
+ok: [172.35.0.201]
+ok: [172.45.1.230]
+ok: [172.35.0.182]
+ok: [172.35.0.183]
+ok: [172.35.0.184]
+ok: [172.35.0.20]
+ok: [172.35.1.240]
+ok: [172.35.0.93]
+ok: [172.35.1.235]
+ok: [172.35.1.226]
+ok: [172.35.1.228]
+ok: [172.35.0.218]
+ok: [172.35.0.157]
+ok: [172.35.0.207]
+ok: [172.35.0.65]
+ok: [172.35.0.145]
+ok: [172.35.0.121]
+ok: [172.35.0.109]
+ok: [172.35.0.178]
+ok: [172.35.0.158]
+ok: [172.35.0.102]
+ok: [172.35.0.196]
+ok: [172.35.0.214]
+ok: [172.35.0.74]
+ok: [172.35.0.240]
+ok: [172.55.1.29]
+ok: [172.35.0.253]
+ok: [172.45.1.56]
+ok: [172.35.0.51]
+ok: [172.105.21.52]
+ok: [172.35.0.206]
+ok: [172.35.1.107]
+ok: [172.35.1.68]
+ok: [172.35.0.35]
+ok: [172.45.1.239]
+ok: [172.35.0.8]
+ok: [172.35.1.124]
+ok: [172.35.1.153]
+ok: [172.75.1.53]
+ok: [172.35.0.114]
+ok: [172.75.1.59]
+ok: [172.35.1.202]
+ok: [172.75.1.81]
+ok: [172.105.1.24]
+ok: [172.105.1.152]
+ok: [172.105.1.159]
+ok: [172.105.1.91]
+ok: [172.95.1.146]
+ok: [172.35.1.171]
+ok: [172.95.1.244]
+ok: [172.35.1.150]
+ok: [172.95.1.36]
+ok: [172.95.1.83]
+ok: [172.95.1.43]
+ok: [172.35.1.120]
+ok: [172.35.1.182]
+ok: [172.35.1.70]
+ok: [172.95.1.124]
+ok: [172.105.1.142]
+ok: [172.95.1.180]
+ok: [172.35.1.183]
+ok: [172.35.1.151]
+ok: [172.35.1.104]
+ok: [172.35.1.30]
+ok: [172.85.1.73]
+ok: [172.35.1.181]
+ok: [172.35.1.144]
+ok: [172.35.1.234]
+ok: [172.35.1.248]
+ok: [172.95.1.174]
+ok: [172.35.1.113]
+ok: [172.95.1.45]
+ok: [172.35.1.100]
+ok: [172.35.1.146]
+ok: [172.35.1.14]
+ok: [172.75.1.217]
+ok: [172.55.1.83]
+
+TASK [Pod ID] ********************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.35.1.233]
+changed: [172.35.1.15]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.60]
+changed: [172.35.0.250]
+changed: [172.35.0.120]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.183]
+changed: [172.35.0.184]
+changed: [172.45.1.116]
+changed: [172.35.0.20]
+changed: [172.35.1.240]
+changed: [172.35.0.93]
+changed: [172.45.1.230]
+changed: [172.35.1.235]
+changed: [172.35.1.226]
+changed: [172.35.1.228]
+changed: [172.35.0.218]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.65]
+changed: [172.35.0.145]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.196]
+changed: [172.35.0.214]
+changed: [172.35.0.102]
+changed: [172.35.0.74]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.55.1.29]
+changed: [172.35.0.206]
+changed: [172.45.1.56]
+changed: [172.35.1.107]
+changed: [172.105.21.52]
+changed: [172.35.1.68]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.1.124]
+changed: [172.35.1.153]
+changed: [172.45.1.239]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.75.1.53]
+changed: [172.75.1.59]
+changed: [172.75.1.81]
+changed: [172.105.1.24]
+changed: [172.105.1.91]
+changed: [172.105.1.152]
+changed: [172.105.1.159]
+changed: [172.95.1.146]
+changed: [172.35.1.171]
+changed: [172.35.1.150]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.35.1.120]
+changed: [172.95.1.36]
+changed: [172.35.1.182]
+changed: [172.95.1.43]
+changed: [172.35.1.70]
+changed: [172.35.1.183]
+changed: [172.35.1.104]
+changed: [172.95.1.180]
+changed: [172.35.1.181]
+changed: [172.95.1.124]
+changed: [172.35.1.30]
+changed: [172.35.1.151]
+changed: [172.105.1.142]
+changed: [172.35.1.144]
+changed: [172.35.1.234]
+changed: [172.35.1.248]
+changed: [172.35.1.113]
+changed: [172.85.1.73]
+changed: [172.35.1.100]
+changed: [172.35.1.14]
+changed: [172.35.1.146]
+changed: [172.75.1.217]
+changed: [172.95.1.174]
+changed: [172.95.1.45]
+changed: [172.55.1.83]
+
+TASK [Copy pslinux file] *********************************************************************************************************************************************************************************************
+changed: [172.35.0.249]
+changed: [172.35.0.248]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.35.1.233]
+changed: [172.35.1.15]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.60]
+changed: [172.35.0.250]
+changed: [172.35.0.120]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.183]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.1.240]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.1.226]
+changed: [172.35.1.228]
+changed: [172.35.0.218]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.65]
+changed: [172.35.0.145]
+changed: [172.35.0.121]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.109]
+changed: [172.45.1.116]
+changed: [172.35.0.196]
+changed: [172.45.1.230]
+changed: [172.35.0.214]
+changed: [172.35.0.74]
+changed: [172.35.0.102]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.206]
+changed: [172.35.1.107]
+changed: [172.35.1.68]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.1.124]
+changed: [172.55.1.29]
+changed: [172.35.1.153]
+changed: [172.45.1.56]
+changed: [172.105.21.52]
+changed: [172.45.1.239]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.75.1.53]
+changed: [172.75.1.59]
+changed: [172.75.1.81]
+changed: [172.105.1.24]
+changed: [172.105.1.91]
+changed: [172.105.1.152]
+changed: [172.105.1.159]
+changed: [172.35.1.171]
+changed: [172.95.1.146]
+changed: [172.35.1.150]
+changed: [172.35.1.120]
+changed: [172.35.1.182]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.95.1.36]
+changed: [172.35.1.70]
+changed: [172.95.1.43]
+changed: [172.35.1.183]
+changed: [172.35.1.104]
+changed: [172.35.1.151]
+changed: [172.35.1.181]
+changed: [172.105.1.142]
+changed: [172.35.1.30]
+changed: [172.95.1.124]
+changed: [172.95.1.180]
+changed: [172.35.1.144]
+changed: [172.35.1.234]
+changed: [172.35.1.248]
+changed: [172.35.1.113]
+changed: [172.35.1.100]
+changed: [172.35.1.14]
+changed: [172.35.1.146]
+changed: [172.95.1.174]
+changed: [172.95.1.45]
+changed: [172.85.1.73]
+changed: [172.75.1.217]
+changed: [172.55.1.83]
+
+TASK [Copy script] ***************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.168]
+changed: [172.35.0.134]
+changed: [172.35.0.66]
+changed: [172.35.1.233]
+changed: [172.35.1.15]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.0.120]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.183]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.1.240]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.1.226]
+changed: [172.35.1.228]
+changed: [172.35.0.218]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.65]
+changed: [172.35.0.145]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.102]
+changed: [172.35.0.196]
+changed: [172.35.0.214]
+changed: [172.35.0.74]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.206]
+changed: [172.35.1.107]
+changed: [172.35.1.68]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.55.1.29]
+changed: [172.35.1.124]
+changed: [172.35.1.153]
+changed: [172.45.1.56]
+changed: [172.105.21.52]
+changed: [172.35.0.114]
+changed: [172.45.1.239]
+changed: [172.35.1.202]
+changed: [172.75.1.53]
+changed: [172.75.1.59]
+changed: [172.75.1.81]
+changed: [172.105.1.24]
+changed: [172.105.1.91]
+changed: [172.105.1.152]
+changed: [172.105.1.159]
+changed: [172.35.1.171]
+changed: [172.95.1.146]
+changed: [172.35.1.150]
+changed: [172.35.1.120]
+changed: [172.35.1.182]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.95.1.36]
+changed: [172.35.1.70]
+changed: [172.95.1.43]
+changed: [172.35.1.183]
+changed: [172.35.1.104]
+changed: [172.35.1.151]
+changed: [172.35.1.181]
+changed: [172.105.1.142]
+changed: [172.35.1.30]
+changed: [172.95.1.180]
+changed: [172.95.1.124]
+changed: [172.35.1.144]
+changed: [172.35.1.234]
+changed: [172.35.1.248]
+changed: [172.35.1.113]
+changed: [172.35.1.100]
+changed: [172.35.1.14]
+changed: [172.35.1.146]
+changed: [172.95.1.174]
+changed: [172.95.1.45]
+changed: [172.85.1.73]
+changed: [172.75.1.217]
+changed: [172.55.1.83]
+
+TASK [Execute script] ************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.249]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.168]
+changed: [172.35.0.134]
+changed: [172.35.0.66]
+changed: [172.35.1.233]
+changed: [172.35.1.15]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.62]
+changed: [172.35.0.138]
+changed: [172.35.0.59]
+changed: [172.35.0.60]
+changed: [172.35.0.250]
+changed: [172.35.0.120]
+changed: [172.45.1.116]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.45.1.230]
+changed: [172.35.0.183]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.1.240]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.1.226]
+changed: [172.35.1.228]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.207]
+changed: [172.35.0.65]
+changed: [172.35.0.145]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.102]
+changed: [172.35.0.196]
+changed: [172.35.0.214]
+changed: [172.35.0.74]
+changed: [172.35.0.240]
+changed: [172.55.1.29]
+changed: [172.105.21.52]
+changed: [172.45.1.56]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.206]
+changed: [172.35.1.107]
+changed: [172.45.1.239]
+changed: [172.35.1.68]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.1.153]
+changed: [172.35.1.124]
+changed: [172.75.1.53]
+changed: [172.75.1.59]
+changed: [172.35.1.202]
+changed: [172.75.1.81]
+changed: [172.35.0.114]
+changed: [172.105.1.24]
+changed: [172.105.1.91]
+changed: [172.105.1.152]
+changed: [172.105.1.159]
+changed: [172.95.1.146]
+changed: [172.95.1.244]
+changed: [172.35.1.171]
+changed: [172.95.1.83]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+changed: [172.35.1.150]
+changed: [172.35.1.120]
+changed: [172.35.1.182]
+changed: [172.105.1.142]
+changed: [172.95.1.124]
+changed: [172.35.1.70]
+changed: [172.95.1.180]
+changed: [172.35.1.183]
+changed: [172.85.1.73]
+changed: [172.35.1.104]
+changed: [172.35.1.151]
+changed: [172.35.1.181]
+changed: [172.35.1.30]
+changed: [172.35.1.144]
+changed: [172.95.1.174]
+changed: [172.95.1.45]
+changed: [172.35.1.234]
+changed: [172.35.1.248]
+changed: [172.35.1.113]
+changed: [172.35.1.100]
+changed: [172.35.1.14]
+changed: [172.35.1.146]
+changed: [172.75.1.217]
+changed: [172.55.1.83]
+
+TASK [Print result] **************************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:32:52 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:32:52 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:32:52 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:32:52 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:32:53 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:03 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:03 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:04 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.233] => {
+    "msg": [
+        "PodName: pdpod10", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:04 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.15] => {
+    "msg": [
+        "PodName: pdpod10", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:04 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:16 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:16 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:16 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:17 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:17 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:29 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:32 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:29 UTC; 22ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:30 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:30 UTC; 34ms ago"
+        ]
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:45 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:42 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:43 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:43 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:45 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:55 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:55 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:56 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:57 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:33:58 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:07 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:08 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:08 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:10 UTC; 23ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:10 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:20 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:20 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:21 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:23 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:23 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:32 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:33 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:33 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:36 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:36 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:45 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:48 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: pdpod4000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:50 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:51 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:48 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:34:57 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:00 UTC; 22ms ago"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:04 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:02 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.107] => {
+    "msg": [
+        "PodName: pdpod32", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:04 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.68] => {
+    "msg": [
+        "PodName: pdpod32", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:09 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:13 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:15 UTC; 24ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.124] => {
+    "msg": [
+        "PodName: pdpod33", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:17 UTC; 26ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.153] => {
+    "msg": [
+        "PodName: pdpod33", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:17 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.75.1.53] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:24 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:27 UTC; 22ms ago"
+        ]
+    ]
+}
+ok: [172.75.1.81] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:30 UTC; 39ms ago"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:30 UTC; 44ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:30 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.105.1.24] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:40 UTC; 27ms ago"
+        ]
+    ]
+}
+ok: [172.105.1.91] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:44 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.105.1.152] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:46 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.105.1.159] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:47 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:48 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:35:57 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:01 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:03 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:00 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:04 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.150] => {
+    "msg": [
+        "PodName: pdpod37", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:10 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.120] => {
+    "msg": [
+        "PodName: pdpod37", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:13 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.182] => {
+    "msg": [
+        "PodName: pdpod37", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:14 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.105.1.142] => {
+    "msg": [
+        "PodName: pdpod4002", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:20 UTC; 20ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.124] => {
+    "msg": [
+        "PodName: pdpod6003", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:22 UTC; 21ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.180] => {
+    "msg": [
+        "PodName: pdpod6004", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:28 UTC; 22ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.70] => {
+    "msg": [
+        "PodName: pdpod38", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:26 UTC; 19ms ago"
+        ]
+    ]
+}
+ok: [172.85.1.73] => {
+    "msg": [
+        "PodName: pdpod3000", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:34 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.183] => {
+    "msg": [
+        "PodName: pdpod18", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:33 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.104] => {
+    "msg": [
+        "PodName: pdpod39", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:34 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.151] => {
+    "msg": [
+        "PodName: pdpod40", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:38 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.181] => {
+    "msg": [
+        "PodName: pdpod44", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:41 UTC; 24ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.30] => {
+    "msg": [
+        "PodName: pdpod17", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:46 UTC; 29ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.174] => {
+    "msg": [
+        "PodName: pdpod6005", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:51 UTC; 23ms ago"
+        ]
+    ]
+}
+ok: [172.95.1.45] => {
+    "msg": [
+        "PodName: pdpod6006", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:51 UTC; 34ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.144] => {
+    "msg": [
+        "PodName: pdpod30", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:50 UTC; 24ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.234] => {
+    "msg": [
+        "PodName: pdpod41", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:54 UTC; 18ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.248] => {
+    "msg": [
+        "PodName: pdpod45", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:36:58 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.113] => {
+    "msg": [
+        "PodName: pdpod45", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:03 UTC; 16ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.100] => {
+    "msg": [
+        "PodName: pdpod45", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:04 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.14] => {
+    "msg": [
+        "PodName: pdpod46", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:05 UTC; 22ms ago"
+        ]
+    ]
+}
+ok: [172.35.1.146] => {
+    "msg": [
+        "PodName: pdpod42", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:06 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.75.1.217] => {
+    "msg": [
+        "PodName: pdpod5001", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:12 UTC; 17ms ago"
+        ]
+    ]
+}
+ok: [172.55.1.83] => {
+    "msg": [
+        "PodName: pdpod2002", 
+        [
+            "3dbcc6c76a7d0a147f5e11943b965418  /tmp/_pslinux.py", 
+            "Taking Backup of pslinux file", 
+            "Copying file to build target", 
+            "Copying file to site packages", 
+            "   Active: active (running) since Sun 2022-10-23 12:37:17 UTC; 19ms ago"
+        ]
+    ]
+}
+
+PLAY RECAP ***********************************************************************************************************************************************************************************************************
+172.105.1.142              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.1.152              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.1.159              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.1.24               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.1.91               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.102               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.100               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.104               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.107               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.113               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.120               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.124               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.14                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.144               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.146               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.15                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.150               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.151               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.153               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.181               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.182               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.183               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.228               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.233               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.234               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.248               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.30                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.68                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.70                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.83                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.217               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.53                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.81                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.85.1.73                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.124               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.146               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.174               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.180               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.45                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

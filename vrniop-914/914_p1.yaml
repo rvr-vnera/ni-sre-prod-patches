@@ -1,0 +1,20 @@
+---
+- name: Copy script to tmp
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    staging_dir: /tmp/914-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Create staging dir
+      shell: |
+        mkdir -p "{{staging_dir}}"
+
+    - name: Stage files
+      copy:
+        src: files/capping.sh
+        dest: "{{ staging_dir }}"
+        mode: '0755'

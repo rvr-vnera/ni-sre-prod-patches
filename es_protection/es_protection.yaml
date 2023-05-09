@@ -1,0 +1,106 @@
+---
+- name: Apply restapi patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: MemoryHigh
+      lineinfile:
+        regexp: "^MemoryHigh"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#MemoryHigh=9000M'
+      become_user: root
+
+    - name: MemoryMax
+      lineinfile:
+        regexp: "^MemoryMax"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#MemoryMax=9000M'
+      become_user: root
+
+    - name: KillMode
+      lineinfile:
+        regexp: "^KillMode"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#KillMode=process'
+      become_user: root
+
+    - name: MemoryAccounting
+      lineinfile:
+        regexp: "^MemoryAccounting"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#MemoryAccounting=true'
+      become_user: root
+
+    - name: OOMScoreAdjust
+      lineinfile:
+        regexp: "^OOMScoreAdjust"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#OOMScoreAdjust=1000'
+      become_user: root
+
+    - name: MemorySwapMax
+      lineinfile:
+        regexp: "^MemorySwapMax"
+        path: /etc/systemd/system/multi-user.target.wants/elasticsearch.service
+        line: '#MemorySwapMax=1'
+      become_user: root
+
+    - name: es_real_memory_high
+      lineinfile:
+        regexp: "^es_real_memory_high"
+        path: /home/ubuntu/build-target/server-config-mgmt/xlarge.properties
+        line: 'es_real_memory_high = 20000M'
+      become_user: ubuntu
+
+    - name: es_real_memory_max
+      lineinfile:
+        regexp: "^es_real_memory_max"
+        path: /home/ubuntu/build-target/server-config-mgmt/xlarge.properties
+        line: 'es_real_memory_max = 20000M'
+      become_user: ubuntu
+
+    - name: Reload daemon
+      shell: sudo systemctl daemon-reload
+      become: true
+
+    - name: Restart ES service
+      shell: sudo service elasticsearch restart
+      become: true
+
+    - name: Fetch properties
+      shell: |
+        cat /etc/systemd/system/multi-user.target.wants/elasticsearch.service | grep -A 6 "# Process will be killed"
+      register: prop_file
+      ignore_errors: true
+
+    - name: Fetch properties xlarge
+      shell: |
+        cat /home/ubuntu/build-target/server-config-mgmt/xlarge.properties | grep es_
+      register: xlarge_file
+      ignore_errors: true
+
+    - name: Check ES uptime
+      shell: |
+        sleep 15s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 Elastic
+      register: es
+      ignore_errors: true
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ prop_file.stdout_lines }}"
+         - "{{ xlarge_file.stdout_lines }}"
+         - "{{ es.stdout_lines }}"

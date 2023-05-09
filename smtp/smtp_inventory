@@ -1,0 +1,16 @@
+[STAGING]
+172.44.5.45
+
+[STAGING:vars]
+key_pair="/home/ubuntu/.ssh/keys/vnera-infra-ec2.pem"
+
+
+[PRODUCTION]
+172.35.0.37
+172.35.0.204
+172.35.0.219
+172.35.0.162
+172.35.0.7
+
+[PRODUCTION:vars]
+key_pair="/home/ubuntu/.ssh/keys/vnera-infra-ec2.pem"

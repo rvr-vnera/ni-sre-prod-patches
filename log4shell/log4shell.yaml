@@ -1,0 +1,56 @@
+---
+- name: Apply log4shell Fix
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: jvm.options in /etc
+      lineinfile:
+        path: /etc/elasticsearch/jvm.options
+        line: '-Dlog4j2.formatMsgNoLookups=true'
+        insertafter: "^-Djava.io.tmpdir"
+      become_user: root
+      become: true
+      register: etc_file
+
+    - name: jvm.options in build-target
+      lineinfile:
+        path: /home/ubuntu/build-target/elasticsearch/elasticsearch-jvm.options
+        line: '-Dlog4j2.formatMsgNoLookups=true'
+        insertafter: "^-Djava.io.tmpdir"
+      register: build_target_file
+
+    - name: Restart elasticsearch service
+      shell: sudo service elasticsearch restart
+      become: true
+      when: etc_file.changed or build_target_file.changed
+
+    - name: Check service health
+      shell: |
+        sleep 10s
+        /home/ubuntu/check-service-health.sh -p | grep Elastic -A 1
+      register: service_health
+
+    - name: Verify -D param
+      shell: |
+        ps -ef  | grep elastic+ | grep log4j2.formatMsgNoLookups
+      register: after_restart
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "Service Health: "
+         - "{{ service_health.stdout_lines }}"
+         - "After Restart: "
+         - "{{ after_restart.stdout_lines }}"
+

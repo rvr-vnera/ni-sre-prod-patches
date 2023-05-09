@@ -1,0 +1,2001 @@
+
+PLAY [Modify smtp properties file] *****************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.248]
+ok: [172.45.165.67]
+ok: [172.45.88.131]
+ok: [172.35.0.110]
+ok: [172.45.39.94]
+ok: [172.45.211.130]
+ok: [172.35.0.59]
+ok: [172.35.0.138]
+ok: [172.35.0.54]
+ok: [172.35.0.130]
+ok: [172.35.0.62]
+ok: [172.35.0.250]
+ok: [172.35.0.60]
+ok: [172.35.1.235]
+ok: [172.35.0.120]
+ok: [172.35.0.93]
+ok: [172.35.0.82]
+ok: [172.35.1.240]
+ok: [172.35.0.192]
+ok: [172.35.0.183]
+ok: [172.35.0.201]
+ok: [172.35.0.182]
+ok: [172.35.0.22]
+ok: [172.35.0.63]
+ok: [172.35.0.84]
+ok: [172.35.0.224]
+ok: [172.35.0.152]
+ok: [172.35.0.76]
+ok: [172.35.0.113]
+ok: [172.35.0.24]
+ok: [172.35.0.184]
+ok: [172.35.0.9]
+ok: [172.35.0.20]
+ok: [172.35.0.207]
+ok: [172.35.0.157]
+ok: [172.55.26.234]
+ok: [172.35.0.218]
+ok: [172.35.0.145]
+ok: [172.35.0.102]
+ok: [172.35.0.121]
+ok: [172.35.0.109]
+ok: [172.35.0.158]
+ok: [172.35.0.65]
+ok: [172.35.0.178]
+ok: [172.35.0.74]
+ok: [172.35.0.196]
+ok: [172.35.0.214]
+ok: [172.35.0.73]
+ok: [172.35.0.58]
+ok: [172.35.0.147]
+ok: [172.35.0.197]
+ok: [172.35.0.204]
+ok: [172.35.0.122]
+ok: [172.35.0.162]
+ok: [172.35.0.69]
+ok: [172.35.0.7]
+ok: [172.35.0.232]
+ok: [172.35.0.219]
+ok: [172.35.0.37]
+ok: [172.35.0.61]
+ok: [172.35.0.5]
+ok: [172.35.0.52]
+ok: [172.35.0.79]
+ok: [172.35.0.150]
+ok: [172.35.0.254]
+ok: [172.35.0.159]
+ok: [172.35.0.167]
+ok: [172.35.0.222]
+ok: [172.35.0.175]
+ok: [172.35.0.200]
+ok: [172.35.0.43]
+ok: [172.35.0.240]
+ok: [172.35.0.164]
+ok: [172.35.0.51]
+ok: [172.35.0.253]
+ok: [172.35.0.249]
+ok: [172.35.0.206]
+ok: [172.35.0.35]
+ok: [172.35.0.114]
+ok: [172.35.1.202]
+ok: [172.35.0.8]
+ok: [172.35.0.217]
+ok: [172.35.0.191]
+ok: [172.35.0.137]
+ok: [172.35.0.134]
+ok: [172.72.0.198]
+ok: [172.72.0.222]
+ok: [172.70.0.206]
+ok: [172.70.0.228]
+ok: [172.70.0.198]
+ok: [172.70.0.214]
+ok: [172.70.0.217]
+ok: [172.70.0.196]
+ok: [172.70.0.224]
+ok: [172.35.0.168]
+ok: [172.70.0.248]
+ok: [172.70.0.197]
+ok: [172.70.0.200]
+ok: [172.35.0.66]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.54]
+changed: [172.45.211.130]
+changed: [172.35.0.130]
+changed: [172.45.165.67]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.93]
+changed: [172.35.1.240]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.55.26.234]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.7]
+changed: [172.35.0.232]
+changed: [172.35.0.219]
+changed: [172.35.0.37]
+changed: [172.35.0.61]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.5]
+changed: [172.35.0.52]
+changed: [172.35.0.159]
+changed: [172.35.0.167]
+changed: [172.35.0.79]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.72.0.222]
+changed: [172.70.0.198]
+changed: [172.72.0.198]
+changed: [172.70.0.224]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.70.0.196]
+changed: [172.70.0.248]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+
+TASK [Change smtp username] ************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.54]
+changed: [172.35.0.130]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+ok: [172.45.211.130]
+changed: [172.35.0.93]
+changed: [172.45.165.67]
+changed: [172.45.39.94]
+changed: [172.35.1.240]
+changed: [172.45.88.131]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.55.26.234]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.7]
+changed: [172.35.0.232]
+changed: [172.35.0.219]
+changed: [172.35.0.37]
+changed: [172.35.0.61]
+changed: [172.35.0.5]
+changed: [172.35.0.52]
+changed: [172.35.0.79]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.72.0.222]
+changed: [172.70.0.198]
+changed: [172.72.0.198]
+changed: [172.70.0.224]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.70.0.196]
+changed: [172.70.0.248]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+
+TASK [Change smtp password] ************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.54]
+changed: [172.35.0.130]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+ok: [172.45.211.130]
+changed: [172.35.0.60]
+changed: [172.45.165.67]
+changed: [172.45.39.94]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.93]
+changed: [172.35.1.240]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.45.88.131]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.55.26.234]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.7]
+changed: [172.35.0.232]
+changed: [172.35.0.219]
+changed: [172.35.0.37]
+changed: [172.35.0.61]
+changed: [172.35.0.5]
+changed: [172.35.0.52]
+changed: [172.35.0.79]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.72.0.222]
+changed: [172.70.0.198]
+changed: [172.72.0.198]
+changed: [172.70.0.224]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.70.0.196]
+changed: [172.70.0.248]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+
+TASK [Restart restapi service] *********************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.45.211.130]
+changed: [172.45.165.67]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+changed: [172.35.0.54]
+changed: [172.35.0.130]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.93]
+changed: [172.35.1.240]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.55.26.234]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.7]
+changed: [172.35.0.232]
+changed: [172.35.0.219]
+changed: [172.35.0.61]
+changed: [172.35.0.37]
+changed: [172.35.0.5]
+changed: [172.35.0.52]
+changed: [172.35.0.79]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.72.0.222]
+changed: [172.72.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.248]
+changed: [172.35.0.168]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+changed: [172.35.0.66]
+
+TASK [Check restapi servicee] **********************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.45.211.130]
+changed: [172.45.165.67]
+changed: [172.45.88.131]
+changed: [172.45.39.94]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.60]
+changed: [172.35.0.250]
+changed: [172.35.1.235]
+changed: [172.35.0.93]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.1.240]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.183]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.55.26.234]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.35.0.197]
+changed: [172.35.0.122]
+changed: [172.35.0.204]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.232]
+changed: [172.35.0.7]
+changed: [172.35.0.219]
+changed: [172.35.0.37]
+changed: [172.35.0.61]
+changed: [172.35.0.79]
+changed: [172.35.0.52]
+changed: [172.35.0.5]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.167]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.240]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.72.0.222]
+changed: [172.72.0.198]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.248]
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+
+TASK [New SMTP] ************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.54]
+changed: [172.45.165.67]
+changed: [172.35.0.130]
+changed: [172.45.211.130]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.1.235]
+changed: [172.35.0.120]
+changed: [172.35.0.93]
+changed: [172.35.1.240]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.63]
+changed: [172.35.0.22]
+changed: [172.35.0.224]
+changed: [172.35.0.84]
+changed: [172.35.0.152]
+changed: [172.35.0.76]
+changed: [172.35.0.113]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.157]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.55.26.234]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.73]
+changed: [172.35.0.58]
+changed: [172.35.0.147]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.69]
+changed: [172.35.0.7]
+changed: [172.35.0.232]
+changed: [172.35.0.219]
+changed: [172.35.0.37]
+changed: [172.35.0.61]
+changed: [172.35.0.5]
+changed: [172.35.0.52]
+changed: [172.35.0.79]
+changed: [172.35.0.150]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.35.0.134]
+changed: [172.70.0.206]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.72.0.222]
+changed: [172.70.0.248]
+changed: [172.72.0.198]
+changed: [172.70.0.197]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+changed: [172.70.0.200]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.45.211.130] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.45.165.67] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.45.39.94] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.45.88.131] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:15", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:15", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:15", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:15", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:16", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:25", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:26", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:25", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:25", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:26", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:35", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:37", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:36", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:37", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:37", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:46", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:47", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.63] => {
+    "msg": [
+        "PodName: pdpod17", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:47", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.22] => {
+    "msg": [
+        "PodName: pdpod17", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:47", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.224] => {
+    "msg": [
+        "PodName: pdpod17", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:48", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.84] => {
+    "msg": [
+        "PodName: pdpod18platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:59", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.152] => {
+    "msg": [
+        "PodName: pdpod18platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:58", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.76] => {
+    "msg": [
+        "PodName: pdpod18platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:58", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.113] => {
+    "msg": [
+        "PodName: pdpod18platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:01:58", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.24] => {
+    "msg": [
+        "PodName: pdpod18platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:02", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:10", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:08", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.55.26.234] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:10", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:08", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:13", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:20", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:19", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:19", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:22", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:24", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:29", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:29", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:29", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:32", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:34", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:40", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:39", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.73] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:41", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.58] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:43", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.147] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:45", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.197] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:52", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.204] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:51", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.122] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:51", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.162] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:53", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.69] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:02:56", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.7] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:03", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.232] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:01", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.219] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:02", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:04", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.61] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:07", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.5] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:14", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.52] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:13", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.79] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:12", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.150] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:16", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.254] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:17", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.159] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:24", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.167] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:23", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.222] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:24", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:25", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.43] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:28", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.200] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:35", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.164] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:34", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:34", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:37", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:38", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:45", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:44", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:47", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:49", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:51", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:56", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:03:55", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.72.0.222] => {
+    "msg": [
+        "PodName: pdpod4000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:00", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.72.0.198] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:01", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:02", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:06", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:06", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:13", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:12", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:13", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:15", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:16", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:24", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:23", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:23", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:26", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:26", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:35", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        "\u001b[00;32mRestapilayer is running\u001b[00m\nUptime:04:33", 
+        [
+            "mail.smtp.auth=true", 
+            "mail.smtp.auth.username=AKIA2HL4H3ZENYOKPFU3", 
+            "mail.smtp.auth.password=BFzkvprOsJbQhfKyexIHT3qe3U80mtPA9eQRvfh2SqhI", 
+            "mail.smtp.auth.type=TLS"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.102               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.113               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.122               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.147               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.150               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.152               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.159               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.162               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.164               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.167               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.197               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.200               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.204               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.219               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.22                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.222               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.224               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.232               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.254               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.43                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.5                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.52                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.58                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.61                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.63                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.69                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.7                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.73                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.76                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.79                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.84                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.165.67              : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.211.130             : ok=8    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.39.94               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.88.131              : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.26.234              : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.196               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.72.0.198               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.72.0.222               : ok=8    changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

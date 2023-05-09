@@ -1,0 +1,79 @@
+---
+- name: Apply liagent
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    li_agent_script: "enable_li_agent.sh"
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Copy script
+      copy:
+        src: "files/{{ li_agent_script }}"
+        dest: /tmp
+        mode: '755'
+
+    - name: Current Setting
+      shell: |
+        cat /etc/liagent.ini | grep "vmware.com"
+        cat /etc/liagent.ini | grep "tags={\"env"
+      register: current_tags
+      ignore_errors: yes
+
+    - name: Remove 443 Port
+      lineinfile:
+        regexp: "^port=443"
+        path: /home/ubuntu/build-target/infra-base/infra-automation/cookbooks/loginsight/templates/liagent.ini.erb
+        state: absent
+    
+    - name: Modify dmz host
+      lineinfile:
+        regexp: "^hostname=dmz2.licf.vmware.com"
+        path: /home/ubuntu/build-target/infra-base/infra-automation/cookbooks/loginsight/templates/liagent.ini.erb
+        line: 'hostname=vrni-dmz.licf.vmware.com'
+
+    - name: SSL Policy setting
+      lineinfile:
+        path: /home/ubuntu/build-target/infra-base/infra-automation/cookbooks/loginsight/templates/liagent.ini.erb
+        line: 'ssl_accept_any_trusted=yes'
+        insertafter: "^ssl=yes"
+
+    - name: Run script
+      shell: |
+        /tmp/"{{ li_agent_script }}"
+
+    - name: Fix Setup Name
+      lineinfile:
+        regexp: "Symphony"
+        path: /etc/liagent.ini
+        line: 'tags={"env": "VRNI-PRODUCTION", "product": "vRNI", "role": "PLATFORM", "setup_name": "{{ pod_name.stdout }}", "tenant": "Symphony"}'
+      become: true
+      become_user: root
+
+    - name: Restart liagent service
+      shell: sudo service liagentd restart
+      become: true
+
+    - name: Final Setting
+      shell: |
+        cat /etc/liagent.ini | grep "vmware.com"
+        cat /etc/liagent.ini | grep "ssl_accept_any_trusted"
+        cat /etc/liagent.ini | grep "tags={\"env"
+      register: after_tags
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "Current Tags: "
+         - "{{ current_tags.stdout_lines }}"
+         - "After Tags: "
+         - "{{ after_tags.stdout_lines }}"
+

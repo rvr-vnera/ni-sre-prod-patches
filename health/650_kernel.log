@@ -1,0 +1,1153 @@
+
+PLAY [Apply restapi patch] *************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.248]
+ok: [172.45.1.116]
+ok: [172.35.0.110]
+ok: [172.45.1.239]
+ok: [172.45.1.56]
+ok: [172.45.1.230]
+ok: [172.35.0.138]
+ok: [172.35.0.130]
+ok: [172.35.0.54]
+ok: [172.35.0.62]
+ok: [172.35.0.59]
+ok: [172.35.0.250]
+ok: [172.35.0.120]
+ok: [172.35.0.60]
+ok: [172.35.1.226]
+ok: [172.35.1.235]
+ok: [172.35.1.228]
+ok: [172.35.1.240]
+ok: [172.35.0.93]
+ok: [172.35.0.183]
+ok: [172.35.0.192]
+ok: [172.35.0.201]
+ok: [172.35.0.82]
+ok: [172.35.0.184]
+ok: [172.35.0.182]
+ok: [172.35.0.9]
+ok: [172.35.0.207]
+ok: [172.35.0.20]
+ok: [172.35.0.218]
+ok: [172.35.0.157]
+ok: [172.55.1.29]
+ok: [172.35.0.145]
+ok: [172.35.0.102]
+ok: [172.35.0.65]
+ok: [172.35.0.121]
+ok: [172.35.0.109]
+ok: [172.35.0.158]
+ok: [172.35.0.178]
+ok: [172.35.0.196]
+ok: [172.35.0.74]
+ok: [172.35.0.214]
+ok: [172.35.0.240]
+ok: [172.35.0.253]
+ok: [172.35.0.51]
+ok: [172.35.0.249]
+ok: [172.35.0.8]
+ok: [172.35.0.114]
+ok: [172.35.0.206]
+ok: [172.35.1.202]
+ok: [172.35.0.35]
+ok: [172.35.1.171]
+ok: [172.35.1.120]
+ok: [172.35.0.217]
+ok: [172.35.0.191]
+ok: [172.75.1.59]
+ok: [172.35.0.137]
+ok: [172.105.21.197]
+ok: [172.105.21.52]
+ok: [172.95.1.146]
+ok: [172.95.1.83]
+ok: [172.95.1.36]
+ok: [172.95.1.244]
+ok: [172.95.1.43]
+ok: [172.35.0.134]
+ok: [172.70.0.248]
+ok: [172.70.0.197]
+ok: [172.70.0.200]
+ok: [172.70.0.214]
+ok: [172.70.0.228]
+ok: [172.70.0.196]
+ok: [172.70.0.224]
+ok: [172.70.0.198]
+ok: [172.70.0.206]
+ok: [172.70.0.217]
+ok: [172.35.0.168]
+ok: [172.35.0.66]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.138]
+changed: [172.45.1.116]
+changed: [172.35.0.130]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.35.0.54]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.1.235]
+changed: [172.35.1.226]
+changed: [172.35.0.93]
+changed: [172.35.1.228]
+changed: [172.35.1.240]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.82]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.157]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.65]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.55.1.29]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.74]
+changed: [172.35.0.196]
+changed: [172.35.0.51]
+changed: [172.35.0.214]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.0.240]
+changed: [172.35.1.202]
+changed: [172.35.0.253]
+changed: [172.35.1.171]
+changed: [172.35.1.120]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.244]
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.95.1.36]
+changed: [172.70.0.197]
+changed: [172.95.1.43]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.35.0.168]
+changed: [172.70.0.206]
+changed: [172.35.0.66]
+changed: [172.70.0.217]
+
+TASK [Check service health es] *********************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.138]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.45.1.116]
+changed: [172.35.0.60]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.35.1.235]
+changed: [172.45.1.239]
+changed: [172.35.1.226]
+changed: [172.35.0.93]
+changed: [172.35.1.228]
+changed: [172.35.1.240]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.201]
+changed: [172.35.0.182]
+changed: [172.35.0.82]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.157]
+changed: [172.35.0.145]
+changed: [172.35.0.102]
+changed: [172.35.0.65]
+changed: [172.35.0.121]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+changed: [172.35.0.74]
+changed: [172.35.0.196]
+changed: [172.55.1.29]
+changed: [172.35.0.214]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.1.120]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.244]
+changed: [172.70.0.248]
+changed: [172.70.0.200]
+changed: [172.95.1.36]
+changed: [172.70.0.197]
+changed: [172.95.1.43]
+changed: [172.70.0.228]
+changed: [172.70.0.214]
+changed: [172.70.0.196]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.35.0.168]
+changed: [172.70.0.206]
+changed: [172.35.0.66]
+changed: [172.70.0.217]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1 - platform-infra", 
+        [
+            " 13:43:11 up 9 days,  9:54,  1 user,  load average: 2.34, 2.50, 2.73", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:13 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000 - vrni-platform-release", 
+        [
+            " 13:43:14 up 9 days,  9:56,  1 user,  load average: 2.43, 3.09, 3.18", 
+            "", 
+            "wtmp begins Wed Feb  2 01:05:36 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001 - vrni-platform-release", 
+        [
+            " 13:43:14 up 9 days,  9:56,  1 user,  load average: 1.33, 1.89, 2.05", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:17 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002 - vrni-platform-release", 
+        [
+            " 13:43:14 up 9 days,  9:56,  1 user,  load average: 1.99, 1.72, 1.84", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:18 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003 - vrni-platform-release", 
+        [
+            " 13:43:14 up 9 days,  9:58,  1 user,  load average: 1.66, 2.79, 3.34", 
+            "", 
+            "wtmp begins Wed Feb  2 11:06:44 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10 - platform-infra", 
+        [
+            " 13:43:12 up 2 days, 20:17,  1 user,  load average: 6.90, 7.41, 7.37", 
+            "", 
+            "wtmp begins Tue Feb  1 03:58:16 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11 - platform1", 
+        [
+            " 13:43:12 up 9 days,  9:54,  1 user,  load average: 2.30, 2.51, 2.50", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:22 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11 - platform2", 
+        [
+            " 13:43:12 up 9 days,  9:55,  1 user,  load average: 3.48, 3.17, 2.55", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:22 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11 - platform3", 
+        [
+            " 13:43:13 up 9 days,  9:56,  1 user,  load average: 3.04, 3.07, 2.53", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:23 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12 - platform-infra", 
+        [
+            " 13:43:13 up 9 days,  9:53,  1 user,  load average: 5.39, 5.07, 4.77", 
+            "", 
+            "wtmp begins Wed Feb  2 01:02:47 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13 - sym-platform-release", 
+        [
+            " 13:43:13 up 9 days,  9:56,  1 user,  load average: 5.38, 4.85, 4.65", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:24 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform - platform1", 
+        [
+            " 13:43:13 up 9 days,  9:54,  1 user,  load average: 4.04, 4.51, 4.89", 
+            "", 
+            "wtmp begins Wed Feb  2 08:36:26 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform - platform2", 
+        [
+            " 13:43:14 up 9 days,  9:55,  1 user,  load average: 3.86, 4.38, 4.17", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:27 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform - platform3", 
+        [
+            " 13:43:14 up 66 days, 11:47,  1 user,  load average: 3.15, 3.88, 3.95", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:27 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15 - platform2", 
+        [
+            " 13:43:14 up 56 days,  1:38,  1 user,  load average: 3.29, 3.67, 3.71", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:28 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15 - platform4", 
+        [
+            " 13:43:14 up 56 days,  1:42,  1 user,  load average: 1.99, 2.19, 2.30", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:29 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15 - platform1", 
+        [
+            " 13:43:15 up 56 days,  1:33,  1 user,  load average: 4.50, 4.15, 3.85", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:31 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15 - platform5", 
+        [
+            " 13:43:15 up 56 days,  1:49,  1 user,  load average: 2.80, 2.83, 3.10", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:31 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15 - platform3", 
+        [
+            " 13:43:15 up 9 days,  9:53,  1 user,  load average: 3.29, 3.33, 3.30", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:32 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16 - platform2", 
+        [
+            " 13:43:15 up 9 days,  9:50,  1 user,  load average: 3.55, 4.71, 4.39", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:34 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16 - platform3", 
+        [
+            " 13:43:15 up 9 days,  9:51,  1 user,  load average: 3.94, 4.31, 4.00", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:36 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16 - platform1", 
+        [
+            " 13:43:15 up 9 days,  9:49,  1 user,  load average: 5.80, 6.96, 6.71", 
+            "", 
+            "wtmp begins Wed Feb  2 19:15:11 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16 - platform4", 
+        [
+            " 13:43:15 up 9 days,  9:52,  1 user,  load average: 3.37, 3.58, 3.61", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:37 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16 - platform5", 
+        [
+            " 13:43:15 up 9 days,  9:53,  1 user,  load average: 9.85, 6.27, 5.61", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:38 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform - platform-infra", 
+        [
+            " 13:43:15 up 9 days,  9:56,  1 user,  load average: 2.67, 2.86, 2.87", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:39 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2 - platform-infra", 
+        [
+            " 13:43:16 up 9 days,  9:56,  1 user,  load average: 1.21, 2.14, 2.51", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:40 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001 - vrni-platform-release", 
+        [
+            " 13:43:18 up 9 days,  2:48,  1 user,  load average: 0.77, 1.17, 1.45", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:45 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20 - vrni-platform-release", 
+        [
+            " 13:43:16 up 9 days,  9:57,  1 user,  load average: 4.37, 4.30, 4.78", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:42 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21 - platform3", 
+        [
+            " 13:43:16 up 9 days,  9:52,  1 user,  load average: 5.20, 3.81, 2.94", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:43 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21 - platform1", 
+        [
+            " 13:43:16 up 9 days,  9:49,  1 user,  load average: 3.82, 3.83, 3.71", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:43 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21 - platform2", 
+        [
+            " 13:43:16 up 9 days,  9:51,  1 user,  load average: 3.93, 3.65, 3.67", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:45 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: pdpod22 - platform1", 
+        [
+            " 13:43:16 up 9 days,  9:46,  1 user,  load average: 4.74, 6.71, 7.37", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:47 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22 - platform6", 
+        [
+            " 13:43:16 up 9 days,  9:52,  1 user,  load average: 3.64, 5.43, 5.72", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:47 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22 - platform5", 
+        [
+            " 13:43:17 up 9 days,  9:51,  1 user,  load average: 4.75, 5.33, 5.48", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:48 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22 - platform3", 
+        [
+            " 13:43:17 up 9 days,  9:49,  1 user,  load average: 3.35, 4.66, 5.17", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:49 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22 - platform2", 
+        [
+            " 13:43:17 up 9 days,  9:47,  1 user,  load average: 2.42, 4.75, 5.61", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:49 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22 - platform4", 
+        [
+            " 13:43:17 up 9 days,  9:50,  1 user,  load average: 3.12, 4.63, 5.07", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:52 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22 - platform7", 
+        [
+            " 13:43:18 up 9 days,  9:53,  1 user,  load average: 4.30, 4.99, 5.48", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:52 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform - platform3", 
+        [
+            " 13:43:18 up 9 days,  9:53,  1 user,  load average: 3.19, 2.96, 3.22", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:53 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform - platform1", 
+        [
+            " 13:43:18 up 9 days,  9:50,  1 user,  load average: 3.68, 2.90, 2.89", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:53 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform - platform2", 
+        [
+            " 13:43:18 up 9 days,  9:52,  1 user,  load average: 3.12, 2.57, 2.71", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:55 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27 - vrni-platform-release", 
+        [
+            " 13:43:18 up 9 days,  9:53,  1 user,  load average: 0.98, 1.22, 1.60", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:56 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28 - vrni-platform-release", 
+        [
+            " 13:43:18 up 9 days,  9:54,  1 user,  load average: 5.80, 4.96, 4.67", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:56 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29 - vrni-platform-release", 
+        [
+            " 13:43:18 up 9 days,  9:56,  1 user,  load average: 2.23, 2.17, 2.32", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:58 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3 - platform-infra", 
+        [
+            " 13:43:18 up 9 days,  9:56,  1 user,  load average: 1.69, 2.28, 2.46", 
+            "", 
+            "wtmp begins Thu Feb  3 13:41:59 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31 - vrni-platform-release", 
+        [
+            " 13:43:19 up 9 days, 11:07,  1 user,  load average: 3.77, 3.12, 3.05", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:00 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32 - vrni-platform-release", 
+        [
+            " 13:43:19 up 93 days, 17:02,  1 user,  load average: 6.81, 5.31, 4.34", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:01 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33 - vrni-platform-release", 
+        [
+            " 13:43:19 up 9 days, 11:06,  1 user,  load average: 3.43, 4.44, 4.75", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:01 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34 - vrni-platform-release", 
+        [
+            " 13:43:19 up 9 days, 11:01,  1 user,  load average: 3.79, 4.41, 4.27", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:02 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35 - vrni-platform-release", 
+        [
+            " 13:43:19 up 9 days,  9:56,  1 user,  load average: 1.83, 2.22, 2.48", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:04 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36 - vrni-platform-release", 
+        [
+            " 13:43:19 up 9 days, 10:59,  1 user,  load average: 1.17, 1.59, 2.04", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:05 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.1.120] => {
+    "msg": [
+        "PodName: pdpod37 - vrni-platform-release", 
+        [
+            " 13:43:19 up 41 days,  6:42,  1 user,  load average: 4.43, 3.46, 3.12", 
+            "", 
+            "wtmp begins Wed Feb  2 02:41:07 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4 - platform-infra", 
+        [
+            " 13:43:19 up 9 days,  9:56,  1 user,  load average: 4.67, 4.28, 4.05", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:07 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: pdpod4000 - vrni-platform-release", 
+        [
+            " 13:43:22 up 9 days,  2:51,  1 user,  load average: 4.34, 3.19, 3.13", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:14 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: pdpod4001 - vrni-platform-release", 
+        [
+            " 13:43:22 up 9 days,  2:49,  1 user,  load average: 3.17, 3.76, 3.40", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:14 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5 - platform-infra", 
+        [
+            " 13:43:20 up 9 days,  9:57,  1 user,  load average: 5.85, 4.50, 4.08", 
+            "", 
+            "wtmp begins Tue Feb  1 18:47:55 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000 - vrni-platform-release", 
+        [
+            " 13:43:21 up 9 days,  9:57,  1 user,  load average: 3.08, 3.09, 2.76", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:13 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6 - platform-infra", 
+        [
+            " 13:43:20 up 9 days,  9:56,  1 user,  load average: 4.42, 4.05, 3.51", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:11 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000 - platform2", 
+        [
+            " 13:43:23 up 9 days,  9:53,  1 user,  load average: 2.04, 2.47, 2.49", 
+            "", 
+            "wtmp begins Tue Feb  1 00:45:07 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000 - platform3", 
+        [
+            " 13:43:23 up 9 days,  9:55,  1 user,  load average: 1.67, 2.27, 2.54", 
+            "", 
+            "wtmp begins Tue Feb  1 00:45:23 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000 - platform1", 
+        [
+            " 13:43:24 up 9 days,  9:52,  1 user,  load average: 2.99, 3.04, 2.98", 
+            "", 
+            "wtmp begins Tue Feb  1 00:45:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001 - vrni-platform-release", 
+        [
+            " 13:43:26 up 9 days,  9:56,  1 user,  load average: 2.52, 2.46, 2.53", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:23 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002 - vrni-platform-release", 
+        [
+            " 13:43:26 up 64 days, 20:34,  1 user,  load average: 2.31, 2.65, 2.50", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:24 2022", 
+            "5.4.0-81-generic"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7 - platform-infra", 
+        [
+            " 13:43:23 up 9 days,  9:58,  1 user,  load average: 3.09, 3.94, 4.28", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:25 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: pdpod7000 - platform10", 
+        [
+            " 13:43:25 up 9 days,  9:50,  1 user,  load average: 0.73, 2.08, 3.23", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:29 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: pdpod7000 - platform5", 
+        [
+            " 13:43:25 up 9 days,  9:44,  1 user,  load average: 0.89, 2.27, 3.23", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: pdpod7000 - platform3", 
+        [
+            " 13:43:26 up 9 days,  9:42,  1 user,  load average: 2.26, 2.65, 3.02", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: pdpod7000 - platform9", 
+        [
+            " 13:43:26 up 9 days,  9:49,  1 user,  load average: 2.52, 3.00, 3.60", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: pdpod7000 - platform7", 
+        [
+            " 13:43:26 up 9 days,  9:47,  1 user,  load average: 1.76, 2.41, 3.06", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: pdpod7000 - platform2", 
+        [
+            " 13:43:27 up 9 days,  9:41,  1 user,  load average: 2.66, 3.88, 4.14", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:36 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: pdpod7000 - platform1", 
+        [
+            " 13:43:27 up 9 days,  9:40,  1 user,  load average: 2.15, 3.36, 3.81", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:37 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: pdpod7000 - platform4", 
+        [
+            " 13:43:28 up 9 days,  9:43,  1 user,  load average: 1.66, 2.85, 3.07", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:37 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: pdpod7000 - platform6", 
+        [
+            " 13:43:28 up 9 days,  9:46,  1 user,  load average: 1.28, 2.02, 2.74", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:38 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: pdpod7000 - platform8", 
+        [
+            " 13:43:28 up 9 days,  9:48,  1 user,  load average: 1.53, 2.56, 3.10", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:38 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8 - platform-release", 
+        [
+            " 13:43:28 up 9 days,  9:58,  1 user,  load average: 2.52, 1.87, 1.78", 
+            "", 
+            "wtmp begins Thu Feb  3 13:42:40 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9 - platform-infra", 
+        [
+            " 13:43:28 up 9 days,  9:54,  1 user,  load average: 4.18, 4.41, 4.05", 
+            "", 
+            "wtmp begins Thu Feb  3 13:23:31 2022", 
+            "5.4.0-90-generic"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.102               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.120               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.228               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.196               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.146               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

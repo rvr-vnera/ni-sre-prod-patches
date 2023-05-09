@@ -1,0 +1,348 @@
+
+PLAY [Flow cache load time] ************************************************************************************************************************************************************************************
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.70.0.197]
+changed: [172.70.0.200]
+changed: [172.70.0.214]
+changed: [172.70.0.248]
+changed: [172.70.0.228]
+changed: [172.70.0.217]
+changed: [172.70.0.224]
+changed: [172.70.0.198]
+changed: [172.70.0.196]
+changed: [172.70.0.206]
+changed: [172.35.0.102]
+changed: [172.35.0.121]
+changed: [172.35.0.65]
+changed: [172.35.0.145]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+
+TASK [Flow cache data] *****************************************************************************************************************************************************************************************
+changed: [172.70.0.214]
+changed: [172.70.0.197]
+changed: [172.70.0.228]
+changed: [172.70.0.200]
+changed: [172.70.0.248]
+changed: [172.70.0.196]
+changed: [172.70.0.206]
+changed: [172.70.0.198]
+changed: [172.70.0.224]
+changed: [172.70.0.217]
+changed: [172.35.0.102]
+changed: [172.35.0.145]
+changed: [172.35.0.121]
+changed: [172.35.0.65]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.178]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 330004 time_taken=1860 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 1 time_taken=1867 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.09.log:customer 1 time_taken=4188 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.09.log:customer 330004 time_taken=4181 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.09.log:customer 330001 time_taken=134930 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1860 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1867 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=589569 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=239 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=224 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=11687 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-13-05.17.58.log.error:customer 330001 time_taken=61000 ms"
+        ]
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 1 time_taken=2004 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 330004 time_taken=1996 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=2004 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1996 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=15313 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.59.51.log:customer 330004 time_taken=2463 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.59.51.log:customer 1 time_taken=2465 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.59.51.log:customer 330001 time_taken=139301 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=285 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=301 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=29764 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-04.37.21.log.error:customer 1 time_taken=1632 ms"
+        ]
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1691 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1697 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=17349 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.02.14.log:customer 1 time_taken=1704 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.02.14.log:customer 330004 time_taken=1699 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.02.14.log:customer 330001 time_taken=110953 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330001 time_taken=31039 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=330 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=322 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=31039 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.02.14.log.error:customer 330001 time_taken=110953 ms"
+        ]
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 330004 time_taken=1984 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1981 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1984 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=11378 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330001 time_taken=30822 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=268 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=284 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=30822 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.55.log:customer 330004 time_taken=3523 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.55.log:customer 1 time_taken=3532 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.55.log:customer 330001 time_taken=139586 ms"
+        ]
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=422 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=415 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=13961 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 1 time_taken=1862 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330004 time_taken=1850 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330001 time_taken=30201 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=1862 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=1850 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=30201 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.57.23.log:customer 330004 time_taken=1564 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.57.23.log:customer 1 time_taken=1571 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.57.23.log:customer 330001 time_taken=135850 ms"
+        ]
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1784 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1790 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=16632 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330001 time_taken=32671 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=239 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=249 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=32671 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.03.26.log:customer 330004 time_taken=1561 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.03.26.log:customer 1 time_taken=1568 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.03.26.log:customer 330001 time_taken=101250 ms"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 1 time_taken=1980 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 330004 time_taken=1972 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1980 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1972 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=588629 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.04.19.log:customer 1 time_taken=1526 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.04.19.log:customer 330004 time_taken=1520 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.04.19.log:customer 330001 time_taken=236199 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.39.15.log:customer 1 time_taken=418 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.39.15.log:customer 330004 time_taken=407 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.39.15.log:customer 330001 time_taken=12778 ms"
+        ]
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.01.04.log:customer 1 time_taken=1975 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.01.04.log:customer 330004 time_taken=1991 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.01.04.log:customer 330001 time_taken=135919 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 1 time_taken=1808 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1786 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1808 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=16741 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log.error:customer 330001 time_taken=31975 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=272 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=263 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=31975 ms"
+        ]
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1703 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1696 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=13027 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-04.37.18.log.error:customer 1 time_taken=4796 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.58.36.log:customer 1 time_taken=2307 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.58.36.log:customer 330004 time_taken=2305 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.58.36.log:customer 330001 time_taken=151546 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.06.log:customer 330004 time_taken=244 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.06.log:customer 1 time_taken=253 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.06.log:customer 330001 time_taken=32619 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-13-05.17.51.log.error:customer 330001 time_taken=61529 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.06.log.error:customer 330001 time_taken=32619 ms"
+        ]
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: \"pdpod7000\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 330004 time_taken=1815 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log.error:customer 1 time_taken=1839 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330004 time_taken=1815 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 1 time_taken=1839 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.43.24.log:customer 330001 time_taken=589405 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330004 time_taken=255 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 1 time_taken=262 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.40.07.log:customer 330001 time_taken=11542 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.56.09.log:customer 1 time_taken=1674 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.56.09.log:customer 330004 time_taken=1666 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.56.09.log:customer 330001 time_taken=133460 ms"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=226 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.17.43.log.error:customer 1 time_taken=1643 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.58.35.log.error:customer 1 time_taken=2464 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.58.35.log.error:customer 10838 time_taken=1483 ms"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-05.00.42.log.error:customer 1 time_taken=248 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=563 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=178 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 10838 time_taken=100 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.52.09.log.error:customer 1 time_taken=2280 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log:customer 1 time_taken=563 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log:customer 10838 time_taken=243 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log:customer 10722 time_taken=29889 ms"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-05.00.42.log.error:customer 1 time_taken=294 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=625 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=351 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.53.23.log.error:customer 1 time_taken=2005 ms"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-05.00.44.log.error:customer 1 time_taken=248 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=629 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=381 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-04.31.42.log.error:customer 1 time_taken=3876 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.55.47.log.error:customer 1 time_taken=2065 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.55.47.log.error:customer 10838 time_taken=1468 ms"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-04.31.48.log.error:customer 1 time_taken=3514 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.57.06.log.error:customer 1 time_taken=5051 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=582 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 10838 time_taken=271 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-05.00.43.log.error:customer 1 time_taken=240 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=310 ms"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2021-12-20-05.00.42.log.error:customer 1 time_taken=248 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=656 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.31.log.error:customer 1 time_taken=2167 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.54.31.log.error:customer 10838 time_taken=1252 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=457 ms"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Flowstore bootstrap time", 
+        [
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-03.51.12.log.error:customer 1 time_taken=5615 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-16.18.40.log.error:customer 1 time_taken=885 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 1 time_taken=219 ms", 
+            "/home/ubuntu/logs/restapilayer/restapilayer.STDOUT-2022-01-25-04.32.17.log.error:customer 10838 time_taken=137 ms"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.102               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.196               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

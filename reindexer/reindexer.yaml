@@ -1,0 +1,41 @@
+---
+- name: Run reindexer
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Check reindexer
+      uri:
+        url: http://localhost:9200/denorm/_search?pretty
+        method: POST
+        body: '{"query": {"bool": {"must": [{ "terms": { "__type": [206, 205, 155, 707] }}]}},"size": 0}'
+        body_format: json
+      register: objects
+
+    - name: Run reindexer script
+      shell: 'nohup /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707 > /home/ubuntu/logs/reindex_mgr_ots.log &'
+      #async: 45
+      #poll: 0
+      when: objects.json.hits.total.value > 0
+
+    - name: Check process
+      shell: |
+        ps -ef | grep reindexer.sh
+      register: bg_process
+      ignore_errors: yes
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ objects.json.hits.total.value }}"
+         - "{{ bg_process.stdout_lines }}"

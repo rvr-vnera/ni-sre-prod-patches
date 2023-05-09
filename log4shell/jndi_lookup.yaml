@@ -1,0 +1,63 @@
+---
+- name: Remove JNDILookup class
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  serial: 1
+  vars:
+    target_dir: /tmp/log4shell
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Create target dir
+      command: "mkdir -p  {{ target_dir }}"
+
+    - name: Copy jndi execution script
+      copy:
+        src: files/remove_jndi_lookup.sh
+        dest: "{{ target_dir }}/remove_jndi_lookup.sh"
+        mode: '755'
+        owner: ubuntu
+
+    - name: md5sum before
+      shell: md5sum /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar
+      register: hash_before
+
+    - name: Execute jndi script
+      shell: |
+        cd {{ target_dir }}
+        ./remove_jndi_lookup.sh > /home/ubuntu/logs/remove_jndi_lookup_{{ pod_name.stdout }}.log
+        cat /home/ubuntu/logs/remove_jndi_lookup_{{ pod_name.stdout }}.log
+      register: jndi
+
+    - name: md5sum after
+      shell: md5sum /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar
+      register: hash_after
+
+    - name: Restart elasticsearch service
+      shell: sudo service elasticsearch restart
+      become: true
+      when: hash_before.stdout != hash_after.stdout
+
+    - name: Check service health
+      shell: |
+        sleep 15s
+        /home/ubuntu/check-service-health.sh -p | grep Elastic -A 1
+      register: service_health
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "Logs"
+         - "{{ jndi.stdout_lines }}"
+         - "Service Health: "
+         - "{{ service_health.stdout_lines }}"
+         - "Hash Before : {{ hash_before.stdout }}"
+         - "Hash After : {{ hash_after.stdout }}"

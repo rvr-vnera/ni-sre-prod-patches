@@ -1,0 +1,8 @@
+[PROD]
+172.35.1.15
+172.35.1.187
+172.35.1.233
+172.35.0.110
+
+[PROD:vars]
+key_pair="~/.ssh/keys/vnera-infra-ec2.pem"

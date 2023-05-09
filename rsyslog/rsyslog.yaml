@@ -1,0 +1,52 @@
+---
+- name: Fix rsyslog
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: root
+  strategy: free
+  #serial: 1
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: fix rsyslog conf port number
+      lineinfile:
+        regexp: ".*0.0.0.0:-1"
+        path: /etc/rsyslog.d/loghost.conf
+        line: '*.* @0.0.0.0:100514'
+      register: conf_file
+    
+    - name: Restart syslogd service
+      shell: sudo systemctl restart rsyslog.service 
+
+    - name: File size Before
+      shell: du -sh /var/log/warn
+      register: before_size
+
+    - name: Empty log/warn file
+      shell: |
+        cat /dev/null > /var/log/warn
+      register: service_health
+
+    - name: File size After
+      shell: |
+        sleep 10s
+        du -sh /var/log/warn
+      register: after_size
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "Hostname: {{ ansible_hostname }}"
+         - "Size Before: "
+         - "{{ before_size.stdout_lines }}"
+         - "Size After: "
+         - "{{ after_size.stdout_lines }}"
+

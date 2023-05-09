@@ -1,0 +1,40 @@
+---
+- name: Use internal domain
+  hosts: "{{ HOSTS }}"
+  become: true
+  gather_facts: no
+  become_user: ubuntu
+  vars:
+    target_dir: /tmp/vrniop-1064
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Replace external domain with internal domain
+      replace:
+        path: /home/ubuntu/build-target/deployment/servers.info
+        regexp: 'pd.ni-onsaas.com'
+        replace: 'pd.ni-onsaas-internal.com'
+      register: file_change
+
+    - name: Restart launcher
+      shell: |
+        sudo service launcher-service restart
+        sleep 10s
+      when: file_change.changed
+
+    - name: Check new value in nginx
+      shell: |
+        sudo grep "pd.ni-onsaas" /etc/nginx/sites-available/vnera
+      register: new_domain
+
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ new_domain.stdout }}"

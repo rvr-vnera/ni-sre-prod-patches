@@ -1,0 +1,3416 @@
+
+PLAY [Scan vip service jar and patch] **************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.248]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+
+TASK [Create target dir] ***************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+
+TASK [Copy scan script] ****************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+
+TASK [Execute scan script] *************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+
+TASK [Fetch results] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.248               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+
+PLAY [Scan vip service jar and patch] **************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.248]
+ok: [172.35.0.110]
+ok: [172.45.1.230]
+ok: [172.45.1.56]
+ok: [172.45.1.239]
+ok: [172.45.1.116]
+ok: [172.35.0.59]
+ok: [172.35.0.130]
+ok: [172.35.0.54]
+ok: [172.35.0.62]
+ok: [172.35.0.138]
+ok: [172.35.1.226]
+ok: [172.35.0.250]
+ok: [172.35.0.120]
+ok: [172.35.0.60]
+ok: [172.35.1.240]
+ok: [172.35.1.228]
+ok: [172.35.1.235]
+ok: [172.35.0.93]
+ok: [172.35.0.82]
+ok: [172.35.0.201]
+ok: [172.35.0.183]
+ok: [172.35.0.192]
+ok: [172.35.0.184]
+ok: [172.35.0.182]
+ok: [172.35.0.9]
+ok: [172.35.0.20]
+ok: [172.35.0.157]
+ok: [172.35.0.207]
+ok: [172.35.0.218]
+ok: [172.35.0.145]
+ok: [172.55.1.29]
+ok: [172.35.0.158]
+ok: [172.35.0.121]
+ok: [172.35.0.109]
+ok: [172.35.0.102]
+ok: [172.35.0.178]
+ok: [172.35.0.65]
+ok: [172.35.0.196]
+ok: [172.35.0.74]
+ok: [172.35.0.7]
+ok: [172.35.0.214]
+ok: [172.35.0.147]
+ok: [172.35.0.61]
+ok: [172.35.0.197]
+ok: [172.35.0.204]
+ok: [172.35.0.73]
+ok: [172.35.0.69]
+ok: [172.35.0.232]
+ok: [172.35.0.58]
+ok: [172.35.0.219]
+ok: [172.35.0.122]
+ok: [172.35.0.162]
+ok: [172.35.0.5]
+ok: [172.35.0.37]
+ok: [172.35.0.52]
+ok: [172.35.0.167]
+ok: [172.35.0.79]
+ok: [172.35.0.43]
+ok: [172.35.0.150]
+ok: [172.35.0.164]
+ok: [172.35.0.159]
+ok: [172.35.0.200]
+ok: [172.35.0.222]
+ok: [172.35.0.254]
+ok: [172.35.0.175]
+ok: [172.35.0.240]
+ok: [172.35.0.51]
+ok: [172.35.0.253]
+ok: [172.35.0.249]
+ok: [172.35.0.35]
+ok: [172.35.0.206]
+ok: [172.35.0.8]
+ok: [172.35.0.114]
+ok: [172.35.1.202]
+ok: [172.35.1.171]
+ok: [172.35.0.217]
+ok: [172.35.0.191]
+ok: [172.35.0.137]
+ok: [172.75.1.59]
+ok: [172.105.21.52]
+ok: [172.105.21.197]
+ok: [172.95.1.244]
+ok: [172.95.1.83]
+ok: [172.95.1.36]
+ok: [172.95.1.146]
+ok: [172.95.1.43]
+ok: [172.35.0.134]
+ok: [172.70.0.248]
+ok: [172.70.0.224]
+ok: [172.70.0.196]
+ok: [172.70.0.228]
+ok: [172.70.0.198]
+ok: [172.70.0.206]
+ok: [172.70.0.214]
+ok: [172.70.0.217]
+ok: [172.70.0.200]
+ok: [172.70.0.197]
+ok: [172.35.0.168]
+ok: [172.35.0.66]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.35.0.54]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.1.226]
+changed: [172.35.1.240]
+changed: [172.35.1.228]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.182]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.55.1.29]
+changed: [172.35.0.102]
+changed: [172.35.0.178]
+changed: [172.35.0.65]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.214]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.232]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.122]
+changed: [172.35.0.5]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.43]
+changed: [172.35.0.167]
+changed: [172.35.0.150]
+changed: [172.35.0.79]
+changed: [172.35.0.164]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.200]
+changed: [172.35.0.254]
+changed: [172.35.0.175]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.0.191]
+changed: [172.35.1.171]
+changed: [172.35.0.217]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.146]
+changed: [172.70.0.228]
+changed: [172.70.0.248]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+changed: [172.35.0.168]
+changed: [172.70.0.214]
+changed: [172.35.0.66]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+
+TASK [Create target dir] ***************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.35.0.60]
+changed: [172.45.1.56]
+changed: [172.35.1.226]
+changed: [172.45.1.239]
+changed: [172.35.1.240]
+changed: [172.35.1.228]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.182]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.35.0.102]
+changed: [172.35.0.178]
+changed: [172.35.0.65]
+changed: [172.55.1.29]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.214]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.232]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.122]
+changed: [172.35.0.5]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.43]
+changed: [172.35.0.167]
+changed: [172.35.0.150]
+changed: [172.35.0.79]
+changed: [172.35.0.164]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.200]
+changed: [172.35.0.254]
+changed: [172.35.0.175]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.146]
+changed: [172.70.0.228]
+changed: [172.70.0.248]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.35.0.168]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.35.0.66]
+
+TASK [Copy scan script] ****************************************************************************************************************************************************************************************
+ok: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.1.226]
+changed: [172.35.1.240]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.35.1.228]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.182]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.35.0.102]
+changed: [172.35.0.178]
+changed: [172.35.0.65]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.214]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.232]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.122]
+changed: [172.35.0.5]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.43]
+changed: [172.35.0.167]
+changed: [172.35.0.150]
+changed: [172.35.0.79]
+changed: [172.55.1.29]
+changed: [172.35.0.164]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.200]
+changed: [172.35.0.254]
+changed: [172.35.0.175]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+changed: [172.35.1.171]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.146]
+changed: [172.70.0.228]
+changed: [172.70.0.248]
+changed: [172.70.0.224]
+changed: [172.95.1.43]
+changed: [172.95.1.36]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+
+TASK [Execute scan script] *************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.45.1.239]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.0.62]
+changed: [172.35.0.138]
+changed: [172.35.0.59]
+changed: [172.35.0.250]
+changed: [172.35.1.226]
+changed: [172.35.0.60]
+changed: [172.35.0.120]
+changed: [172.35.1.240]
+changed: [172.35.1.228]
+changed: [172.35.1.235]
+changed: [172.35.0.93]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.182]
+changed: [172.35.0.192]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.55.1.29]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.35.0.102]
+changed: [172.35.0.178]
+changed: [172.35.0.65]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.214]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.232]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.122]
+changed: [172.35.0.5]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.43]
+changed: [172.35.0.167]
+changed: [172.35.0.150]
+changed: [172.35.0.79]
+changed: [172.35.0.164]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.254]
+changed: [172.35.0.200]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.175]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.1.202]
+changed: [172.35.0.114]
+changed: [172.35.1.171]
+changed: [172.35.0.191]
+changed: [172.35.0.217]
+changed: [172.105.21.197]
+changed: [172.105.21.52]
+changed: [172.75.1.59]
+changed: [172.35.0.137]
+changed: [172.95.1.244]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.95.1.36]
+changed: [172.95.1.43]
+changed: [172.35.0.134]
+changed: [172.70.0.228]
+changed: [172.70.0.248]
+changed: [172.70.0.224]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+changed: [172.70.0.214]
+changed: [172.70.0.200]
+changed: [172.70.0.197]
+changed: [172.35.0.168]
+changed: [172.35.0.66]
+
+TASK [Fetch results] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.248]
+changed: [172.35.0.110]
+changed: [172.35.0.130]
+changed: [172.45.1.116]
+changed: [172.45.1.230]
+changed: [172.35.0.54]
+changed: [172.45.1.56]
+changed: [172.45.1.239]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.250]
+changed: [172.35.0.60]
+changed: [172.35.1.226]
+changed: [172.35.1.240]
+changed: [172.35.1.228]
+changed: [172.35.0.93]
+changed: [172.35.1.235]
+changed: [172.35.0.82]
+changed: [172.35.0.201]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.182]
+changed: [172.35.0.184]
+changed: [172.35.0.9]
+changed: [172.35.0.20]
+changed: [172.35.0.157]
+changed: [172.35.0.207]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.158]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.55.1.29]
+changed: [172.35.0.102]
+changed: [172.35.0.178]
+changed: [172.35.0.65]
+changed: [172.35.0.196]
+changed: [172.35.0.74]
+changed: [172.35.0.214]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.204]
+changed: [172.35.0.73]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.232]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.122]
+changed: [172.35.0.5]
+changed: [172.35.0.37]
+changed: [172.35.0.52]
+changed: [172.35.0.43]
+changed: [172.35.0.167]
+changed: [172.35.0.150]
+changed: [172.35.0.79]
+changed: [172.35.0.164]
+changed: [172.35.0.159]
+changed: [172.35.0.222]
+changed: [172.35.0.200]
+changed: [172.35.0.254]
+changed: [172.35.0.175]
+changed: [172.35.0.240]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.249]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.35.1.202]
+fatal: [172.35.1.171]: FAILED! => {"changed": true, "cmd": "sudo chown ubuntu:ubuntu /home/ubuntu/logs/vip_patchpdpod36.log\ncat /home/ubuntu/logs/vip_patch_pdpod36.log\n", "delta": "0:00:00.008459", "end": "2021-12-22 08:57:49.426808", "msg": "non-zero return code", "rc": 1, "start": "2021-12-22 08:57:49.418349", "stderr": "chown: cannot access '/home/ubuntu/logs/vip_patchpdpod36.log': No such file or directory\ncat: /home/ubuntu/logs/vip_patch_pdpod36.log: Permission denied", "stderr_lines": ["chown: cannot access '/home/ubuntu/logs/vip_patchpdpod36.log': No such file or directory", "cat: /home/ubuntu/logs/vip_patch_pdpod36.log: Permission denied"], "stdout": "", "stdout_lines": []}
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.137]
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.244]
+changed: [172.95.1.83]
+changed: [172.35.0.134]
+changed: [172.95.1.146]
+changed: [172.70.0.228]
+changed: [172.95.1.36]
+fatal: [172.95.1.43]: FAILED! => {"changed": true, "cmd": "sudo chown ubuntu:ubuntu /home/ubuntu/logs/vip_patchpdpod6002.log\ncat /home/ubuntu/logs/vip_patch_pdpod6002.log\n", "delta": "0:00:00.008696", "end": "2021-12-22 08:58:00.790096", "msg": "non-zero return code", "rc": 1, "start": "2021-12-22 08:58:00.781400", "stderr": "chown: cannot access '/home/ubuntu/logs/vip_patchpdpod6002.log': No such file or directory\ncat: /home/ubuntu/logs/vip_patch_pdpod6002.log: Permission denied", "stderr_lines": ["chown: cannot access '/home/ubuntu/logs/vip_patchpdpod6002.log': No such file or directory", "cat: /home/ubuntu/logs/vip_patch_pdpod6002.log: Permission denied"], "stdout": "", "stdout_lines": []}
+changed: [172.70.0.248]
+changed: [172.70.0.224]
+changed: [172.70.0.206]
+changed: [172.70.0.217]
+changed: [172.70.0.196]
+changed: [172.35.0.168]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.200]
+changed: [172.35.0.66]
+changed: [172.70.0.197]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.7] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.147] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.61] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.197] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.204] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.73] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.69] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.58] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.232] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.162] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.219] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.122] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.5] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.52] => {
+    "msg": [
+        "PodName: pdpod24", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.43] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.167] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.150] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.79] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.164] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.159] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.222] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.200] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.254] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: pdpod26", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: pdpod4000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.224] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        "Logs", 
+        [
+            "Patching /opt/hbck/hbase-hbck2.jar", 
+            "No JndiLookup found in /opt/hbck/hbase-hbck2.jar", 
+            "Patching /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "No JndiLookup found in /opt/datadog-agent/bin/agent/dist/jmx/jmxfetch.jar", 
+            "Patching /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "No JndiLookup found in /usr/lib/hadoop/lib/log4j-core-2.8.2.jar", 
+            "Patching /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /home/ubuntu/log4j_original/log4j-core-2.11.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/lib/log4j-core-2.12.1.jar", 
+            "Patching /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "No JndiLookup found in /home/ubuntu/deploy/flink/bin/bash-java-utils.jar", 
+            "Patching /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "No JndiLookup found in /home/ubuntu/build-target/hbase/hbase-hbck2.jar", 
+            "Patching /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "No JndiLookup found in /usr/share/elasticsearch/lib/log4j-core-2.11.1.jar", 
+            "Checking /home/ubuntu/build-target/vipservice/vipservice.jar", 
+            "Fixing /var/lib/tmp/vipscratch/jar-fixer/BOOT-INF/lib/log4j-core-2.14.1.jar", 
+            "Patched vipservice"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.102               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.122               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.147               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.150               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.157               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.159               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.162               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.164               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.167               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.197               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.200               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.204               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.219               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.222               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.232               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=7    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.254               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.43                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.5                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.52                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.58                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.61                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.69                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.7                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.73                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.79                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.228               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.116               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.196               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.146               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.244               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.36                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

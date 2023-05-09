@@ -1,0 +1,912 @@
+Using /home/ubuntu/Prod_Patches/vrniop-914/ansible.cfg as config file
+
+PLAY [Copy script to tmp] **************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.110]
+ok: [172.35.0.248]
+ok: [172.45.211.130]
+ok: [172.45.39.94]
+ok: [172.35.0.138]
+ok: [172.45.165.67]
+ok: [172.45.88.131]
+ok: [172.35.0.62]
+ok: [172.35.0.59]
+ok: [172.35.0.93]
+ok: [172.35.0.120]
+ok: [172.35.0.63]
+ok: [172.35.0.201]
+ok: [172.35.0.24]
+ok: [172.35.0.184]
+ok: [172.35.0.9]
+ok: [172.35.0.20]
+ok: [172.35.0.218]
+ok: [172.35.0.196]
+ok: [172.35.0.145]
+ok: [172.55.26.234]
+ok: [172.35.0.37]
+ok: [172.35.0.253]
+ok: [172.35.0.240]
+ok: [172.35.0.51]
+ok: [172.35.0.175]
+ok: [172.35.0.249]
+ok: [172.35.0.39]
+ok: [172.35.0.217]
+ok: [172.35.0.191]
+ok: [172.35.0.137]
+ok: [172.35.0.134]
+ok: [172.72.0.222]
+ok: [172.35.0.168]
+ok: [172.70.0.224]
+ok: [172.35.0.66]
+
+TASK [Create staging dir] **************************************************************************************************************************************************************************************
+changed: [172.35.0.248] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002647'
+  end: '2021-06-09 11:47:41.265047'
+  rc: 0
+  start: '2021-06-09 11:47:41.262400'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.110] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002470'
+  end: '2021-06-09 11:47:41.268504'
+  rc: 0
+  start: '2021-06-09 11:47:41.266034'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.138] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002609'
+  end: '2021-06-09 11:47:41.851763'
+  rc: 0
+  start: '2021-06-09 11:47:41.849154'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.62] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002585'
+  end: '2021-06-09 11:47:42.131649'
+  rc: 0
+  start: '2021-06-09 11:47:42.129064'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.59] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.004129'
+  end: '2021-06-09 11:47:42.403576'
+  rc: 0
+  start: '2021-06-09 11:47:42.399447'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.120] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.005003'
+  end: '2021-06-09 11:47:42.696289'
+  rc: 0
+  start: '2021-06-09 11:47:42.691286'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.93] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002382'
+  end: '2021-06-09 11:47:42.965123'
+  rc: 0
+  start: '2021-06-09 11:47:42.962741'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.201] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002450'
+  end: '2021-06-09 11:47:43.245451'
+  rc: 0
+  start: '2021-06-09 11:47:43.243001'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.63] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002260'
+  end: '2021-06-09 11:47:43.513728'
+  rc: 0
+  start: '2021-06-09 11:47:43.511468'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.24] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002888'
+  end: '2021-06-09 11:47:43.779133'
+  rc: 0
+  start: '2021-06-09 11:47:43.776245'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.184] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003011'
+  end: '2021-06-09 11:47:44.063063'
+  rc: 0
+  start: '2021-06-09 11:47:44.060052'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.45.211.130] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002310'
+  end: '2021-06-09 11:47:43.877448'
+  rc: 0
+  start: '2021-06-09 11:47:43.875138'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.45.165.67] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002511'
+  end: '2021-06-09 11:47:43.986626'
+  rc: 0
+  start: '2021-06-09 11:47:43.984115'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.9] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002439'
+  end: '2021-06-09 11:47:44.334371'
+  rc: 0
+  start: '2021-06-09 11:47:44.331932'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.45.39.94] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002522'
+  end: '2021-06-09 11:47:44.097737'
+  rc: 0
+  start: '2021-06-09 11:47:44.095215'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.20] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003137'
+  end: '2021-06-09 11:47:44.463505'
+  rc: 0
+  start: '2021-06-09 11:47:44.460368'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.45.88.131] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002368'
+  end: '2021-06-09 11:47:44.179049'
+  rc: 0
+  start: '2021-06-09 11:47:44.176681'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.218] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002521'
+  end: '2021-06-09 11:47:44.694945'
+  rc: 0
+  start: '2021-06-09 11:47:44.692424'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.145] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002464'
+  end: '2021-06-09 11:47:44.804750'
+  rc: 0
+  start: '2021-06-09 11:47:44.802286'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.196] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002434'
+  end: '2021-06-09 11:47:44.926768'
+  rc: 0
+  start: '2021-06-09 11:47:44.924334'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.37] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003164'
+  end: '2021-06-09 11:47:45.324990'
+  rc: 0
+  start: '2021-06-09 11:47:45.321826'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.175] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.004330'
+  end: '2021-06-09 11:47:45.402967'
+  rc: 0
+  start: '2021-06-09 11:47:45.398637'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.240] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002397'
+  end: '2021-06-09 11:47:45.507455'
+  rc: 0
+  start: '2021-06-09 11:47:45.505058'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.253] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002607'
+  end: '2021-06-09 11:47:45.628026'
+  rc: 0
+  start: '2021-06-09 11:47:45.625419'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.51] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002199'
+  end: '2021-06-09 11:47:45.721445'
+  rc: 0
+  start: '2021-06-09 11:47:45.719246'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.249] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003309'
+  end: '2021-06-09 11:47:45.853684'
+  rc: 0
+  start: '2021-06-09 11:47:45.850375'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.39] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003548'
+  end: '2021-06-09 11:47:45.966304'
+  rc: 0
+  start: '2021-06-09 11:47:45.962756'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.217] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002190'
+  end: '2021-06-09 11:47:46.089095'
+  rc: 0
+  start: '2021-06-09 11:47:46.086905'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.191] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003227'
+  end: '2021-06-09 11:47:46.333837'
+  rc: 0
+  start: '2021-06-09 11:47:46.330610'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.137] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002211'
+  end: '2021-06-09 11:47:46.432339'
+  rc: 0
+  start: '2021-06-09 11:47:46.430128'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.134] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003065'
+  end: '2021-06-09 11:47:46.559836'
+  rc: 0
+  start: '2021-06-09 11:47:46.556771'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.55.26.234] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002377'
+  end: '2021-06-09 11:47:46.482310'
+  rc: 0
+  start: '2021-06-09 11:47:46.479933'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.168] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002658'
+  end: '2021-06-09 11:47:46.800407'
+  rc: 0
+  start: '2021-06-09 11:47:46.797749'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.35.0.66] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.003640'
+  end: '2021-06-09 11:47:46.900959'
+  rc: 0
+  start: '2021-06-09 11:47:46.897319'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.70.0.224] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002428'
+  end: '2021-06-09 11:47:47.607869'
+  rc: 0
+  start: '2021-06-09 11:47:47.605441'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+changed: [172.72.0.222] => changed=true 
+  cmd: |-
+    mkdir -p "/tmp/914-patch"
+  delta: '0:00:00.002513'
+  end: '2021-06-09 11:47:48.923372'
+  rc: 0
+  start: '2021-06-09 11:47:48.920859'
+  stderr: ''
+  stderr_lines: <omitted>
+  stdout: ''
+  stdout_lines: <omitted>
+
+TASK [Stage files] *********************************************************************************************************************************************************************************************
+changed: [172.35.0.110] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239269.54-244499430154666/source
+  state: file
+  uid: 999
+changed: [172.35.0.248] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239269.43-29797233919639/source
+  state: file
+  uid: 999
+changed: [172.35.0.138] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239270.71-261996416340222/source
+  state: file
+  uid: 999
+changed: [172.35.0.62] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239271.4-225355406702575/source
+  state: file
+  uid: 999
+changed: [172.35.0.59] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239272.05-84722604405135/source
+  state: file
+  uid: 999
+changed: [172.35.0.120] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239272.72-242264686284813/source
+  state: file
+  uid: 999
+changed: [172.35.0.93] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239273.41-89560181589814/source
+  state: file
+  uid: 999
+changed: [172.35.0.201] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239274.06-46560967022020/source
+  state: file
+  uid: 999
+changed: [172.35.0.63] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239274.77-150609610638241/source
+  state: file
+  uid: 999
+changed: [172.35.0.24] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239275.42-114726450766749/source
+  state: file
+  uid: 999
+changed: [172.35.0.184] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239276.13-239352421649098/source
+  state: file
+  uid: 999
+changed: [172.35.0.9] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239276.81-281406114958829/source
+  state: file
+  uid: 999
+changed: [172.35.0.20] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239277.47-205435930093510/source
+  state: file
+  uid: 999
+changed: [172.45.211.130] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239269.66-221099146701625/source
+  state: file
+  uid: 999
+changed: [172.45.39.94] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239269.88-231963022215858/source
+  state: file
+  uid: 998
+changed: [172.45.165.67] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239269.77-224247423941858/source
+  state: file
+  uid: 999
+changed: [172.35.0.218] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239278.24-147505661946158/source
+  state: file
+  uid: 999
+changed: [172.35.0.145] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239278.36-189085097143348/source
+  state: file
+  uid: 999
+changed: [172.45.88.131] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239270.59-136747197249461/source
+  state: file
+  uid: 998
+changed: [172.35.0.196] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239278.48-176933714066805/source
+  state: file
+  uid: 999
+changed: [172.35.0.37] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.0-7404920354415/source
+  state: file
+  uid: 998
+changed: [172.35.0.175] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.1-34193224497066/source
+  state: file
+  uid: 998
+changed: [172.35.0.240] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.21-51247082501447/source
+  state: file
+  uid: 998
+changed: [172.35.0.253] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.32-125851553453235/source
+  state: file
+  uid: 998
+changed: [172.35.0.51] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.7-144305442167670/source
+  state: file
+  uid: 998
+changed: [172.35.0.249] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.84-87623129939814/source
+  state: file
+  uid: 999
+changed: [172.35.0.39] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239279.94-51272136085428/source
+  state: file
+  uid: 998
+changed: [172.35.0.217] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239280.07-109727166685843/source
+  state: file
+  uid: 999
+changed: [172.35.0.191] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239280.51-209647189070013/source
+  state: file
+  uid: 999
+changed: [172.35.0.137] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239280.66-27691112159926/source
+  state: file
+  uid: 999
+changed: [172.35.0.134] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239280.78-53563470992107/source
+  state: file
+  uid: 999
+changed: [172.35.0.168] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239281.37-49284210189583/source
+  state: file
+  uid: 999
+changed: [172.35.0.66] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 999
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239281.48-159574624231782/source
+  state: file
+  uid: 999
+changed: [172.70.0.224] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239281.2-132993503133538/source
+  state: file
+  uid: 998
+changed: [172.55.26.234] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239278.13-64394844153942/source
+  state: file
+  uid: 998
+changed: [172.72.0.222] => changed=true 
+  checksum: e7b9e88e5bec37e0c20ed043e35f2ea16593ecd3
+  dest: /tmp/914-patch/capping.sh
+  gid: 998
+  group: ubuntu
+  md5sum: db780f6d3f43a87c01c191054e082393
+  mode: '0755'
+  owner: ubuntu
+  size: 804
+  src: /var/tmp/ansible-tmp-1623239280.36-2417257066163/source
+  state: file
+  uid: 998
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.110               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.196               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.217               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.253               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.39                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.63                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.165.67              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.211.130             : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.39.94               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.88.131              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.26.234              : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.224               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.72.0.222               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

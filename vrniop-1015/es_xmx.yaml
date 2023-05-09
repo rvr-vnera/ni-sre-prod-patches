@@ -1,0 +1,43 @@
+---
+- name: ES XMX
+  hosts: "{{ HOSTS }}"
+  become: true
+  gather_facts: no
+  become_user: ubuntu
+  vars:
+    xlarge_file: "/home/ubuntu/build-target/server-config-mgmt/xlarge.properties"
+    xmx_value: 8000m
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2
+      register: pod_name
+
+    - name: Modify es xmx value
+      lineinfile:
+        regexp: "^es_xmx"
+        path: "{{ xlarge_file }}"
+        line: "es_xmx = {{ xmx_value }}"
+
+   - name: Verify xlarge prop file
+      shell: |
+        cat {{ xlarge_file }} | grep es_xmx
+      register: es_xmx_new_value
+      ignore_errors: yes
+
+    - name: Run server reconfiguration
+      shell: |
+        cd /home/ubuntu/build-target/server-config-mgmt
+        ./run-server-config-mgmt.sh /home/ubuntu/build-target/server-config-mgmt/server-config.configuration /home/ubuntu/build-target/elasticsearch
+      ignore_errors: yes
+
+    - name: Check if the value is applied to ES
+
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+         - "New value on xlarge.properties : {{ es_xmx_new_value }}"

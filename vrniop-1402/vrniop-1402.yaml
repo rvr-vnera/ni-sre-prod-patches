@@ -1,0 +1,68 @@
+---
+- name: Apply restapi patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    rest_api_jar: "restapilayer-0.001-SNAPSHOT.jar"
+    backup_dir: /tmp/vrniop1402
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    rest_api_root_dir: /home/ubuntu/build-target/restapilayer
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Create backup backup_dir
+      shell: |
+        mkdir -p "{{ backup_dir }}"
+
+    - name: Copy jar file
+      copy:
+        src: "files/{{ rest_api_jar }}"
+        dest: "{{ backup_dir }}/{{ rest_api_jar }}"
+        mode: '640'
+
+    - name: Check md5sum oldfile
+      shell: |
+        md5sum "{{ rest_api_root_dir }}"/"{{ rest_api_jar }}"
+      register: old_file_md5
+      ignore_errors: true
+
+    - name: Take backup
+      shell: |
+        mkdir -p "{{backup_dir}}"/old
+        cp "{{ rest_api_root_dir }}/{{ rest_api_jar }}" "{{ backup_dir }}"/old
+
+    - name: Replace jar in build-target
+      shell: |
+        cp "{{ backup_dir }}"/"{{ rest_api_jar }}" "{{ rest_api_root_dir }}"/"{{ rest_api_jar }}"
+
+    - name: Restart restapi service
+      shell: sudo service restapilayer-service restart
+      become: true
+
+    - name: Check restapi uptime
+      shell: |
+        sleep 15s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 Restapilayer
+      register: restapi
+      ignore_errors: true
+
+    - name: Check md5sum
+      shell: |
+        md5sum "{{ rest_api_root_dir }}"/"{{ rest_api_jar }}"
+      register: new_file_md5
+      ignore_errors: true
+
+    - name: Print result
+      debug:
+        msg: 
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ old_file_md5.stdout }}"
+         - "{{ restapi.stdout_lines }}"
+         - "{{ new_file_md5.stdout }}"

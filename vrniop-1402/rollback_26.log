@@ -1,0 +1,189 @@
+
+PLAY [Apply restapi patch] *************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.175]
+ok: [172.35.0.222]
+ok: [172.35.0.167]
+ok: [172.35.0.254]
+ok: [172.35.0.159]
+ok: [172.35.0.164]
+ok: [172.35.0.79]
+ok: [172.35.0.43]
+ok: [172.35.0.200]
+ok: [172.35.0.150]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.222]
+changed: [172.35.0.167]
+changed: [172.35.0.175]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.164]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.150]
+
+TASK [Replace jar in build-target] *****************************************************************************************************************************************************************************
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.164]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.150]
+
+TASK [Restart restapi service] *********************************************************************************************************************************************************************************
+changed: [172.35.0.159]
+changed: [172.35.0.254]
+changed: [172.35.0.222]
+changed: [172.35.0.79]
+changed: [172.35.0.167]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.164]
+changed: [172.35.0.150]
+changed: [172.35.0.200]
+
+TASK [Check restapi uptime] ************************************************************************************************************************************************************************************
+changed: [172.35.0.222]
+changed: [172.35.0.167]
+changed: [172.35.0.159]
+changed: [172.35.0.254]
+changed: [172.35.0.175]
+changed: [172.35.0.43]
+changed: [172.35.0.79]
+changed: [172.35.0.200]
+changed: [172.35.0.164]
+changed: [172.35.0.150]
+
+TASK [Check md5sum] ********************************************************************************************************************************************************************************************
+changed: [172.35.0.167]
+changed: [172.35.0.222]
+changed: [172.35.0.175]
+changed: [172.35.0.254]
+changed: [172.35.0.159]
+changed: [172.35.0.164]
+changed: [172.35.0.79]
+changed: [172.35.0.43]
+changed: [172.35.0.200]
+changed: [172.35.0.150]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.167] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:25"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.222] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:29"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:25"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.254] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:30"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.159] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:31"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.164] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.79] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:42"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.43] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:40"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.200] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:32"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.150] => {
+    "msg": [
+        "PodName: pdpod26", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "6e951cc588371ced267823bc0932e4f6  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.150               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.159               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.164               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.167               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.175               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.200               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.222               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.254               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.43                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.79                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

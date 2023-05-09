@@ -1,0 +1,40 @@
+---
+- name: Apply dd-agent patch
+  hosts: "{{ HOSTS }}"
+  strategy: free
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    infra_base: /home/ubuntu/build-target/infra-base
+
+  tasks:
+    #- name: Pod ID
+      #shell: |
+       # cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      #register: pod_name
+
+    - name: Modify configure dd script
+      copy:
+        src: files/configure-datadog.sh
+        dest: '{{ infra_base }}/telemetry/configure-datadog.sh'
+        mode: '750'
+      register: fcopy
+
+    - name: Add dir param
+      lineinfile:
+        path: "{{ infra_base }}/{{ item }}"
+        line: DATADOG_CONF_DIRECTORY="/etc/datadog-agent/conf.d/"
+        backup: yes
+      with_items:
+        - props.sh
+        - props.sh.template
+      register: settings
+   
+    - name: Force Reconfigure dd agent
+      shell: |
+        sudo bash -c "source /home/ubuntu/build-target/infra-base/telemetry/configure-datadog.sh /home/ubuntu/build-target/infra-base true ; main_configure"
+      register: dd_reconfigure
+      when: fcopy.changed or settings.changed 

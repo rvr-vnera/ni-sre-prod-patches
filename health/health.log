@@ -1,0 +1,1041 @@
+
+PLAY [Apply restapi patch] *************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.75.1.59]
+ok: [172.105.21.197]
+ok: [172.105.21.52]
+ok: [172.95.1.36]
+ok: [172.95.1.146]
+ok: [172.95.1.83]
+ok: [172.55.1.29]
+ok: [172.95.1.244]
+ok: [172.45.1.239]
+ok: [172.95.1.43]
+ok: [172.35.0.207]
+ok: [172.35.0.183]
+ok: [172.45.1.230]
+ok: [172.45.1.56]
+ok: [172.35.0.35]
+ok: [172.45.1.116]
+ok: [172.35.0.217]
+ok: [172.35.0.8]
+ok: [172.35.0.249]
+ok: [172.35.0.253]
+ok: [172.35.0.110]
+ok: [172.35.0.74]
+ok: [172.35.0.114]
+ok: [172.35.0.248]
+ok: [172.35.1.235]
+ok: [172.35.0.120]
+ok: [172.35.0.218]
+ok: [172.35.0.51]
+ok: [172.35.0.138]
+ok: [172.35.1.171]
+ok: [172.35.0.66]
+ok: [172.35.0.240]
+ok: [172.35.1.226]
+ok: [172.35.0.250]
+ok: [172.35.0.196]
+ok: [172.35.0.93]
+ok: [172.35.0.184]
+ok: [172.35.1.120]
+ok: [172.35.0.192]
+ok: [172.35.1.228]
+ok: [172.35.0.168]
+ok: [172.35.0.201]
+ok: [172.35.0.191]
+ok: [172.35.0.214]
+ok: [172.35.0.206]
+ok: [172.35.0.134]
+ok: [172.35.1.240]
+ok: [172.35.0.9]
+ok: [172.35.0.182]
+ok: [172.35.1.202]
+ok: [172.35.0.20]
+ok: [172.35.0.60]
+ok: [172.35.0.62]
+ok: [172.35.0.130]
+ok: [172.35.0.59]
+ok: [172.35.0.82]
+ok: [172.35.0.157]
+ok: [172.35.0.54]
+ok: [172.35.0.137]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.55.1.29]
+changed: [172.95.1.43]
+changed: [172.95.1.244]
+changed: [172.45.1.239]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.45.1.116]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.218]
+changed: [172.35.0.51]
+changed: [172.35.1.226]
+changed: [172.35.0.66]
+changed: [172.35.0.93]
+changed: [172.35.0.250]
+changed: [172.35.0.20]
+changed: [172.35.0.138]
+changed: [172.35.0.196]
+changed: [172.35.1.171]
+changed: [172.35.0.59]
+changed: [172.35.0.240]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.191]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.201]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.1.240]
+changed: [172.35.0.9]
+changed: [172.35.0.182]
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Check service health es] *********************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+changed: [172.95.1.146]
+changed: [172.95.1.83]
+changed: [172.55.1.29]
+changed: [172.95.1.43]
+changed: [172.45.1.239]
+changed: [172.95.1.244]
+changed: [172.35.0.207]
+changed: [172.35.0.183]
+changed: [172.45.1.230]
+changed: [172.45.1.56]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.45.1.116]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.253]
+changed: [172.35.0.74]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+changed: [172.35.0.120]
+changed: [172.35.1.235]
+changed: [172.35.0.51]
+changed: [172.35.0.218]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.1.171]
+changed: [172.35.1.226]
+changed: [172.35.0.240]
+changed: [172.35.0.250]
+changed: [172.35.0.93]
+changed: [172.35.0.20]
+changed: [172.35.0.196]
+changed: [172.35.0.59]
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+changed: [172.35.0.192]
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+changed: [172.35.0.214]
+changed: [172.35.0.134]
+changed: [172.35.0.206]
+changed: [172.35.0.201]
+changed: [172.35.1.240]
+changed: [172.35.0.182]
+changed: [172.35.0.9]
+changed: [172.35.0.60]
+changed: [172.35.1.202]
+changed: [172.35.0.62]
+changed: [172.35.0.82]
+changed: [172.35.0.130]
+changed: [172.35.0.137]
+changed: [172.35.0.157]
+changed: [172.35.0.54]
+
+TASK [Check service health policy] *****************************************************************************************************************************************************************************
+changed: [172.75.1.59]
+changed: [172.105.21.52]
+changed: [172.105.21.197]
+changed: [172.95.1.36]
+fatal: [172.95.1.146]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.967467", "end": "2022-01-25 15:28:14.035014", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:12.067547", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.95.1.83]
+changed: [172.55.1.29]
+changed: [172.45.1.239]
+fatal: [172.95.1.244]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:02.090824", "end": "2022-01-25 15:28:19.323297", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:17.232473", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.207]
+changed: [172.45.1.230]
+changed: [172.95.1.43]
+changed: [172.45.1.56]
+fatal: [172.35.0.183]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:02.012088", "end": "2022-01-25 15:28:24.269086", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:22.256998", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.45.1.116]
+changed: [172.35.0.35]
+changed: [172.35.0.217]
+changed: [172.35.0.8]
+changed: [172.35.0.249]
+changed: [172.35.0.110]
+changed: [172.35.0.74]
+changed: [172.35.0.253]
+changed: [172.35.0.114]
+changed: [172.35.0.248]
+fatal: [172.35.0.120]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.860184", "end": "2022-01-25 15:28:29.372109", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:27.511925", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+fatal: [172.35.1.235]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.993121", "end": "2022-01-25 15:28:29.760944", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:27.767823", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+fatal: [172.35.0.218]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.976466", "end": "2022-01-25 15:28:30.305169", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:28.328703", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.51]
+changed: [172.35.0.66]
+fatal: [172.35.0.138]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.982013", "end": "2022-01-25 15:28:31.653433", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:29.671420", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+fatal: [172.35.1.226]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.390493", "end": "2022-01-25 15:28:32.005668", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:30.615175", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.1.171]
+changed: [172.35.0.240]
+fatal: [172.35.0.93]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.999084", "end": "2022-01-25 15:28:33.187191", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:31.188107", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+fatal: [172.35.0.250]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.959092", "end": "2022-01-25 15:28:33.914262", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:31.955170", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.20]
+fatal: [172.35.0.196]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:02.053019", "end": "2022-01-25 15:28:34.504174", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:32.451155", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.191]
+changed: [172.35.0.184]
+changed: [172.35.1.120]
+fatal: [172.35.0.192]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.695922", "end": "2022-01-25 15:28:36.499172", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:34.803250", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.1.228]
+changed: [172.35.0.168]
+fatal: [172.35.0.201]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:02.068962", "end": "2022-01-25 15:28:38.757750", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:36.688788", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+fatal: [172.35.0.214]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:02.164309", "end": "2022-01-25 15:28:38.971545", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:36.807236", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.59]
+changed: [172.35.0.206]
+fatal: [172.35.1.240]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.796514", "end": "2022-01-25 15:28:40.848667", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:39.052153", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.9]
+changed: [172.35.0.134]
+fatal: [172.35.0.182]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.857708", "end": "2022-01-25 15:28:41.524447", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:39.666739", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.1.202]
+changed: [172.35.0.60]
+changed: [172.35.0.62]
+fatal: [172.35.0.130]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:01.860190", "end": "2022-01-25 15:28:43.715434", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:41.855244", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+changed: [172.35.0.82]
+changed: [172.35.0.137]
+changed: [172.35.0.54]
+fatal: [172.35.0.157]: FAILED! => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 PolicyManager\n", "delta": "0:00:04.698345", "end": "2022-01-25 15:28:48.045354", "msg": "non-zero return code", "rc": 1, "start": "2022-01-25 15:28:43.347009", "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+...ignoring
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.105.21.52] => {
+    "msg": [
+        "PodName: pdpod4000", 
+        [
+            "\u001b[00;31mProblem: ElasticSearch javaservice is not running.\u001b[00m", 
+            "\u001b[00;32mHMaster is running\u001b[00m"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:03:23:28"
+        ]
+    ]
+}
+ok: [172.105.21.197] => {
+    "msg": [
+        "PodName: pdpod4001", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:04:18:18"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:04:13:32"
+        ]
+    ]
+}
+ok: [172.75.1.59] => {
+    "msg": [
+        "PodName: pdpod5000", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:26:02"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:20:17"
+        ]
+    ]
+}
+ok: [172.95.1.36] => {
+    "msg": [
+        "PodName: pdpod6001", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:26:07"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:21:34"
+        ]
+    ]
+}
+ok: [172.95.1.146] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:09:24"
+        ], 
+        []
+    ]
+}
+ok: [172.95.1.83] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:09:27"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:04:26"
+        ]
+    ]
+}
+ok: [172.95.1.43] => {
+    "msg": [
+        "PodName: pdpod6002", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:28:52"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:24:11"
+        ]
+    ]
+}
+ok: [172.95.1.244] => {
+    "msg": [
+        "PodName: pdpod6000", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:09:29"
+        ], 
+        []
+    ]
+}
+ok: [172.55.1.29] => {
+    "msg": [
+        "PodName: pdpod2001", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:04:19:24"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:04:14:57"
+        ]
+    ]
+}
+ok: [172.45.1.239] => {
+    "msg": [
+        "PodName: pdpod1003", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:26:21"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:21:15"
+        ]
+    ]
+}
+ok: [172.45.1.230] => {
+    "msg": [
+        "PodName: pdpod1001", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:09:36:25"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:48:11"
+        ]
+    ]
+}
+ok: [172.45.1.56] => {
+    "msg": [
+        "PodName: pdpod1002", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:25:21"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:20:40"
+        ]
+    ]
+}
+ok: [172.45.1.116] => {
+    "msg": [
+        "PodName: pdpod1000", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:09:10"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:12:41"
+        ]
+    ]
+}
+ok: [172.35.0.207] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:05:26"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:00:03"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:56:19"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.35] => {
+    "msg": [
+        "PodName: pdpod32", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:27:00"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:21:27"
+        ]
+    ]
+}
+ok: [172.35.0.217] => {
+    "msg": [
+        "PodName: PDPOD4", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:05:13:35"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:56:21"
+        ]
+    ]
+}
+ok: [172.35.0.8] => {
+    "msg": [
+        "PodName: pdpod33", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:28:35"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:23:39"
+        ]
+    ]
+}
+ok: [172.35.0.249] => {
+    "msg": [
+        "PodName: PDPOD3", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:05:47:08"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:23:07"
+        ]
+    ]
+}
+ok: [172.35.0.110] => {
+    "msg": [
+        "PodName: pdpod10", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:45:29"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:51:50"
+        ]
+    ]
+}
+ok: [172.35.0.253] => {
+    "msg": [
+        "PodName: pdpod28", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:17:33"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:12:06"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:09:21:42"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:09:17:04"
+        ]
+    ]
+}
+ok: [172.35.0.114] => {
+    "msg": [
+        "PodName: pdpod34", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:27:48"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:22:01"
+        ]
+    ]
+}
+ok: [172.35.0.248] => {
+    "msg": [
+        "PodName: PDPOD1", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:09:29:51"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:19:32"
+        ]
+    ]
+}
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:07:11"
+        ], 
+        []
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:55:59"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:05:32"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.51] => {
+    "msg": [
+        "PodName: pdpod29", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:25:15"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:19:45"
+        ]
+    ]
+}
+ok: [172.35.0.66] => {
+    "msg": [
+        "PodName: pdpod9", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:00:46"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:43:15"
+        ]
+    ]
+}
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:51:13"
+        ], 
+        []
+    ]
+}
+ok: [172.35.1.171] => {
+    "msg": [
+        "PodName: pdpod36", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:28:50"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:24:19"
+        ]
+    ]
+}
+ok: [172.35.1.226] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:55:03"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.240] => {
+    "msg": [
+        "PodName: pdpod27", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:22:37"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:18:11"
+        ]
+    ]
+}
+ok: [172.35.0.93] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:57:41"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.250] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:07:27"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.20] => {
+    "msg": [
+        "PodName: pdpod20", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:40:36"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:12:14"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:09:26:13"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.59] => {
+    "msg": [
+        "PodName: pdpod13", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:05:25:56"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:13:10"
+        ]
+    ]
+}
+ok: [172.35.0.191] => {
+    "msg": [
+        "PodName: pdpod5", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:06:35:29"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:38:38"
+        ]
+    ]
+}
+ok: [172.35.0.184] => {
+    "msg": [
+        "PodName: pdpod19platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:03:33"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:21:56"
+        ]
+    ]
+}
+ok: [172.35.1.120] => {
+    "msg": [
+        "PodName: pdpod37", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:26:21"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:19:12"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:56:35"
+        ], 
+        []
+    ]
+}
+ok: [172.35.1.228] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:44:31"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:46:50"
+        ]
+    ]
+}
+ok: [172.35.0.168] => {
+    "msg": [
+        "PodName: pdpod8", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:07:20"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:21:51"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:56:36"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:09:24:32"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.134] => {
+    "msg": [
+        "PodName: pdpod7", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:05:43:44"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:09:03"
+        ]
+    ]
+}
+ok: [172.35.0.206] => {
+    "msg": [
+        "PodName: pdpod31", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:30:25"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:24:51"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:55:11"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.9] => {
+    "msg": [
+        "PodName: PDPOD2", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:05:03:29"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:14:39"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:56:42"
+        ], 
+        []
+    ]
+}
+ok: [172.35.1.202] => {
+    "msg": [
+        "PodName: pdpod35", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:26:35"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:22:08"
+        ]
+    ]
+}
+ok: [172.35.0.60] => {
+    "msg": [
+        "PodName: pdpod14platform", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:07:27"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:00:44"
+        ]
+    ]
+}
+ok: [172.35.0.62] => {
+    "msg": [
+        "PodName: pdpod12", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:55:30"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:48:41"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:56:32"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:50:08"
+        ]
+    ]
+}
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:10:55:50"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.137] => {
+    "msg": [
+        "PodName: pdpod6", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:03:07"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:10:59:31"
+        ]
+    ]
+}
+ok: [172.35.0.157] => {
+    "msg": [
+        "PodName: pdpod21", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:05:46"
+        ], 
+        []
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        [
+            "\u001b[00;32mElasticSearch is running\u001b[00m", 
+            "Uptime:11:01:19"
+        ], 
+        [
+            "\u001b[00;32mPolicyManager is running\u001b[00m", 
+            "Uptime:11:01:33"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.105.21.197             : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.105.21.52              : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.110               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.114               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.120               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.130               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.134               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.137               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.138               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.157               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.168               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.183               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.184               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.191               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.196               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.20                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.201               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.206               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.207               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.217               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.218               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.240               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.248               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.249               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.250               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.0.253               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.35                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.59                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.60                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.62                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.8                 : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.9                 : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.93                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.1.120               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.171               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.202               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.226               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.1.228               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.35.1.240               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.45.1.116               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.230               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.239               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.45.1.56                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.55.1.29                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.75.1.59                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.146               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.95.1.244               : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=1   
+172.95.1.36                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.43                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.95.1.83                : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

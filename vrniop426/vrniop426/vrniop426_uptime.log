@@ -1,0 +1,40 @@
+Using /home/ubuntu/.ansible.cfg as config file
+
+PLAY [Apply saasservice patch] *********************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.182]
+ok: [172.35.0.26]
+ok: [172.35.0.28]
+ok: [172.35.0.221]
+ok: [172.35.0.127]
+ok: [172.35.0.49]
+ok: [172.35.0.79]
+ok: [172.35.0.71]
+ok: [172.35.0.142]
+ok: [172.35.0.216]
+
+TASK [Check uptime] ********************************************************************************************************************************************************************************************
+changed: [172.35.0.182] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.779725", "end": "2020-08-20 13:48:38.183257", "rc": 0, "start": "2020-08-20 13:48:36.403532", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:31", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:31"]}
+changed: [172.35.0.28] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.917787", "end": "2020-08-20 13:48:38.233899", "rc": 0, "start": "2020-08-20 13:48:36.316112", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:31", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:31"]}
+changed: [172.35.0.26] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:02.207525", "end": "2020-08-20 13:48:38.427087", "rc": 0, "start": "2020-08-20 13:48:36.219562", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:30", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:30"]}
+changed: [172.35.0.127] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:02.528485", "end": "2020-08-20 13:48:38.746690", "rc": 0, "start": "2020-08-20 13:48:36.218205", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:31", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:31"]}
+changed: [172.35.0.221] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:02.834584", "end": "2020-08-20 13:48:39.048002", "rc": 0, "start": "2020-08-20 13:48:36.213418", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:30", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:30"]}
+changed: [172.35.0.49] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.851776", "end": "2020-08-20 13:48:40.332893", "rc": 0, "start": "2020-08-20 13:48:38.481117", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:26", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:26"]}
+changed: [172.35.0.79] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.961730", "end": "2020-08-20 13:48:40.349067", "rc": 0, "start": "2020-08-20 13:48:38.387337", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:26", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:26"]}
+changed: [172.35.0.142] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.847388", "end": "2020-08-20 13:48:40.479613", "rc": 0, "start": "2020-08-20 13:48:38.632225", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:26", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:26"]}
+changed: [172.35.0.71] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.846492", "end": "2020-08-20 13:48:40.803202", "rc": 0, "start": "2020-08-20 13:48:38.956710", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:26", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:26"]}
+changed: [172.35.0.216] => {"changed": true, "cmd": "/home/ubuntu/check-service-health.sh -u | grep -A 1 SaasListener", "delta": "0:00:01.956541", "end": "2020-08-20 13:48:41.209579", "rc": 0, "start": "2020-08-20 13:48:39.253038", "stderr": "", "stderr_lines": [], "stdout": "\u001b[00;32mSaasListener is running\u001b[00m\nUptime:02:27", "stdout_lines": ["\u001b[00;32mSaasListener is running\u001b[00m", "Uptime:02:27"]}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.127               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.142               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.216               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.221               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.26                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.28                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.49                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.71                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.79                : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

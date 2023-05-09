@@ -1,0 +1,5 @@
+[PROD_PODS]
+
+
+[PROD_PODS:vars]
+key_pair="~/.ssh/keys/vnera-infra-ec2.pem"

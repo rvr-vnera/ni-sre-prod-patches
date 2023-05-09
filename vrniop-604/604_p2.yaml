@@ -1,0 +1,24 @@
+---
+- name: Apply UI patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    target_dir: /usr/share/nginx/www
+    backup_dir: /usr/share/nginx/www_before604
+    staging_dir: /tmp/604-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Verify user login
+      shell: |
+        whoami
+        cd ~
+        ls -l
+
+    - name: Untar files to target_dir
+      shell: |
+        sudo tar -xzvf "{{ staging_dir }}"/ui-patch.tgz -C "{{ target_dir }}"
+        sudo chown -R www-data:www-data "{{ target_dir }}"
+      become: true

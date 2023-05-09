@@ -1,0 +1,32 @@
+---
+- name: Flow cache load time
+  hosts: "{{ HOSTS }}"
+  become: true
+  gather_facts: no
+  become_user: ubuntu
+  vars:
+    target_dir: /usr/share/nginx/www
+    backup_dir: /usr/share/nginx/www_before_vrniop902
+    staging_dir: /tmp/902-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2
+      register: pod_name
+
+    - name: Flow cache data
+      shell: |
+        grep -roPh  "bootstrapped \K.*" /home/ubuntu/logs/restapilayer/
+      register: restapi
+      ignore_errors: yes
+      become: true
+
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+         - "Flowstore bootstrap time"
+         - "{{ restapi.stdout_lines }}"

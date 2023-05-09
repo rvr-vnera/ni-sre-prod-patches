@@ -1,0 +1,15 @@
+---
+- name: Apply samzaservice patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  serial: 1
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Execute migrator script
+      shell: /tmp/migrator.sh > /tmp/metric_migrator.log
+      become: true

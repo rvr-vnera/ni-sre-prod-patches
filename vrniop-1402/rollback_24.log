@@ -1,0 +1,274 @@
+
+PLAY [Apply restapi patch] *************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.0.61]
+ok: [172.35.0.219]
+ok: [172.35.0.122]
+ok: [172.35.0.5]
+ok: [172.35.0.162]
+ok: [172.35.0.197]
+ok: [172.35.0.52]
+ok: [172.35.0.232]
+ok: [172.35.0.73]
+ok: [172.35.0.204]
+ok: [172.35.0.69]
+ok: [172.35.0.37]
+ok: [172.35.0.7]
+ok: [172.35.0.147]
+ok: [172.35.0.58]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.162]
+changed: [172.35.0.122]
+changed: [172.35.0.219]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.73]
+changed: [172.35.0.52]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+
+TASK [Replace jar in build-target] *****************************************************************************************************************************************************************************
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.73]
+changed: [172.35.0.52]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+
+TASK [Restart restapi service] *********************************************************************************************************************************************************************************
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.61]
+changed: [172.35.0.5]
+changed: [172.35.0.122]
+changed: [172.35.0.197]
+changed: [172.35.0.73]
+changed: [172.35.0.232]
+changed: [172.35.0.52]
+changed: [172.35.0.204]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.7]
+changed: [172.35.0.37]
+changed: [172.35.0.147]
+
+TASK [Check restapi uptime] ************************************************************************************************************************************************************************************
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.61]
+changed: [172.35.0.5]
+changed: [172.35.0.219]
+changed: [172.35.0.197]
+changed: [172.35.0.73]
+changed: [172.35.0.232]
+changed: [172.35.0.52]
+changed: [172.35.0.204]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+changed: [172.35.0.37]
+
+TASK [Check md5sum] ********************************************************************************************************************************************************************************************
+changed: [172.35.0.122]
+changed: [172.35.0.162]
+changed: [172.35.0.219]
+changed: [172.35.0.5]
+changed: [172.35.0.61]
+changed: [172.35.0.197]
+changed: [172.35.0.73]
+changed: [172.35.0.52]
+changed: [172.35.0.232]
+changed: [172.35.0.204]
+changed: [172.35.0.69]
+changed: [172.35.0.58]
+changed: [172.35.0.37]
+changed: [172.35.0.7]
+changed: [172.35.0.147]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.122] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:23"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.162] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:26"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.219] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:25"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.5] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:25"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.61] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:25"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.197] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.73] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.52] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.232] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:38"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.204] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:37"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.69] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:51"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.58] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:51"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:50"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.7] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:50"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+ok: [172.35.0.147] => {
+    "msg": [
+        "PodName: pdpod24", 
+        [
+            "\u001b[00;32mRestapilayer is running\u001b[00m", 
+            "Uptime:00:50"
+        ], 
+        "e1365cb1fcc82ab879333e99a7ee1886  /home/ubuntu/build-target/restapilayer/restapilayer-0.001-SNAPSHOT.jar"
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.122               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.147               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.162               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.197               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.204               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.219               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.232               : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.37                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.5                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.52                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.58                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.61                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.69                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.7                 : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.73                : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

@@ -1,0 +1,34 @@
+---
+- name: Apply UI patch
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    target_dir: /usr/share/nginx/www
+    backup_dir: /usr/share/nginx/www_before_vrniop902
+    staging_dir: /tmp/902-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Verify user login
+      shell: |
+        whoami
+        cd ~
+        ls -l
+
+    - name: Untar files to target_dir
+      shell: |
+        sudo tar -xzvf "{{ staging_dir }}"/uibundle.tgz -C "{{ target_dir }}"
+        sudo chown -R www-data:www-data "{{ target_dir }}"
+      become: true
+
+    - name: Restart express js service
+      shell: sudo service expressJs-server restart
+      become: true
+
+    - name: Check if service is up
+      shell: |
+        sleep 3s
+        /home/ubuntu/check-service-health.sh -u | grep -A 1 ExpressJSApp
+      become: true

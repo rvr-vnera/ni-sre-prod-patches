@@ -1,0 +1,20 @@
+---
+- name: Execute capping script
+  hosts: "{{ HOSTS }}"
+  strategy: free
+  gather_facts: no
+  become: true
+  become_user: ubuntu
+  vars:
+    staging_dir: /tmp/914-patch
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+
+  tasks:
+    - name: Run capping script
+      shell: '{{ staging_dir }}/capping.sh'
+      register: capping_output
+      become: true
+
+    - debug:
+        var: capping_output.stdout 

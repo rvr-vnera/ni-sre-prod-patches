@@ -1,0 +1,55 @@
+---
+
+- name: Stop All Services
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    stop_services_order:
+      - launcher-service
+      - expressJs-server
+      - databus-gateway
+      - restapilayer-service
+      - vipservice
+      - saasservice
+      - policy-manager
+      - path-analyzer
+      - day2ops-analytics
+      - federation
+      - samzajobs
+      - flinkjobs
+      - batch-analytics
+      - kafka
+      - elasticsearch
+      - hadoop-yarn-nodemanager
+      - hadoop-yarn-resourcemanager
+      - tsdb-server
+      - hbase-regionserver
+      - hbase-master
+      - hadoop-hdfs-datanode
+      - hadoop-hdfs-namenode
+      - hadoop-hdfs-journalnode
+      - hadoop-hdfs-zkfc
+      - fdb
+      - zookeeper-server
+      - nginx
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"' && hostname
+      register: pod_name
+      become: true
+
+    - name: Stop All Services in an order
+      shell: "python3 /home/ubuntu/build-target/launcher/horizontalupgrade/scripts/start_stop_services.py -s {{ stop_services_order|join(',') }} -a stop"
+      register: machine_uptime
+
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+

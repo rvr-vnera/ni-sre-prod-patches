@@ -1,0 +1,32 @@
+---
+- name: Get customerIds
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    customer_script: "customer_ids.sh"
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"'
+      register: pod_name
+
+    - name: Copy script
+      copy:
+        src: "files/{{ customer_script }}"
+        dest: "/tmp"
+        mode: '755'
+
+    - name: Execute script
+      shell: |
+        "/tmp/{{ customer_script }}"
+
+    - name: Download json
+      fetch:
+        flat: yes
+        src: "/tmp/{{ pod_name.stdout }}_customers.json"
+        dest: "/home/ubuntu/Prod_Patches/customers/"

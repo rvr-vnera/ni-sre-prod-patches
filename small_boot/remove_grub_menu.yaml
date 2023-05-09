@@ -1,0 +1,51 @@
+- name: Remove old grub menu
+  hosts: "{{ HOSTS }}"
+  become: true
+  become_user: ubuntu
+  vars:
+    ansible_ssh_private_key_file: "{{ key_pair }}"
+    ansible_user: support
+    ansible_password: InfraSoftware1
+    kernel_to_be_removed: 5.4.0-105-generic
+
+  tasks:
+    - name: Pod ID
+      shell: |
+        cat /home/ubuntu/build-target/deployment/policies.properties | grep "SETUP_NAME" | cut -d'=' -f2 | tr -d '"' && hostname
+      register: pod_name
+      become: true
+
+    - name: Running kernel
+      shell: |
+        uname -r
+      register: current_kernel
+      become: true
+
+    - name: Boot Details - Before
+      shell: |
+        df -h /boot/ | grep /boot
+      register: boot_before
+      become: true
+
+    - name: Remove grub menu 105
+      shell: |
+        #sudo update-initramfs -d {{ kernel_to_be_removed }}
+        echo "Pass"
+      become: true
+      become_user: root
+      when: current_kernel.stdout.trim() != kernel_to_be_removed
+ 
+    - name: Boot Details - After
+      shell: |
+        uname -r
+        df -h /boot/ | grep /boot
+      register: boot_after
+      become: true
+
+    - name: Print result
+      debug:
+        msg:
+         - "PodName: {{ pod_name.stdout }}"
+         - "{{ current_kernel.stdout}}"
+         - "{{ boot_before.stdout_lines}}"
+         - "{{ boot_after.stdout_lines}}"

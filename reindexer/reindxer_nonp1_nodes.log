@@ -1,0 +1,442 @@
+
+PLAY [Run reindexer] *******************************************************************************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************************************************
+ok: [172.35.1.235]
+ok: [172.35.0.183]
+ok: [172.35.0.130]
+ok: [172.35.0.54]
+ok: [172.35.1.240]
+ok: [172.35.0.192]
+ok: [172.35.0.182]
+ok: [172.35.0.109]
+ok: [172.35.0.82]
+ok: [172.35.0.121]
+ok: [172.35.0.65]
+ok: [172.35.0.178]
+ok: [172.35.0.158]
+ok: [172.35.0.102]
+ok: [172.35.0.74]
+ok: [172.35.0.214]
+ok: [172.70.0.217]
+ok: [172.70.0.206]
+ok: [172.70.0.200]
+ok: [172.70.0.228]
+ok: [172.70.0.196]
+ok: [172.70.0.198]
+ok: [172.70.0.214]
+ok: [172.70.0.197]
+ok: [172.70.0.248]
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.54]
+changed: [172.35.0.130]
+changed: [172.35.1.240]
+changed: [172.35.1.235]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.182]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.102]
+changed: [172.35.0.214]
+changed: [172.35.0.74]
+changed: [172.70.0.217]
+changed: [172.70.0.206]
+changed: [172.70.0.200]
+changed: [172.70.0.228]
+changed: [172.70.0.196]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.197]
+changed: [172.70.0.248]
+
+TASK [Check reindexer] *****************************************************************************************************************************************************************************************
+ok: [172.35.1.235]
+ok: [172.35.0.183]
+ok: [172.35.1.240]
+ok: [172.35.0.192]
+ok: [172.35.0.82]
+ok: [172.35.0.182]
+ok: [172.35.0.109]
+ok: [172.35.0.121]
+ok: [172.35.0.158]
+ok: [172.35.0.65]
+ok: [172.35.0.54]
+ok: [172.35.0.130]
+ok: [172.35.0.178]
+ok: [172.35.0.102]
+ok: [172.35.0.214]
+ok: [172.35.0.74]
+ok: [172.70.0.217]
+ok: [172.70.0.206]
+ok: [172.70.0.200]
+ok: [172.70.0.228]
+ok: [172.70.0.196]
+ok: [172.70.0.214]
+ok: [172.70.0.198]
+ok: [172.70.0.197]
+ok: [172.70.0.248]
+
+TASK [Run reindexer script] ************************************************************************************************************************************************************************************
+changed: [172.35.0.183]
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.1.240]
+changed: [172.35.1.235]
+changed: [172.35.0.121]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.182]
+changed: [172.35.0.109]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.214]
+changed: [172.35.0.102]
+changed: [172.35.0.74]
+changed: [172.70.0.217]
+changed: [172.70.0.206]
+changed: [172.70.0.200]
+changed: [172.70.0.228]
+changed: [172.70.0.196]
+changed: [172.70.0.198]
+changed: [172.70.0.214]
+changed: [172.70.0.197]
+changed: [172.70.0.248]
+
+TASK [Check process] *******************************************************************************************************************************************************************************************
+changed: [172.35.0.130]
+changed: [172.35.0.54]
+changed: [172.35.1.240]
+changed: [172.35.1.235]
+changed: [172.35.0.183]
+changed: [172.35.0.192]
+changed: [172.35.0.82]
+changed: [172.35.0.182]
+changed: [172.35.0.109]
+changed: [172.35.0.121]
+changed: [172.35.0.158]
+changed: [172.35.0.65]
+changed: [172.35.0.178]
+changed: [172.35.0.102]
+changed: [172.35.0.214]
+changed: [172.35.0.74]
+changed: [172.70.0.217]
+changed: [172.70.0.206]
+changed: [172.70.0.200]
+changed: [172.70.0.228]
+changed: [172.70.0.196]
+changed: [172.70.0.214]
+changed: [172.70.0.198]
+changed: [172.70.0.197]
+changed: [172.70.0.248]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+ok: [172.35.0.130] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "2", 
+        [
+            "ubuntu   63429     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   64188 64187  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   64190 64188  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.54] => {
+    "msg": [
+        "PodName: pdpod11", 
+        "2", 
+        [
+            "ubuntu   33030     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   34735 34734  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   34737 34735  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.1.240] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "3", 
+        [
+            "ubuntu   25246     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   25908 25905  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   25910 25908  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.1.235] => {
+    "msg": [
+        "PodName: pdpod15", 
+        "3", 
+        [
+            "ubuntu   62048     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   62917 62916  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   62919 62917  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.183] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "72", 
+        [
+            "ubuntu   30546     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   31985 31984  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   31987 31985  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.192] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "72", 
+        [
+            "ubuntu     746     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu    1444  1437  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu    1446  1444  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.82] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "72", 
+        [
+            "ubuntu   64587     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   65052 65051  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   65054 65052  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.182] => {
+    "msg": [
+        "PodName: pdpod16", 
+        "72", 
+        [
+            "ubuntu   45754     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   46443 46442  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   46445 46443  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.109] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu   35517     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   36012 36011  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   36014 36012  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.121] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu   39493     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   41924 41915  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   41926 41924  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.158] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu   46237     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   46804 46797  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   46806 46804  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.65] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu   22647     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   23101 23098  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   23103 23101  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.178] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu   49206     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   49775 49773  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   49777 49775  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.102] => {
+    "msg": [
+        "PodName: pdpod22", 
+        "24", 
+        [
+            "ubuntu    3907     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu    4391  4390  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu    4393  4391  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.214] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "1", 
+        [
+            "ubuntu    6394     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu    6965  6964  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu    6967  6965  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.35.0.74] => {
+    "msg": [
+        "PodName: pdpod23platform", 
+        "1", 
+        [
+            "ubuntu   36730     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   37220 37219  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   37222 37220  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.217] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   46204     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   46769 46767  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   46771 46769  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.206] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   34368     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   34947 34946  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   34949 34947  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.200] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   30886     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   32076 32074  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   32078 32076  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.228] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   40425     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   45548 45490  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   45553 45548  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.196] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   27221     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   27931 27930  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   27933 27931  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.214] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   57888     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   58554 58553  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   58556 58554  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.198] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu     404     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu    1766  1765  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu    1768  1766  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.197] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   32269     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   33156 33153  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   33158 33156  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+ok: [172.70.0.248] => {
+    "msg": [
+        "PodName: pdpod7000", 
+        "31", 
+        [
+            "ubuntu   34245     1  0 09:21 ?        00:00:00 /bin/bash /home/ubuntu/build-target/restapilayer/reindexer.sh -f -s -objTypes 206,205,155,707", 
+            "ubuntu   35255 35254  0 09:21 pts/0    00:00:00 /bin/sh -c ps -ef | grep reindexer.sh ", 
+            "ubuntu   35257 35255  0 09:21 pts/0    00:00:00 grep reindexer.sh"
+        ]
+    ]
+}
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.102               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.109               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.121               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.130               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.158               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.178               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.182               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.183               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.192               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.214               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.54                : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.65                : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.74                : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.82                : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.235               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.1.240               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.196               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.197               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.198               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.200               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.206               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.214               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.217               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.228               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.70.0.248               : ok=6    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+

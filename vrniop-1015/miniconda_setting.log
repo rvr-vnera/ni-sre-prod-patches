@@ -1,0 +1,351 @@
+
+PLAY [Check miniconda config] **********************************************************************************************************************************************************************************
+
+TASK [Pod ID] **************************************************************************************************************************************************************************************************
+changed: [172.35.0.9]
+changed: [172.35.0.217]
+changed: [172.35.0.248]
+changed: [172.35.0.249]
+changed: [172.35.0.191]
+changed: [172.35.0.168]
+changed: [172.35.0.137]
+changed: [172.35.0.110]
+changed: [172.35.0.134]
+changed: [172.35.0.66]
+changed: [172.35.0.138]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.120]
+changed: [172.35.0.63]
+changed: [172.35.0.201]
+changed: [172.35.0.24]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.0.93]
+changed: [172.35.0.218]
+changed: [172.35.0.145]
+changed: [172.35.0.196]
+changed: [172.35.0.37]
+changed: [172.70.0.224]
+changed: [172.35.0.175]
+changed: [172.45.211.130]
+changed: [172.45.165.67]
+changed: [172.35.0.240]
+changed: [172.55.26.234]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.35]
+changed: [172.35.0.206]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.72.0.222]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+
+TASK [Fetch data for miniconda] ********************************************************************************************************************************************************************************
+changed: [172.35.0.249]
+changed: [172.35.0.9]
+changed: [172.35.0.248]
+changed: [172.35.0.217]
+changed: [172.35.0.191]
+changed: [172.35.0.134]
+changed: [172.35.0.66]
+changed: [172.35.0.137]
+changed: [172.35.0.168]
+changed: [172.35.0.110]
+changed: [172.35.0.62]
+changed: [172.35.0.59]
+changed: [172.35.0.138]
+changed: [172.35.0.120]
+changed: [172.35.0.201]
+changed: [172.35.0.63]
+changed: [172.35.0.184]
+changed: [172.35.0.20]
+changed: [172.35.0.24]
+changed: [172.35.0.93]
+changed: [172.35.0.218]
+changed: [172.45.211.130]
+changed: [172.35.0.196]
+changed: [172.45.165.67]
+changed: [172.35.0.145]
+changed: [172.55.26.234]
+changed: [172.72.0.222]
+changed: [172.35.0.37]
+changed: [172.35.0.240]
+changed: [172.70.0.224]
+changed: [172.35.0.175]
+changed: [172.35.0.253]
+changed: [172.35.0.51]
+changed: [172.35.0.206]
+changed: [172.35.0.35]
+changed: [172.35.0.8]
+changed: [172.35.0.114]
+changed: [172.45.39.94]
+changed: [172.45.88.131]
+
+TASK [Print result] ********************************************************************************************************************************************************************************************
+skipping: [172.35.0.248]
+skipping: [172.35.0.9]
+skipping: [172.35.0.249]
+skipping: [172.35.0.217]
+skipping: [172.35.0.191]
+skipping: [172.35.0.137]
+skipping: [172.35.0.134]
+skipping: [172.35.0.168]
+skipping: [172.35.0.66]
+skipping: [172.35.0.110]
+ok: [172.35.0.138] => {
+    "msg": [
+        "PodName: \"pdpod11\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: False", 
+            "--platform3--", 
+            "auto_activate_base: False"
+        ]
+    ]
+}
+skipping: [172.35.0.62]
+skipping: [172.35.0.59]
+skipping: [172.45.211.130]
+skipping: [172.45.165.67]
+ok: [172.35.0.120] => {
+    "msg": [
+        "PodName: \"pdpod14platform\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+ok: [172.35.0.201] => {
+    "msg": [
+        "PodName: \"pdpod16\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: False", 
+            "--platform3--", 
+            "auto_activate_base: False", 
+            "--platform4--", 
+            "auto_activate_base: False", 
+            "--platform5--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+ok: [172.35.0.63] => {
+    "msg": [
+        "PodName: \"pdpod17\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+ok: [172.35.0.24] => {
+    "msg": [
+        "PodName: \"pdpod18platform\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: True", 
+            "--platform4--", 
+            "auto_activate_base: True", 
+            "--platform5--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+skipping: [172.35.0.184]
+skipping: [172.35.0.20]
+skipping: [172.35.0.93]
+ok: [172.35.0.218] => {
+    "msg": [
+        "PodName: \"pdpod21\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+ok: [172.35.0.145] => {
+    "msg": [
+        "PodName: \"pdpod22\"", 
+        "Miniconda Config:", 
+        [
+            "--platform3--", 
+            "auto_activate_base: True", 
+            "--platform6--", 
+            "auto_activate_base: True", 
+            "--platform5--", 
+            "auto_activate_base: False", 
+            "--platform7--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform4--", 
+            "auto_activate_base: False", 
+            "--platform1--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+ok: [172.35.0.196] => {
+    "msg": [
+        "PodName: \"pdpod23platform\"", 
+        "Miniconda Config:", 
+        [
+            "--platform2--", 
+            "auto_activate_base: False", 
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: False"
+        ]
+    ]
+}
+skipping: [172.55.26.234]
+ok: [172.35.0.37] => {
+    "msg": [
+        "PodName: \"pdpod24\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: True", 
+            "--platform10--", 
+            "auto_activate_base: True", 
+            "--platform2--", 
+            "auto_activate_base: True", 
+            "--platform3--", 
+            "auto_activate_base: True", 
+            "--platform4--", 
+            "auto_activate_base: True", 
+            "--platform5--", 
+            "auto_activate_base: True", 
+            "--platform6--", 
+            "auto_activate_base: True", 
+            "--platform7--", 
+            "auto_activate_base: True", 
+            "--platform8--", 
+            "auto_activate_base: True", 
+            "--platform9--", 
+            "auto_activate_base: True", 
+            "--platform11--", 
+            "auto_activate_base: True", 
+            "--platform12--", 
+            "auto_activate_base: True", 
+            "--platform13--", 
+            "auto_activate_base: True", 
+            "--platform14--", 
+            "auto_activate_base: True", 
+            "--platform15--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+skipping: [172.72.0.222]
+skipping: [172.70.0.224]
+ok: [172.35.0.175] => {
+    "msg": [
+        "PodName: \"pdpod26\"", 
+        "Miniconda Config:", 
+        [
+            "--platform1--", 
+            "auto_activate_base: False", 
+            "--platform2--", 
+            "auto_activate_base: False", 
+            "--platform3--", 
+            "auto_activate_base: False", 
+            "--platform4--", 
+            "auto_activate_base: False", 
+            "--platform5--", 
+            "auto_activate_base: False", 
+            "--platform10--", 
+            "auto_activate_base: True", 
+            "--platform6--", 
+            "auto_activate_base: True", 
+            "--platform7--", 
+            "auto_activate_base: True", 
+            "--platform8--", 
+            "auto_activate_base: True", 
+            "--platform9--", 
+            "auto_activate_base: True"
+        ]
+    ]
+}
+skipping: [172.45.39.94]
+skipping: [172.35.0.240]
+skipping: [172.35.0.253]
+skipping: [172.35.0.51]
+skipping: [172.45.88.131]
+skipping: [172.35.0.206]
+skipping: [172.35.0.35]
+skipping: [172.35.0.8]
+skipping: [172.35.0.114]
+
+PLAY RECAP *****************************************************************************************************************************************************************************************************
+172.35.0.110               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.114               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.120               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.134               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.137               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.138               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.145               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.168               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.175               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.184               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.191               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.196               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.20                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.201               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.206               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.217               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.218               : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.24                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.240               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.248               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.249               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.253               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.35                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.37                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.51                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.59                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.62                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.63                : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+172.35.0.66                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.8                 : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.9                 : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.35.0.93                : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.45.165.67              : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.45.211.130             : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.45.39.94               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.45.88.131              : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.55.26.234              : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.70.0.224               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+172.72.0.222               : ok=2    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
